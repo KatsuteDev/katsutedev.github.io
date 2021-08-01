@@ -1,0 +1,39 @@
+---
+layout: compress
+---
+{% assign redirect = page.redirect %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="refresh" content="0;url={{ redirect }}">
+        <meta name="robots" content="noindex, nofollow, none, noarchive, nosnippet" />
+
+        <style>
+            html, body {
+                padding: 0;
+                margin : 0;
+
+                width: 100vw;
+                max-width: 100vw;
+                height: 100vh;
+                max-height: 100vh;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            noscript {
+                font-family: "Open Sans", Arial, Helvetica, sans-serif;
+            }
+        </style>
+
+        <script>
+            window.location.replace("{{ redirect }}");
+        </script>
+    </head>
+    <body>
+        <noscript>JavaScript is disabled, click to redirect: <a href="{{ redirect }}">{{ redirect }}</a></noscript>
+    </body>
+</html>

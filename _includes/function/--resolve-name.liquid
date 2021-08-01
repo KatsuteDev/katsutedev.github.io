@@ -1,0 +1,25 @@
+{% for __page in site.pages %}
+    {% if __page.path == include.path %}
+        {% if __page.title %}
+            {% comment %} existing title {% endcomment %}
+            {{ __page.title }}
+        {% else %}
+            {% assign __name = __page.name %}
+            {% assign __dname = __name | downcase %}
+
+            {% if __dname == "index.html" or __dname == "readme.md" %}
+                {% comment %} folder {% endcomment %}
+                {% assign __fin = __page.path | split: '/' | size | minus: 2 %}
+                {% assign __name = __page.path | split: '/' | slice: __fin | first %}
+            {% else %}
+                {% comment %} file name w/o ext. {% endcomment %}
+                {% assign __ldot = __name | split: '.' | size | minus: 1 %}
+                {% assign __name = __name | split: '.' | slice: 0, __ldot | join: '.' | replace: '-', ' ' %}
+            {% endif %}
+            {% comment %} capitalize {% endcomment %}
+            {% assign __words = __name | split: ' ' %}
+            {% for __word in __words %}{{ __word | capitalize }} {% endfor %}
+        {% endif %}
+        {% break %}
+    {% endif %}
+{% endfor %}

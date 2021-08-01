@@ -1,0 +1,137 @@
+---
+---
+
+@import "bootstrap";
+
+// ----- global overrides ---------------
+
+pre, code {
+
+    * {
+
+        font-family: Consolas, 'Courier New', Courier, monospace !important;
+
+    }
+
+}
+
+* {
+
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+
+    outline: none;
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+
+        height: 8px;
+        width : 8px;
+
+        /* Track */
+        &-track {
+
+            background: #202020;
+
+        }
+
+        /* Handle */
+        &-thumb {
+
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+
+            &:hover {
+
+                background: rgba(255, 255, 255, 0.35);
+
+            }
+
+        }
+
+    }
+
+}
+
+html, body {
+
+    overflow  : auto;
+    height    : 100vh;
+    max-height: 100vh;
+    width     : 100vw;
+    max-width : 100vw;
+
+    background-color: #F3F2F1;
+
+}
+
+noscript {
+
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+
+    position  : absolute;
+    z-index   : 30000;
+
+    overflow  : hidden;
+    height    : 100vh;
+    max-height: 100vh;
+    width     : 100vw;
+    max-width : 100vw;
+
+    display: flex;
+    align-items    : center;
+    justify-content: center;
+
+    background-color: #F3F2F1;
+
+}
+
+img {
+
+    max-width: 100%;
+
+    &.user-select-none {
+
+        -webkit-user-drag: none;
+        -khtml-user-drag : none;
+        -moz-user-drag   : none;
+        -o-user-drag     : none;
+        user-select      : none;
+
+    }
+
+}
+
+nav li::before {
+
+    content: none;
+
+}
+
+a, button {
+
+    &, &:hover {
+
+        transition:
+            color 0.25s ease-in-out,
+            background-color 0.25s ease-in-out
+            !important;
+
+    }
+
+}
+
+// ----- elements ---------------
+
+body {
+
+    @extend .d-flex;
+
+}
+
+main {
+
+    @extend .w-100;
+    @extend .mh-100;
+    @extend .overflow-auto;
+
+}
