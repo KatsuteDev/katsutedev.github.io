@@ -6,5 +6,7 @@ Disallow: /dependencies
 Disallow: /dependencies/*
 Disallow: /*/dependencies
 Disallow: /*/dependencies/*
+Disallow: /u
+Disallow: /u/*
 
 Sitemap: https://katsute.dev/sitemap.xml
