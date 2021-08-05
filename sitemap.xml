@@ -3,6 +3,7 @@ layout: compress
 paths:
     - ""
     - r
+    - r/ccyn
     - r/desktop-flick
     - r/jcore
     - r/mal4j
