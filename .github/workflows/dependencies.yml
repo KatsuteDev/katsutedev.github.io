@@ -13,6 +13,7 @@ jobs:
         with:
           node-version: 14
           architecture: x64
+          check-latest: true
 
       - name: 📚 Update dependencies
         run: |
