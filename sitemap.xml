@@ -1,5 +1,5 @@
 ---
-layout: compress
+layout: none
 paths:
     - ""
     - r
@@ -11,15 +11,12 @@ paths:
     - r/rexedia/editor
     - r/simplehttpserver
 ---
-{% assign mod = site.time | date: "%Y-%m-%d" %}
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
-    {% for path in page.paths %}
-        <url>
-            <loc>{{ site.url }}/{{ path }}</loc>
-            <lastmod>{{ mod }}</lastmod>
-            <changefreq>weekly</changefreq>
-            <priority>0.5</priority>
-        </url>
-    {% endfor %}
-</urlset>
+{% assign mod = site.time | date: "%Y-%m-%d" %}{% for path in page.paths %}    <url>
+        <loc>{{ site.url }}/{{ path }}</loc>
+        <lastmod>{{ mod }}</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+    </url>
+{% endfor %}</urlset>

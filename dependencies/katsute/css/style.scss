@@ -135,3 +135,16 @@ main {
     @extend .overflow-auto;
 
 }
+
+.bk-gradient {
+
+    background: linear-gradient(30deg, #355192, #4366b7);
+
+}
+
+img[data-bs-toggle="tooltip"] {
+
+    position: relative;
+    z-index: 2;
+
+}

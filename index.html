@@ -1,20 +1,440 @@
 ---
+title: Katsute
+layout: default
+
+foot: |
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+        })
+    </script>
+
+nav:
+    - Repositories: /r
+    - <i class="fab fa-github fa-fw me-1"></i>Katsute: https://github.com/Katsute
+    - <i class="fab fa-github fa-fw me-1"></i>KatsuteDev: https://github.com/KatsuteDev
+    - <i class="fab fa-linkedin fa-fw fa-lg"></i>: https://www.linkedin.com/in/ keith-chiu/
+    - <i class="far fa-envelope fa-fw fa-lg"></i>: mailto:business@katsute.dev
+
+header-title: |
+    Welcome to My Site
+header-body: |
+    I do primarily back-end application and library development.
+
+technologies:
+  java:
+    title: Java
+    body: 3 years experience working with Java for webserver and library development.
+    icon: java
+  maven:
+    title: Maven
+    body: Experience using maven for both dependency management and deployment.
+    icon: apachemaven
+  python:
+    title: Python
+    body: 2 years experience working with Python.
+    icon: python
+  javascript:
+    title: JavaScript
+    body: 2 years experience using JavaScript for site development.
+    icon: javascript
+  typescript:
+    title: TypeScript
+    body: 1 years experience using TypeScript for electron and small workflows.
+    icon: typescript
+  nodejs:
+    title: NodeJS
+    body: 1 years exprience using npm for dependency mangement.
+    icon: nodejs
+  electronjs:
+    title: ElectronJS
+    body: 1 years experience using Electron for application development.
+    icon: electron
+  html:
+    title: HTML
+    body: 3 years exprience using HTML for site development.
+    icon: html5
+  css:
+    title: CSS
+    body: 3 years experience using CSS for site development.
+    icon: css3
+  bootstrap:
+    title: Bootstrap
+    body: 3 years experience using Bootstrap for site development.
+    icon: bootstrap
+  jekyll:
+    title: Jekyll / Liquid
+    body: 2 years experience using Jekyll and Liquid for site development.
+    icon: jekyll
+  cpp:
+    title: C++
+    body: 6 months experience using C++.
+    icon: cplusplus
+  github:
+    title: GitHub
+    body: Joined GitHub in December of 2019. Experience managing organizations, repositories, and using the GitHub API.
+    icon: github
+  github-actions:
+    title: Actions
+    body: Experience with using and developing GitHub actions.
+    icon: githubactions
+
+tech:
+    - [java, maven]
+    - [python]
+    - [javascript, typescript, nodejs, electronjs]
+    - [html, css, bootstrap, jekyll]
+    - [cpp]
+    - [github, github-actions]
+
+education:
+    - name: Bayside High School
+      start: 2015
+      end: 2019
+      deg: Advanced Regents Diploma in Computer Programming & Web Design with CTE endorsement
+      desc: |
+        As part of the Computer Program students will learn to use web technologies HTML, CSS, JavaScript, Bootstrap, and REST APIs. Additionally students will also learn object oriented programming with Python and Java.
+        - Created games in Python, such as Flappy Bird.
+        - Created a site to check weather using the OpenWeatherMap and Google Map APIs.
+        - Created a site featuring a quiz to help students learn about history using Firebase, Google Maps API, and Bootstrap.
+        - Created a bouncing ball game in Java.
+        As part of the 4 year program students, in groups, will also complete a [capstone project](https://github.com/Katsute/Mr-Flour) involving said technologies and present them at Queens Community College.
+    - name: Baruch College
+      start: 2019
+      end: Present
+      deg: Computer Information Systems (CIS)
+      desc: |
+        CIS majors will take courses involving both technical and manegerial issues in the information technology (IT) sector of business. Particularly data analytics, software development, and IT strategy.
+        Relevant Coursework:
+        - [CIS 2300 - Programming and Computational Thinking (Introduction to Python)](https://github.com/Katsute/Baruch-CIS-2300)
+        - [CIS 3100 - Object-Oriented Programming I (C++)](https://github.com/Katsute/Baruch-CIS-3100)
+        - [CIS 3120 - Programming for Analytics (Python)](https://github.com/Katsute/Baruch-CIS-3120)
+        - [CIS 4170 - Data Visualization (Python)](https://github.com/Katsute/Baruch-CIS-4170)
+
+        ##### Ascend Baruch
+        - *Member of the Technology Committee (Fall 2020)*
+
+# sourced from /r
+repos:
+    - title: Applications
+      repos:
+        - title: Chrome Can You Not
+          icon: ccyn/favicon.ico
+          link: ccyn
+          technologies:
+            - title: ElectronJS
+              icon: electron
+            - title: JavaScript
+              icon: javascript
+            - title: TypeScript
+              icon: typescript
+            - title: NodeJS
+              icon: nodejs
+          using:
+            - title: Visual Studio Code
+              icon: visualstudiocode
+            - title: GitHub
+              icon: github
+            - title: GitHub Actions
+              icon: githubactions
+          body: |
+            Detect and stop chrome from running in the background.
+        - title: Desktop Flick
+          icon: desktop-flick/favicon.ico
+          link: desktop-flick
+          technologies:
+            - title: ElectronJS
+              icon: electron
+            - title: JavaScript
+              icon: javascript
+            - title: TypeScript
+              icon: typescript
+            - title: NodeJS
+              icon: nodejs
+            - title: HTML
+              icon: html5
+            - title: CSS
+              icon: css3
+          using:
+            - title: Visual Studio Code
+              icon: visualstudiocode
+            - title: GitHub
+              icon: github
+            - title: GitHub Actions
+              icon: githubactions
+          body: |
+            Use your mobile device as a localized desktop keyboard.
+        - title: Rexedia
+          icon: rexedia/favicon.ico
+          link: rexedia
+          technologies:
+            - title: Java
+              icon: java
+          using:
+            - title: IntelliJ
+              icon: intellijidea
+            - title: GitHub
+              icon: github
+            - title: GitHub Actions
+              icon: githubactions
+          body: |
+            Metadata editing for bulk media files using regular expressions (regex).
+    - title: Libraries
+      repos:
+        - title: JCore
+          link: jcore
+          technologies:
+            - title: Java
+              icon: java
+            - title: Maven Central
+              icon: apachemaven
+          using:
+            - title: IntelliJ
+              icon: intellijidea
+            - title: GitHub
+              icon: github
+            - title: GitHub Actions
+              icon: githubactions
+          body: |
+            Java library for GitHub workflow commands.
+        - title: Mal4J
+          icon: mal4j/favicon.ico
+          link: mal4j
+          technologies:
+            - title: Java
+              icon: java
+            - title: Maven Central
+              icon: apachemaven
+          using:
+            - title: IntelliJ
+              icon: intellijidea
+            - title: GitHub
+              icon: github
+            - title: GitHub Actions
+              icon: githubactions
+          body: |
+            Java wrapper for the official MyAnimeList REST API.
+        - title: SimpleHttpServer
+          icon: simplehttpserver/favicon.ico
+          link: simplehttpserver
+          technologies:
+            - title: Java
+              icon: java
+            - title: Maven Central
+              icon: apachemaven
+          using:
+            - title: IntelliJ
+              icon: intellijidea
+            - title: GitHub
+              icon: github
+            - title: GitHub Actions
+              icon: githubactions
+          body: |
+            A simplified implementation of the Java sun http server.
+    - title: Sites
+      repos:
+        - title: Docs
+          icon: dependencies/katsute/assets/favicon.ico
+          link: https://docs.katsute.dev/
+          technologies:
+            - title: HTML
+              icon: html5
+            - title: CSS
+              icon: css3
+            - title: JavaScript
+              icon: javascript
+            - title: NodeJS
+              icon: nodejs
+            - title: Bootstrap
+              icon: bootstrap
+            - title: Jekyll
+              icon: jekyll
+          using:
+            - title: Visual Studio Code
+              icon: visualstudiocode
+            - title: GitHub
+              icon: github
+          body: |
+            Documentaton site for katsute.dev products.
+
 ---
-<div class="d-flex flex-column my-4">
-    <div class="d-flex justify-content-center">
-        <i>This site is currently being developed.</i>
+<div class="bk-gradient">
+    {% comment %} navigation {% endcomment %}
+    <nav class="navbar navbar-expand-lg navbar-dark py-0">
+        <div class="container-lg d-flex justify-content-between">
+            <ul class="navbar-nav flex-row">
+                <li class="nav-item p-2">
+                    <a class="navbar-brand d-flex align-items-center py-0" href="{{ site.url }}">
+                        <img class="user-select-none me-1" src="dependencies/katsute/assets/favicon.png" width="20" height="20">
+                        <span>{{ page.title }}</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav flex-row flex-wrap">
+                {% for link in page.nav %}
+                    <li class="nav-item small ps-3">
+                        {% assign first = link | first | last | slice: 0 %}
+                        <a class="nav-link p-0" href="{{ link | first | last }}" {% unless first == '/' %}target="_blank"{% endunless %}>
+                            <span class="text-white">{{ link | first | first }}</span>
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </nav>
+
+    {% comment %} header {% endcomment %}
+    <div class="p-5 text-center text-white">
+        <div class="py-5">
+            <div class="d-flex justify-content-center align-items-center mb-4">
+                <h1 class="display-4 mb-0">{{ page.header-title }}</h1>
+            </div>
+            <p class="lead">
+                {{ page.header-body }}
+            </p>
+        </div>
     </div>
-    <div class="d-flex justify-content-center">
-        <ul class="mt-4">
-            <li>
-                <a href="/r/">Repositories</a>
-            </li>
-            <li>
-                <a href="https://docs.katsute.dev" target="_blank">Documentation</a>
+</div>
+
+{% comment %} stats {% endcomment %}
+
+<div class="d-flex flex-row flex-wrap container-lg py-4">
+    <div class="col-12 col-sm-6">
+        <div class="p-2 text-center">
+            <img class="user-select-none" src="https://raw.githubusercontent.com/Katsute/Katsute/main/generated/statistics.svg">
+        </div>
+    </div>
+    <div class="col-12 col-sm-6">
+        <div class="p-2 text-center">
+            <img class="user-select-none" src="https://raw.githubusercontent.com/Katsute/Katsute/main/generated/statistics_annual.svg">
+        </div>
+    </div>
+    <div class="col-12 col-sm-6">
+        <div class="p-2 text-center">
+            <img class="user-select-none" src="https://raw.githubusercontent.com/Katsute/Katsute/main/generated/languages.svg">
+        </div>
+    </div>
+    <div class="col-12 col-sm-6">
+        <div class="p-2 text-center">
+            <img class="user-select-none" src="https://raw.githubusercontent.com/Katsute/Katsute/main/generated/languages_coverage.svg">
+        </div>
+    </div>
+    <div class="col-12 small text-center">
+        <em>Generated from <a target="_blank" href="https://github.com/Katsute/Katsute/">github/Katsute</a></em>
+    </div>
+</div>
+
+{% comment %} technologies {% endcomment %}
+
+<div class="bk-gradient text-white py-4">
+    <div class="container-lg">
+        <div class="px-sm-4">
+            <h1 class="border-bottom pt-5 mb-3">Technologies</h1>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+                {% for stack in page.tech %}
+                    <div>
+                        <div class="card text-body">
+                            {% for tech in stack %}
+                                <div class="card-body {% unless forloop.last %}border-bottom{% endunless %}">
+                                    <h5 class="card-title d-flex align-items-center">
+                                        <img class="user-select-none me-1" width="20" height="20" src="dependencies/simpleicons/assets/{{ page.technologies[tech].icon }}.svg">
+                                        {{ page.technologies[tech].title }}
+                                    </h5>
+                                    <p class="card-text">{{ page.technologies[tech].body }}</p>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% comment %} education {% endcomment %}
+
+<div class="pb-4">
+    <div class="container-lg">
+        <div class="px-sm-4">
+            <h1 class="border-bottom pt-5 mb-3">Education</h1>
+            {% for edu in page.education %}
+                <div class="mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h3 class="d-inline-block me-1 card-title">{{ edu.name }}</h3>
+                                <h5 class="d-inline-block text-muted">{{ edu.start }} - {{ edu.end }}</h5>
+                            </div>
+                            <h6 class="card-subtitle mt-1">{{ edu.deg }}</h6>
+                            <p class="card-text">{{ edu.desc | markdownify }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% comment %} projects {% endcomment %}
+
+<div class="bk-gradient py-4">
+    <div class="px-sm-4 py-5">
+        <div class="container-lg">
+            <h1 class="border-bottom mb-2"><a class="text-white text-decoration-none" href="/r/">Projects / Repositories</a></h1>
+            {% for cat in page.repos %}
+                <h2 class="my-3 text-white">{{ cat.title }}</h2>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+                    {% for repo in cat.repos %}
+                        <div>
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title d-flex align-items-center">
+                                        {% if repo.icon %}
+                                            <img class="user-select-none me-1" width="20" height="20" src="/r/{{ repo.icon }}">
+                                        {% endif %}
+                                        {{ repo.title }}
+                                    </h5>
+                                    <h6 class="card-subtitle my-2 text-muted small">
+                                        <span class="pe-1">Built with</span>
+                                        {% for tech in repo.technologies %}
+                                            <img
+                                                class="user-select-none" width="20" height="20"
+                                                src="dependencies/simpleicons/assets/{{ tech.icon }}.svg"
+                                                data-bs-toggle="tooltip" data-bs-placement="top" title="{{ tech.title }}"
+                                            >
+                                        {% endfor %}
+                                        {% if repo.using %}
+                                            <span class="px-1">using</span>
+                                            {% for tech in repo.using %}
+                                                <img
+                                                    class="user-select-none" width="20" height="20"
+                                                    src="dependencies/simpleicons/assets/{{ tech.icon }}.svg"
+                                                    data-bs-toggle="tooltip" data-bs-placement="top" title="{{ tech.title }}"
+                                                >
+                                            {% endfor %}
+                                        {% endif %}
+                                    </h6>
+                                    <p class="card-text">{{ repo.body }}</p>
+                                    <a class="stretched-link" href="/r/{{ repo.link }}">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% comment %} footer {% endcomment %}
+
+<footer class="footer py-3">
+    <div class="container-xl d-flex justify-content-center">
+        <ul class="nav d-flex flex-wrap justify-content-center">
+            <li class="nav-item small text-secondary">
+                <span>&copy; {{ site.time | date: "%Y" }} Katsute</span>
             </li>
         </ul>
     </div>
-    <div class="d-flex justify-content-center mt-2">
-        <span class="small text-secondary user-select-none">&copy; {{ site.time | date: "%Y" }} Katsute</span>
-    </div>
-</div>
+</footer>
