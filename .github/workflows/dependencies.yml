@@ -1,28 +1,11 @@
 name: Dependencies
+
 on: [workflow_dispatch]
+
 jobs:
-  deps:
+  dependencies:
     name: Update Dependencies
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    steps:
-      - name: 📤 Checkout Repository
-        uses: actions/checkout@v2.3.4
-
-      - name: 📚 Install npm
-        uses: actions/setup-node@v2.4.0
-        with:
-          node-version: 14
-          architecture: x64
-
-      - name: 📚 Update dependencies
-        run: |
-          npm i
-
-      - name: 💾 Push to Git Repo
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add -f "dependencies/node"
-          git diff-index --quiet HEAD || git commit -m 'Update dependencies'
-          git push
+    uses: Katsute/Workflows/.github/workflows/npm.commit.yml@main
+    with:
+      commit-files: "'dependencies/node'"
+      commit-message: Update dependencies
