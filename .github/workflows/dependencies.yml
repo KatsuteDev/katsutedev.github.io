@@ -5,7 +5,7 @@ on: [workflow_dispatch]
 jobs:
   dependencies:
     name: Update Dependencies
-    uses: Katsute/Workflows/.github/workflows/npm.yml@main
+    uses: Katsute/Workflows/.github/workflows/npm.run.yml@main
     with:
       command: npm i
       commit-files: "'dependencies/node'"
