@@ -3,23 +3,30 @@
 livereload: true
 port: 8000
 
-source: src
-destination: dist
-
-plugins_dir: plugins
-layouts_dir: layouts
-
 disable_disk_cache: true
 strict_front_matter: true
 
 sass:
   load_paths:
-    - dependencies/katsute/css
-    - dependencies/node/bootstrap/scss
+    - _src/dependencies/katsute/css
+    - _src/dependencies/node/bootstrap/scss
   style: compressed
 
+collections:
+  src:
+    output: true
+    permalink: /:path:output_ext
+
 exclude:
-  - dependencies/node/bootstrap/scss
+  - includes
+  - layouts
+  - CNAME
+  - _config.yml
+  - LICENSE
+  - README.md
+  - '*.json'
+  - '*.ts'
+  - src/dependencies/node/bootstrap/scss
 
 # github plugins
 plugins:
@@ -41,3 +48,7 @@ compress_html:
   blanklines: false
   profile: false
   startings: []
+
+# variables
+
+url: https://katsute.dev

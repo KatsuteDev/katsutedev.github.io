@@ -14,7 +14,7 @@ class Main {
         fs.existsSync(layouts) || fs.mkdirSync(layouts);
 
         const file: WriteStream = fs.createWriteStream(path.join(layouts, "compress.html"));
-        https.get(`https://github.com/penibelst/jekyll-compress-html/releases/download/$[version}/compress.html`, (response) => {
+        https.get(`https://github.com/penibelst/jekyll-compress-html/releases/download/${version}/compress.html`, (response) => {
             response.pipe(file);
         });
     }

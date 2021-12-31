@@ -1,7 +1,8 @@
 node_modules
 
-layouts/compress.html
-src/dependencies/node
-dist
+_layouts/compress.html
+
+_src/dependencies/node
+_site
 
 .vscode
