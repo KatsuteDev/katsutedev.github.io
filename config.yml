@@ -1,0 +1,43 @@
+# development options
+
+livereload: true
+port: 8000
+
+source: src
+destination: dist
+
+plugins_dir: plugins
+layouts_dir: layouts
+
+disable_disk_cache: true
+strict_front_matter: true
+
+sass:
+  load_paths:
+    - dependencies/katsute/css
+    - dependencies/node/bootstrap/scss
+  style: compressed
+
+exclude:
+  - dependencies/node/bootstrap/scss
+
+# github plugins
+plugins:
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+
+readme_index:
+  enabled:          true
+  remove_originals: true
+  with_frontmatter: true
+
+# third-party
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  ignore:
+    envs: []
+  blanklines: false
+  profile: false
+  startings: []

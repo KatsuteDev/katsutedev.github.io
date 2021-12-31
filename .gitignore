@@ -1,0 +1,7 @@
+node_modules
+
+layouts/compress.html
+src/dependencies/node
+dist
+
+.vscode
