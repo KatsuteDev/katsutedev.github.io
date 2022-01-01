@@ -9,7 +9,7 @@ const version: string = "v3.1.0";
 class Main {
 
     public static async main(): Promise<void> {
-        const layouts: string = path.join(__dirname, "layouts");
+        const layouts: string = path.join(__dirname, "_layouts");
 
         fs.existsSync(layouts) || fs.mkdirSync(layouts);
 

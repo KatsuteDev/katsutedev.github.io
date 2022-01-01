@@ -1,5 +1,4 @@
 # development options
-
 livereload: true
 port: 8000
 
@@ -17,16 +16,20 @@ collections:
     output: true
     permalink: /:path:output_ext
 
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
 exclude:
-  - includes
-  - layouts
   - CNAME
   - _config.yml
   - LICENSE
   - README.md
   - '*.json'
   - '*.ts'
-  - src/dependencies/node/bootstrap/scss
+  - _src/dependencies/node/bootstrap/scss
 
 # github plugins
 plugins:
@@ -50,5 +53,4 @@ compress_html:
   startings: []
 
 # variables
-
 url: https://katsute.dev
