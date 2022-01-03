@@ -1,0 +1,50 @@
+<div class="card shadow">
+    <div class="row g-0">
+        <div class="col-12 col-md-7">
+            <div class="card-body">
+                {% comment %} title {% endcomment %}
+                <h5 class="card-title *flex-align-center">{{ include.r.name }}</h5>
+
+                {% comment %} technologies {% endcomment %}
+                <h6 class="card-subtitle my-2 text-muted small">
+                    <span class="pe-1">Built with</span>
+                    {% for t in r.with %}
+                        <img
+                            class="user-select-none" width="20" height="20"
+                            src="/dependencies/katsute/assets/{{ t }}.svg"
+                            data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="{{ site.data.icons[t] }}"
+                        >
+                    {% endfor %}
+                    <span class="pe-1">using</span>
+                    {% for t in r.using %}
+                        <img
+                            class="user-select-none" width="20" height="20"
+                            src="/dependencies/katsute/assets/{{ t }}.svg"
+                            data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="{{ site.data.icons[t] }}"
+                        >
+                    {% endfor %}
+                    <span class="pe-1">for</span>
+                    {% for t in r.for %}
+                        <img
+                            class="user-select-none" width="20" height="20"
+                            src="/dependencies/katsute/assets/{{ t }}.svg"
+                            data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="{{ site.data.icons[t] }}"
+                        >
+                    {% endfor %}
+                </h6>
+
+                {% comment %} body {% endcomment %}
+                <p class="card-text mb-0">
+                    {{ r.desc }}
+                </p>
+                <a class="stretched-link" href="/product/{{ r.name | slugify: "latin"}}"></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-5">
+            <img src=".." alt="..." class="img-fluid rounded-end">
+        </div>
+    </div>
+</div>

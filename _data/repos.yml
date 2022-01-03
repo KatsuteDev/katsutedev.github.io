@@ -1,0 +1,98 @@
+  - name: Chrome Can You Not
+    type: software
+    desc: Detect and stop chrome from running in the background.
+    with:
+      - electron
+      - javascript
+      - typescript
+      - nodejs
+    using:
+      - visualstudiocode
+      - github
+      - githubactions
+    for:
+      - windows
+
+  - name: Desktop Flick
+    type: software
+    desc: Use your mobile device as a localized desktop keyboard.
+    with:
+      - electron
+      - javascript
+      - typescript
+      - nodejs
+      - html5
+      - css3
+    using:
+      - visualstudiocode
+      - github
+      - githubactions
+    for:
+      - windows
+
+  - name: Rexedia
+    type: software
+    desc: Metadata editing for bulk media files using regular expressions (regex).
+    with:
+      - java
+      - apachemaven
+    using:
+      - intellijidea
+      - github
+      - githubactions
+    for:
+      - windows
+
+  - name: GitHub Red Issues
+    type: extension
+    desc: Revert closed GitHub issues from purple back to red.
+    with:
+      - css3
+      - typescript
+      - nodejs
+    using:
+      - visualstudiocode
+    for:
+      - chrome
+      - edge
+      - firefox
+      - opera
+
+  - name: JCore
+    type: library
+    desc: Java library for GitHub workflow commands.
+    with:
+      - java
+      - apachemaven
+    using:
+      - intellijidea
+      - github
+      - githubactions
+    for:
+      - java
+
+  - name: Mal4J
+    type: library
+    desc: Java wrapper for the official MyAnimeList REST API.
+    with:
+      - java
+      - apachemaven
+    using:
+      - intellijidea
+      - github
+      - githubactions
+    for:
+      - java
+
+  - name: SimpleHttpServer
+    type: library
+    desc: A simplified implementation of the Java sun http server.
+    with:
+      - java
+      - apachemaven
+    using:
+      - intellijidea
+      - github
+      - githubactions
+    for:
+      - java

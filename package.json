@@ -5,7 +5,7 @@
     "private": true,
     "scripts": {
         "// -- dev -- //": "",
-        "clean": "rimraf layouts/compress.html & rimraf _src/dependencies/node & rimraf _site",
+        "clean": "rimraf _includes/readme & rimraf _layouts/compress.html & rimraf _src/dependencies/node & rimraf _site",
         "prune": "npm prune && npm i --package-lock --ignore-scripts",
         "update": "npm update -D && npm i --package-lock --ignore-scripts && npm run prune",
         "// -- build -- //": "",

@@ -3,7 +3,7 @@
 
 @import "bootstrap", "fontawesome";
 @import "vars", "component", "attr";
-@import "nav", "footer";
+@import "nav", "products", "footer";
 
 // ----- global overrides ---------------
 
@@ -106,18 +106,18 @@ img {
 
     }
 
+    &[data-bs-toggle="tooltip"] {
+
+        position: relative;
+        z-index: 2;
+
+    }
+
 }
 
 body {
 
     @extend .d-flex;
     @extend .flex-column;
-
-}
-
-main {
-
-    @extend .h-100;
-    @extend .w-100;
 
 }

@@ -4,19 +4,27 @@ import { https } from 'follow-redirects';
 import fs, { WriteStream } from "fs";
 import path from "path";
 
-const version: string = "v3.1.0";
+const jekyll_compress_version: string = "v3.1.0";
 
 class Main {
 
     public static async main(): Promise<void> {
-        const layouts: string = path.join(__dirname, "_layouts");
+        /* layouts */ {
+            const layouts: string = path.join(__dirname, "_layouts");
 
-        fs.existsSync(layouts) || fs.mkdirSync(layouts);
+            fs.existsSync(layouts) || fs.mkdirSync(layouts);
 
-        const file: WriteStream = fs.createWriteStream(path.join(layouts, "compress.html"));
-        https.get(`https://github.com/penibelst/jekyll-compress-html/releases/download/${version}/compress.html`, (response) => {
-            response.pipe(file);
-        });
+            const file: WriteStream = fs.createWriteStream(path.join(layouts, "compress.html"));
+            https.get(`https://github.com/penibelst/jekyll-compress-html/releases/download/${jekyll_compress_version}/compress.html`, (response) => {
+                response.pipe(file);
+            });
+        }
+
+        /* readmes */ {
+            const readme: string = path.join(__dirname, "_includes", "readme");
+
+            fs.existsSync(readme) || fs.mkdirSync(readme);
+        }
     }
 
 }
