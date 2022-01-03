@@ -1,3 +1,11 @@
+nav-links:
+  - name: About
+    link: /
+  - name: Products
+    link: /products
+  - name: Projects
+    link: /projects
+
 github-modal:
   - name: Katsute (Personal)
     icon: fab fa-github
