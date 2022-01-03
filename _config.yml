@@ -9,6 +9,7 @@ sass:
   load_paths:
     - _src/dependencies/katsute/css
     - _src/dependencies/node/bootstrap/scss
+    - _src/dependencies/node/fontawesome/scss
   style: compressed
 
 collections:
@@ -30,6 +31,7 @@ exclude:
   - '*.json'
   - '*.ts'
   - _src/dependencies/node/bootstrap/scss
+  - _src/dependencies/node/fontawesome/scss
 
 # github plugins
 plugins:
