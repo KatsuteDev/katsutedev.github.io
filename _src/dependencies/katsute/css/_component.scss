@@ -6,23 +6,31 @@ ul.nav\+ {
     @extend .col-lg-auto;
     @extend .justify-content-center;
 
-    > li > a {
+    > li > {
 
-        @extend .nav-link;
+        button {
 
-        @extend .px-2;
-        @extend .py-0;
-
-        @extend .d-flex;
-        @extend .align-content-center;
-
-        > svg, i {
-
-            @extend .fa-fw;
-            @extend .fa-lg;
+            @extend .\*btn-none;
 
         }
 
-    }
+        a, button {
 
+            @extend .nav-link;
+
+            @extend .px-2;
+            @extend .py-0;
+
+            @extend .d-flex;
+            @extend .align-content-center;
+
+            > svg, i {
+
+                @extend .fa-fw;
+                @extend .fa-lg;
+
+            }
+
+        }
+    }
 }

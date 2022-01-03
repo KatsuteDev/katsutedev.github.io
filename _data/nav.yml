@@ -1,0 +1,26 @@
+github-modal:
+  - name: Katsute (Personal)
+    icon: fab fa-github
+    link: https://github.com/Katsute
+  - name: KatsuteDev (Organization)
+    icon: fab fa-github
+    link: https://github.com/KatsuteDev
+
+sponsor-modal:
+  - name: Katsute (Patreon)
+    icon: fab fa-patreon
+    link: https://patreon.com/Katsute
+  - name: KatsuteDev (PayPal)
+    icon: fab fa-paypal
+    link: https://paypal.me/katsutedev
+
+social-modal:
+  - name: keith@katsute.dev (Business Email)
+    icon: far fa-envelope
+    link: 'mailto:keith@katsute.dev'
+  - name: Keith Chiu (LinkedIn)
+    icon: fab fa-linkedin-in
+    link: https://www.linkedin.com/in/keith-chiu
+  - name: Katsute (GitHub)
+    icon: fab fa-github
+    link: https://github.com/Katsute

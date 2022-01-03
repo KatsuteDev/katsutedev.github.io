@@ -21,7 +21,7 @@ defaults:
   - scope:
       path: ""
     values:
-      layout: default
+      layout: default-container
 
 exclude:
   - CNAME
@@ -32,16 +32,6 @@ exclude:
   - '*.ts'
   - _src/dependencies/node/bootstrap/scss
   - _src/dependencies/node/fontawesome/scss
-
-# github plugins
-plugins:
-  - jekyll-optional-front-matter
-  - jekyll-readme-index
-
-readme_index:
-  enabled:          true
-  remove_originals: true
-  with_frontmatter: true
 
 # third-party
 compress_html:
