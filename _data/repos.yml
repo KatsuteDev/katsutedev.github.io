@@ -58,9 +58,9 @@
       - firefox
       - opera
 
-  - name: JCore
+  - name: Mal4J
     type: library
-    desc: Java library for GitHub workflow commands.
+    desc: Java wrapper for the official MyAnimeList REST API.
     with:
       - java
       - apachemaven
@@ -71,9 +71,9 @@
     for:
       - java
 
-  - name: Mal4J
+  - name: JCore
     type: library
-    desc: Java wrapper for the official MyAnimeList REST API.
+    desc: Java library for GitHub workflow commands.
     with:
       - java
       - apachemaven
