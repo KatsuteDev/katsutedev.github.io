@@ -96,3 +96,20 @@
       - githubactions
     for:
       - java
+
+  - name: Mr. Flour
+    type: project
+    desc: todo
+    with:
+      - java
+      - gradle
+      - html5
+      - css3
+      - javascript
+      - bootstrap
+    using:
+      - intellijidea
+      - visualstudiocode
+    for:
+      - windows
+      - chrome

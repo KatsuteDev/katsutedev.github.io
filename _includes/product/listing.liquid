@@ -40,11 +40,11 @@
                 <p class="card-text mt-2 mb-1">
                     {{ r.desc }}
                 </p>
-                <a class="stretched-link text-decoration-none mt-auto" href="/product/{{ r.name | slugify: "latin"}}">View Product</a>
+                <a class="stretched-link text-decoration-none mt-auto" href="/product/{{ r.name | slugify: "latin"}}">View {% if r.type != "project" %}Product{% else %}Project{% endif %}</a>
             </div>
         </div>
         <div class="col-12 col-md-6 order-first order-md-last d-flex justify-content-end">
-            <img src="/product/{{ r.name | slugify: "latin" }}/thumbnail.png" alt="thumbnail" class="card-image">
+            <img src="/{% if r.type != "project" %}product{% else %}project{% endif %}/{{ r.name | slugify: "latin" }}/thumbnail.png" alt="thumbnail" class="card-image">
         </div>
     </div>
 </div>

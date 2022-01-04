@@ -1,0 +1,23 @@
+---
+layout: default-container
+---
+<div class="@products mb-3">
+    <div class="p-4 text-center">
+        <i class="{{ page.icon }} fa-fw fa-3x mb-4"></i>
+        <h1 class="display-5 fw-bold">{{ page.name }}</h1>
+        <p class="lead">{{ page.desc }}</p>
+    </div>
+    <div class="product-types">
+        {% for cat in page.list %}
+            <div>
+                <h2><i class="{{ cat.icon }}"></i>{{ cat.name }}</h2>
+                <div class="product-listings">
+                    {% for r in site.data.repos %}
+                        {% if r.type != cat.type %}{% continue %}{% endif %}
+                        {% include product/listing.liquid r=r %}
+                    {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>

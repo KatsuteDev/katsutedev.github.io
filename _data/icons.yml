@@ -8,6 +8,7 @@ electron: Electron
 firefox: Mozilla Firefox
 github: GitHub
 githubactions: GitHub Actions
+gradle: Gradle
 html5: HTML
 intellijidea: IntelliJ
 java: Java
