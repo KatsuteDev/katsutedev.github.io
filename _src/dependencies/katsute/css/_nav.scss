@@ -4,13 +4,9 @@
 
     @extend .bg-dark;
 
-    @include media-breakpoint-up(md){
+    .brand-responsive {
 
-        .brand-responsive {
-
-            font-size: 1.5rem;
-
-        }
+        font-size: 1.5rem;
 
     }
 

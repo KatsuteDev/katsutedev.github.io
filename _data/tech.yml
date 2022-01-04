@@ -1,0 +1,77 @@
+stack:
+  - [java, maven, intellij]
+  - [html, css, bootstrap, jekyll]
+  - [javascript, typescript, nodejs, electronjs, vscode]
+  - [github, github-actions]
+  - [python, pycharm]
+  - [cpp]
+
+tech:
+  java:
+    title: Java
+    body: 3 years experience working with Java for webserver and library development.
+    icon: java
+  maven:
+    title: Maven
+    body: Experience using maven for both dependency management and deployment.
+    icon: apachemaven
+  intellij:
+    title: IntelliJ
+    body: todo
+    icon: intellijidea
+  python:
+    title: Python
+    body: 2 years experience working with Python.
+    icon: python
+  pycharm:
+    title: PyCharm
+    body: todo
+    icon: pycharm
+  javascript:
+    title: JavaScript
+    body: 2 years experience using JavaScript for site development.
+    icon: javascript
+  typescript:
+    title: TypeScript
+    body: 1 years experience using TypeScript for electron and small workflows.
+    icon: typescript
+  nodejs:
+    title: NodeJS
+    body: 1 years exprience using npm for dependency mangement.
+    icon: nodejs
+  electronjs:
+    title: ElectronJS
+    body: 1 years experience using Electron for application development.
+    icon: electron
+  html:
+    title: HTML
+    body: 3 years exprience using HTML for site development.
+    icon: html5
+  css:
+    title: CSS
+    body: 3 years experience using CSS for site development.
+    icon: css3
+  bootstrap:
+    title: Bootstrap
+    body: 3 years experience using Bootstrap for site development.
+    icon: bootstrap
+  vscode:
+    title: Visual Studio Code
+    body: todo
+    icon: visualstudiocode
+  jekyll:
+    title: Jekyll / Liquid
+    body: 2 years experience using Jekyll and Liquid for site development.
+    icon: jekyll
+  cpp:
+    title: C++
+    body: 6 months experience using C++.
+    icon: cplusplus
+  github:
+    title: GitHub
+    body: Joined GitHub in December of 2019. Experience managing organizations, repositories, and using the GitHub API.
+    icon: github
+  github-actions:
+    title: Actions
+    body: Experience with using and developing GitHub actions.
+    icon: githubactions

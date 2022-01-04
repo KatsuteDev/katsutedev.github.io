@@ -1,0 +1,31 @@
+.\@home {
+
+    .section {
+
+        @extend .mt-4;
+
+    }
+
+    .heading {
+
+        @extend .h3;
+        @extend .border-bottom;
+
+        i, svg {
+
+            @extend .fa-fw;
+            @extend .me-2;
+
+        }
+
+        text-align: center;
+
+        @include media-breakpoint-up(sm){
+
+            text-align: left;
+
+        }
+
+    }
+
+}
