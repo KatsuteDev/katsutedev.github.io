@@ -4,17 +4,17 @@ layout: compress
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        {% include html/head.liquid %}
+        {% include _html/head.liquid %}
     </head>
     <body>
         <noscript>This site requires javascript.</noscript>
 
-        {% include layout/nav.liquid %}
+        {% include _layout/nav.liquid %}
         <main>
             {{ content }}
         </main>
-        {% include layout/footer.liquid %}
+        {% include _layout/footer.liquid %}
 
-        {% include html/foot.liquid %}
+        {% include _html/foot.liquid %}
     </body>
 </html>

@@ -52,20 +52,6 @@
 
         }
 
-        .card-image {
-
-            @extend .img-fluid;
-
-            border-radius: .25rem .25rem 0 0;
-
-            @include media-breakpoint-up(md){
-
-                border-radius: 0 .25rem .25rem 0;
-
-            }
-
-        }
-
     }
 
 }

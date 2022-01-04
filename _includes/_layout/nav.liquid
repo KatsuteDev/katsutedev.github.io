@@ -23,7 +23,7 @@
                     {% capture footer %}
                         View <a href="https://github.com/KatsuteDev/katsutedev.github.io" target="_blank" class="text-decoration-none">site source</a>.
                     {% endcapture %}
-                    {% include layout/nav/modal.liquid
+                    {% include _layout/nav/modal.liquid
                         id="github-modal"
                         title="GitHub"
                         links=site.data.nav.github-modal
@@ -37,7 +37,7 @@
                     {% capture footer %}
                         Sponsors help keep open source development free.
                     {% endcapture %}
-                    {% include layout/nav/modal.liquid
+                    {% include _layout/nav/modal.liquid
                         id="sponsor-modal"
                         title="Sponsor"
                         links=site.data.nav.sponsor-modal
@@ -51,7 +51,7 @@
                     {% capture footer %}
                         Business communications only, GitHub users please open issues in their respective repositories.
                     {% endcapture %}
-                    {% include layout/nav/modal.liquid
+                    {% include _layout/nav/modal.liquid
                         id="social-modal"
                         title="Social Links"
                         links=site.data.nav.social-modal

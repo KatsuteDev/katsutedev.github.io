@@ -2,16 +2,21 @@
 layout: default-container
 ---
 <div class="@products mb-3">
+    {% comment %} header {% endcomment %}
     <div class="p-4 text-center">
-        <i class="{{ page.icon }} fa-fw fa-3x mb-4"></i>
+        <i class="{{ page.image }} fa-fw fa-3x mb-4"></i>
         <h1 class="display-5 fw-bold">{{ page.name }}</h1>
         <p class="lead">{{ page.desc }}</p>
     </div>
+    {% comment %} content {% endcomment %}
     <div class="product-types">
         {% for cat in page.list %}
-            <div>
+            {% comment %} category {% endcomment %}
+            <div id="{{ cat.name | slugify }}">
                 <h2><i class="{{ cat.icon }}"></i>{{ cat.name }}</h2>
-                <div class="product-listings">
+                <div class="product-listings m-0 p-0
+                    row row-cols-1 row-cols-md-2 row-cols-xl-3">
+                    {% comment %} item {% endcomment %}
                     {% for r in site.data.repos %}
                         {% if r.type != cat.type %}{% continue %}{% endif %}
                         {% include product/listing.liquid r=r %}

@@ -17,7 +17,7 @@
 {% elsif layout.title %}
     {% assign __title = layout.title %}
 {% endif %}
-<title>{{ __title | strip }}</title>
+<title>Katsute - {{ __title | strip }}</title>
 
 {% comment %} SEO {% endcomment %}
 
@@ -35,7 +35,7 @@
         "@context": "https://schema.org",
         "@type": "WebSite",
         "url": "https://katsute.dev/",
-        "logo": "https://katsute.dev/dependencies/katsute/assets/favicon.png",
+        "logo": "https://katsute.dev/favicon.png",
         "name": "{{ __title | strip }}",
         "description": "{{ page.description }}"
     }
@@ -44,15 +44,13 @@
 {% comment %} dependencies {% endcomment %}
 
 {% unless page.icon %}
-    <link rel="icon" type="image/svg+xml" href="{{ site.url }}/dependencies/katsute/assets/favicon.ico">
-    <link rel="alternate icon" type="image/png" href="{{ site.url }}/dependencies/katsute/assets/favicon.png">
+    <link rel="icon" type="image/svg+xml" href="{{ site.url }}/favicon.ico">
+    <link rel="alternate icon" type="image/png" href="{{ site.url }}/favicon.png">
 {% else %}
     <link rel="icon" type="image/svg+xml" href="{{ page.icon }}">
 {% endunless %}
 
 <link rel="stylesheet" href="{{ site.url }}/dependencies/node/sanitize.css/css/sanitize.css">
-
-<link rel="stylesheet" href="{{ site.url }}/dependencies/node/hover.css/css/hover.css">
 
 <script defer src="{{ site.url }}/dependencies/node/fontawesome/js/all.min.js"></script>
 
