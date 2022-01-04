@@ -14,9 +14,8 @@ class Main {
 
             fs.existsSync(layouts) || fs.mkdirSync(layouts);
 
-            const file: WriteStream = fs.createWriteStream(path.join(layouts, "compress.html"));
             https.get(`https://github.com/penibelst/jekyll-compress-html/releases/download/${jekyll_compress_version}/compress.html`, (response) => {
-                response.pipe(file);
+                response.pipe(fs.createWriteStream(path.join(layouts, "compress.html")));
             });
         }
 
@@ -24,6 +23,22 @@ class Main {
             const readme: string = path.join(__dirname, "_includes", "readme");
 
             fs.existsSync(readme) || fs.mkdirSync(readme);
+
+            const repos: string[] = [
+                "KatsuteDev/Chrome-Can-You-Not",
+                "KatsuteDev/Desktop-Flick",
+                "KatsuteDev/JCore",
+                "KatsuteDev/Mal4J",
+                "Katsute/GitHub-Red-Issues",
+                "Ktt-Development/rexedia",
+                "Ktt-Development/simplehttpserver"
+            ];
+
+            for(const repo of repos){
+                https.get(`https://raw.githubusercontent.com/${repo}/main/README.md`, (response) => {
+                    response.pipe(fs.createWriteStream(path.join(readme, `${repo.replace('/', '-')}.md`)));
+                });
+            }
         }
     }
 

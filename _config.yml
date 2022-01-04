@@ -10,6 +10,7 @@ sass:
     - _src/dependencies/katsute/css
     - _src/dependencies/node/bootstrap/scss
     - _src/dependencies/node/fontawesome/scss
+    - _src/dependencies/node/hover.css/scss
   style: compressed
 
 collections:
@@ -30,8 +31,7 @@ exclude:
   - README.md
   - '*.json'
   - '*.ts'
-  - _src/dependencies/node/bootstrap/scss
-  - _src/dependencies/node/fontawesome/scss
+  - _src/dependencies/node/*/scss
 
 # third-party
 compress_html:
