@@ -31,7 +31,8 @@ exclude:
   - README.md
   - '*.json'
   - '*.ts'
-  - _src/dependencies/node/*/scss
+  - _src/dependencies/node/bootstrap/scss
+  - _src/dependencies/node/fontawesome/scss
 
 # third-party
 compress_html:
