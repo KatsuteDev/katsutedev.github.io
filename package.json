@@ -19,7 +19,7 @@
         "build:fontawesome": "npm run build:fontawesome:js & npm run build:fontawesome:scss & npm run build:fontawesome:webfonts",
         "build:sanitize": "copyfiles \"node_modules/sanitize.css/sanitize.css\" _src/dependencies/node/sanitize.css/css -f",
         "build:ts": "ts-node build.ts",
-        "build": "npm run build:bootstrap & npm run build:firasans & npm run build:fontawesome & npm run build:hovercss & npm run build:sanitize & npm run build:ts",
+        "build": "npm run build:bootstrap & npm run build:firasans & npm run build:fontawesome & npm run build:sanitize & npm run build:ts",
         "build:jekyll": "jekyll build",
         "// -- prepare -- //": "",
         "prepare": "npm run clean && npm run build",
@@ -44,6 +44,7 @@
         "follow-redirects": "^1.14.6",
         "rimraf": "^3.0.2",
         "sanitize.css": "^13.0.0",
+        "ts-node": "^10.4.0",
         "typescript": "^4.5.4"
     }
 }

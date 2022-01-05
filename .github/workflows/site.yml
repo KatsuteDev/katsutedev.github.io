@@ -1,10 +1,11 @@
-name: Build Site
+name: Deploy Site
 on:
   push: {}
     # branches: [main]
 
 jobs:
   deploy:
+    name: Deploy Site
     runs-on: ubuntu-latest
     steps:
       - name: 📤 Checkout Repository
@@ -19,7 +20,8 @@ jobs:
         run: |
           npm i
 
-      - uses: jeffreytse/jekyll-deploy-action@v0.3.1
+      - name: 🌐 Deploy Site
+        uses: jeffreytse/jekyll-deploy-action@v0.3.1
         with:
           provider: 'github'
           token: ${{ secrets.GITHUB_TOKEN }}
