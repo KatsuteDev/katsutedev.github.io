@@ -30,11 +30,12 @@
 
     .product-listings {
 
-        > :not(:last-child) {
+        > * {
 
             @extend .mb-3;
 
         }
+
 
         .card-subtitle {
 

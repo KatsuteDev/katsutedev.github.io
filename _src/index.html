@@ -1,5 +1,18 @@
 ---
 title: Home
+list:
+  - name: Academic Projects
+    icon: fas fa-folder
+    type: project
+  - name: Software
+    icon: fas fa-desktop
+    type: software
+  - name: Libraries
+    icon: fas fa-file-code
+    type: library
+  - name: Extensions
+    icon: fab fa-chrome
+    type: extension
 ---
 <div class="@home">
     <div id="introduction" class="section">
@@ -25,8 +38,10 @@ title: Home
         <div>
             <h2 class="heading"><i class="fas fa-graduation-cap"></i>Education</h2>
         </div>
-        <div>
-            todo
+        <div class="row row-cols-1">
+            {% for edu in site.data.edu %}
+                {% include home/edu.liquid edu=edu %}
+            {% endfor %}
         </div>
     </div>
 {% comment %} projects ============================= {% endcomment %}
@@ -34,8 +49,23 @@ title: Home
         <div>
             <h2 class="heading"><i class="far fa-file-code"></i>Projects</h2>
         </div>
-        <div>
-            todo
+        <div class="@products mb-3">
+            <div class="pt-2">
+                {% for cat in page.list %}
+                    {% comment %} category {% endcomment %}
+                    <div id="{{ cat.name | slugify }}">
+                        <h6 class="h4 m-3"><i class="{{ cat.icon }} me-1"></i>{{ cat.name }}</h6>
+                        <div class="product-listings m-0 p-0
+                            row row-cols-1 row-cols-md-2 row-cols-xl-3">
+                            {% comment %} item {% endcomment %}
+                            {% for r in site.data.repos %}
+                                {% if r.type != cat.type %}{% continue %}{% endif %}
+                                {% include product/listing.liquid r=r nothumbnail=true %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
         </div>
     </div>
 </div>

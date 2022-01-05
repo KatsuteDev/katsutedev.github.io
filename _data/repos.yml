@@ -32,7 +32,7 @@
 
   - name: Rexedia
     type: software
-    desc: Metadata editing for bulk media files using regular expressions (regex).
+    desc: Metadata editing for bulk media files using regular expressions.
     with:
       - java
       - apachemaven
@@ -99,7 +99,7 @@
 
   - name: Mr. Flour
     type: project
-    desc: todo
+    desc: Social platform to share recipes and order baked products.
     with:
       - java
       - gradle

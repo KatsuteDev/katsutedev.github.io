@@ -9,69 +9,74 @@ stack:
 tech:
   java:
     title: Java
-    body: 3 years experience working with Java for webserver and library development.
+    body: 5 years experience using Java for web, application, and library development.
     icon: java
   maven:
     title: Maven
-    body: Experience using maven for both dependency management and deployment.
+    body: Experience using Maven for dependency management and library deployment.
     icon: apachemaven
   intellij:
     title: IntelliJ
-    body: todo
+    body: Experience with using the IntelliJ IDE.
     icon: intellijidea
-  python:
-    title: Python
-    body: 2 years experience working with Python.
-    icon: python
-  pycharm:
-    title: PyCharm
-    body: todo
-    icon: pycharm
+
+  html:
+    title: HTML
+    body: 4 years exprience using HTML for site development.
+    icon: html5
+  css:
+    title: CSS
+    body: 4 years experience using CSS for site development.
+    icon: css3
+  bootstrap:
+    title: Bootstrap
+    body: 4 years experience using Bootstrap for site development.
+    icon: bootstrap
+  jekyll:
+    title: Jekyll & Liquid
+    body: 3 years experience using Jekyll and Liquid for static site development.
+    icon: jekyll
+
   javascript:
     title: JavaScript
-    body: 2 years experience using JavaScript for site development.
+    body: 3 years experience using JavaScript for site and application development.
     icon: javascript
   typescript:
     title: TypeScript
-    body: 1 years experience using TypeScript for electron and small workflows.
+    body: 1 years experience using TypeScript for application development and repository management.
     icon: typescript
   nodejs:
     title: NodeJS
-    body: 1 years exprience using npm for dependency mangement.
+    body: 1 years experience using npm for dependency management.
     icon: nodejs
   electronjs:
     title: ElectronJS
     body: 1 years experience using Electron for application development.
     icon: electron
-  html:
-    title: HTML
-    body: 3 years exprience using HTML for site development.
-    icon: html5
-  css:
-    title: CSS
-    body: 3 years experience using CSS for site development.
-    icon: css3
-  bootstrap:
-    title: Bootstrap
-    body: 3 years experience using Bootstrap for site development.
-    icon: bootstrap
   vscode:
     title: Visual Studio Code
-    body: todo
+    body: Experience with using Microsoft Visual Studio Code IDE.
     icon: visualstudiocode
-  jekyll:
-    title: Jekyll / Liquid
-    body: 2 years experience using Jekyll and Liquid for site development.
-    icon: jekyll
-  cpp:
-    title: C++
-    body: 6 months experience using C++.
-    icon: cplusplus
+
   github:
     title: GitHub
-    body: Joined GitHub in December of 2019. Experience managing organizations, repositories, and using the GitHub API.
+    body: Joined GitHub in December of 2019. Experience with managing organizations, repositories, and using the GitHub API.
     icon: github
   github-actions:
-    title: Actions
-    body: Experience with using and developing GitHub actions.
+    title: GitHub Actions & Workflows
+    body: Experience with using and developing GitHub Actions and Workflows.
     icon: githubactions
+
+  python:
+    title: Python
+    body: 2 years academic experience using Python.
+    icon: python
+  pycharm:
+    title: PyCharm
+    body: Experience with using the PyCharm IDE.
+    icon: pycharm
+
+  cpp:
+    title: C++
+    body: 6 months academic experience using C++.
+    icon: cplusplus
