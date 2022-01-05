@@ -2,7 +2,7 @@ node_modules
 
 _includes/readme
 _layouts/compress.html
-
+_src/CNAME
 _src/dependencies/node
 
 _site

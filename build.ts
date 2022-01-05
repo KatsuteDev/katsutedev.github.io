@@ -9,6 +9,10 @@ const jekyll_compress_version: string = "v3.1.0";
 class Main {
 
     public static async main(): Promise<void> {
+        /* CNAME */ {
+            fs.copyFileSync(path.join(__dirname, "CNAME"), path.join(__dirname, "_src", "CNAME"));
+        }
+
         /* layouts */ {
             const layouts: string = path.join(__dirname, "_layouts");
 
