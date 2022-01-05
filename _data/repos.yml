@@ -1,266 +1,266 @@
-  - name: Chrome Can You Not
-    type: software
-    desc: Detect and stop chrome from running in the background.
-    git: KatsuteDev/Chrome-Can-You-Not
-    readme: KatsuteDev-Chrome-Can-You-Not
-    with:
-      - electron
-      - javascript
-      - typescript
-      - nodejs
-    using:
-      - visualstudiocode
-      - github
-      - githubactions
-    for:
-      - windows
-    download:
-      - name: GitHub
-        icon: fab fa-github
-        style: dark
-        links:
-          - name: GitHub Releases
-            link: https://github.com/KatsuteDev/Chrome-Can-You-Not/releases
-      - name: Windows
-        icon: fab fa-windows
-        style: primary
-        links:
-          - name: exe
-            link: https://github.com/KatsuteDev/Chrome-Can-You-Not/releases/download/1.1.0/Chrome.Can.You.Not-1.1.0.Setup.exe
-          - name: zip
-            link: https://github.com/KatsuteDev/Chrome-Can-You-Not/releases/download/1.1.0/Chrome.Can.You.Not-win32-x64-1.1.0.zip
+- name: Desktop Flick
+  type: software
+  desc: Use your mobile device as a localized desktop keyboard.
+  git: KatsuteDev/Desktop-Flick
+  readme: KatsuteDev-Desktop-Flick
+  with:
+    - electron
+    - javascript
+    - typescript
+    - nodejs
+    - html5
+    - css3
+  using:
+    - visualstudiocode
+    - github
+    - githubactions
+  for:
+    - windows
+  download:
+    - name: GitHub
+      icon: fab fa-github
+      style: dark
+      links:
+        - name: GitHub Releases
+          link: https://github.com/KatsuteDev/Desktop-Flick/releases
+    - name: Windows
+      icon: fab fa-windows
+      style: primary
+      links:
+      - name: exe
+        link: https://github.com/KatsuteDev/Desktop-Flick/releases/download/1.2.0/Desktop.Flick-1.2.0.Setup.exe
+      - name: zip
+        link: https://github.com/KatsuteDev/Desktop-Flick/releases/download/1.2.0/Desktop.Flick-win32-x64-1.2.0.zip
 
-  - name: Desktop Flick
-    type: software
-    desc: Use your mobile device as a localized desktop keyboard.
-    git: KatsuteDev/Desktop-Flick
-    readme: KatsuteDev-Desktop-Flick
-    with:
-      - electron
-      - javascript
-      - typescript
-      - nodejs
-      - html5
-      - css3
-    using:
-      - visualstudiocode
-      - github
-      - githubactions
-    for:
-      - windows
-    download:
-      - name: GitHub
-        icon: fab fa-github
-        style: dark
-        links:
-          - name: GitHub Releases
-            link: https://github.com/KatsuteDev/Desktop-Flick/releases
-      - name: Windows
-        icon: fab fa-windows
-        style: primary
-        links:
+- name: Chrome Can You Not
+  type: software
+  desc: Detect and stop chrome from running in the background.
+  git: KatsuteDev/Chrome-Can-You-Not
+  readme: KatsuteDev-Chrome-Can-You-Not
+  with:
+    - electron
+    - javascript
+    - typescript
+    - nodejs
+  using:
+    - visualstudiocode
+    - github
+    - githubactions
+  for:
+    - windows
+  download:
+    - name: GitHub
+      icon: fab fa-github
+      style: dark
+      links:
+        - name: GitHub Releases
+          link: https://github.com/KatsuteDev/Chrome-Can-You-Not/releases
+    - name: Windows
+      icon: fab fa-windows
+      style: primary
+      links:
         - name: exe
-          link: https://github.com/KatsuteDev/Desktop-Flick/releases/download/1.2.0/Desktop.Flick-1.2.0.Setup.exe
+          link: https://github.com/KatsuteDev/Chrome-Can-You-Not/releases/download/1.1.0/Chrome.Can.You.Not-1.1.0.Setup.exe
         - name: zip
-          link: https://github.com/KatsuteDev/Desktop-Flick/releases/download/1.2.0/Desktop.Flick-win32-x64-1.2.0.zip
+          link: https://github.com/KatsuteDev/Chrome-Can-You-Not/releases/download/1.1.0/Chrome.Can.You.Not-win32-x64-1.1.0.zip
 
-  - name: Rexedia
-    type: software
-    desc: Metadata editing for bulk media files using regular expressions.
-    git: Ktt-Development/rexedia
-    readme: Ktt-Development-rexedia
-    with:
-      - java
-      - apachemaven
-    using:
-      - intellijidea
-      - github
-      - githubactions
-    for:
-      - windows
-    download:
-      - name: GitHub
-        icon: fab fa-github
-        style: dark
-        links:
-          - name: GitHub Releases
-            link: https://github.com/Ktt-Development/rexedia/releases
-      - name: Windows
-        icon: fab fa-windows
-        style: primary
-        links:
-          - name: installer (exe)
-            link: https://github.com/Ktt-Development/rexedia/releases/download/1.3.0/rexedia-1.3.0.exe
-          - name: zip
-            link: https://github.com/Ktt-Development/rexedia/releases/download/1.3.0/rexedia.zip
+- name: Rexedia
+  type: software
+  desc: Metadata editing for bulk media files using regular expressions.
+  git: Ktt-Development/rexedia
+  readme: Ktt-Development-rexedia
+  with:
+    - java
+    - apachemaven
+  using:
+    - intellijidea
+    - github
+    - githubactions
+  for:
+    - windows
+  download:
+    - name: GitHub
+      icon: fab fa-github
+      style: dark
+      links:
+        - name: GitHub Releases
+          link: https://github.com/Ktt-Development/rexedia/releases
+    - name: Windows
+      icon: fab fa-windows
+      style: primary
+      links:
+        - name: installer (exe)
+          link: https://github.com/Ktt-Development/rexedia/releases/download/1.3.0/rexedia-1.3.0.exe
+        - name: zip
+          link: https://github.com/Ktt-Development/rexedia/releases/download/1.3.0/rexedia.zip
 
-  - name: GitHub Red Issues
-    type: extension
-    desc: Revert closed GitHub issues from purple back to red.
-    git: Katsute/GitHub-Red-Issues
-    readme: Katsute-GitHub-Red-Issues
-    with:
-      - css3
-      - typescript
-      - nodejs
-    using:
-      - visualstudiocode
-    for:
-      - chrome
-      - edge
-      - firefox
-      - opera
-    download:
-      - name: GitHub
-        icon: fab fa-github
-        style: dark
-        links:
-          - name: GitHub Releases
-            link: https://github.com/Katsute/GitHub-Red-Issues/releases
-      - name: Chrome
-        icon: fab fa-chrome
-        style: warning
-        links:
-          - name: Chrome Web Store
-            link: https://chrome.google.com/webstore/detail/github-red-issues/kjbbjibfgnnfdeabgmbieapkhpojikpc
-      - name: Firefox
-        icon: fab fa-firefox-browser
-        style: danger
-        links:
-          - name: Firefox Add-ons
-            link: https://addons.mozilla.org/firefox/addon/github-red-issues
+- name: Mal4J
+  type: library
+  desc: Java wrapper for the official MyAnimeList REST API.
+  git: KatsuteDev/Mal4J
+  readme: KatsuteDev-Mal4J
+  with:
+    - java
+    - apachemaven
+  using:
+    - intellijidea
+    - github
+    - githubactions
+  for:
+    - java
+  download:
+    - name: GitHub
+      icon: fab fa-github
+      style: dark
+      links:
+        - name: GitHub Releases
+          link: https://github.com/KatsuteDev/Mal4J/releases
+        - name: GitHub Packages
+          link: https://github.com/KatsuteDev/Mal4J/packages/1104772
+    - name: Maven
+      icon: fas fa-feather-alt
+      style: danger
+      links:
+        - name: Maven Central
+          link: https://mvnrepository.com/artifact/com.kttdevelopment/mal4j
+    - name: Binaries
+      icon: fab fa-java
+      style: dark
+      links:
+        - name: Jar
+          link: https://github.com/KatsuteDev/Mal4J/releases/download/2.7.1/mal4j-2.7.1.jar
+        - name: Sources
+          link: https://github.com/KatsuteDev/Mal4J/releases/download/2.7.1/mal4j-2.7.1-sources.jar
+        - name: Javadoc
+          link: https://github.com/KatsuteDev/Mal4J/releases/download/2.7.1/mal4j-2.7.1-javadoc.jar
 
-  - name: Mal4J
-    type: library
-    desc: Java wrapper for the official MyAnimeList REST API.
-    git: KatsuteDev/Mal4J
-    readme: KatsuteDev-Mal4J
-    with:
-      - java
-      - apachemaven
-    using:
-      - intellijidea
-      - github
-      - githubactions
-    for:
-      - java
-    download:
-      - name: GitHub
-        icon: fab fa-github
-        style: dark
-        links:
-          - name: GitHub Releases
-            link: https://github.com/KatsuteDev/Mal4J/releases
-          - name: GitHub Packages
-            link: https://github.com/KatsuteDev/Mal4J/packages/1104772
-      - name: Maven
-        icon: fas fa-feather-alt
-        style: danger
-        links:
-          - name: Maven Central
-            link: https://mvnrepository.com/artifact/com.kttdevelopment/mal4j
-      - name: Binaries
-        icon: fab fa-java
-        style: dark
-        links:
-          - name: Jar
-            link: https://github.com/KatsuteDev/Mal4J/releases/download/2.7.1/mal4j-2.7.1.jar
-          - name: Sources
-            link: https://github.com/KatsuteDev/Mal4J/releases/download/2.7.1/mal4j-2.7.1-sources.jar
-          - name: Javadoc
-            link: https://github.com/KatsuteDev/Mal4J/releases/download/2.7.1/mal4j-2.7.1-javadoc.jar
+- name: JCore
+  type: library
+  desc: Java library for GitHub workflow commands.
+  git: KatsuteDev/JCore
+  readme: KatsuteDev-JCore
+  with:
+    - java
+    - apachemaven
+  using:
+    - intellijidea
+    - github
+    - githubactions
+  for:
+    - java
+  download:
+    - name: GitHub
+      icon: fab fa-github
+      style: dark
+      links:
+        - name: GitHub Releases
+          link: https://github.com/KatsuteDev/JCore/releases
+        - name: GitHub Packages
+          link: https://github.com/KatsuteDev/JCore/packages/981432
+    - name: Maven
+      icon: fas fa-feather-alt
+      style: danger
+      links:
+        - name: Maven Central
+          link: https://mvnrepository.com/artifact/dev.katsute/jcore
+    - name: Binaries
+      icon: fab fa-java
+      style: dark
+      links:
+        - name: Jar
+          link: https://github.com/KatsuteDev/JCore/releases/download/1.3.0/jcore-1.3.0.jar
+        - name: Sources
+          link: https://github.com/KatsuteDev/JCore/releases/download/1.3.0/jcore-1.3.0-sources.jar
+        - name: Javadoc
+          link: https://github.com/KatsuteDev/JCore/releases/download/1.3.0/jcore-1.3.0-javadoc.jar
 
-  - name: JCore
-    type: library
-    desc: Java library for GitHub workflow commands.
-    git: KatsuteDev/JCore
-    readme: KatsuteDev-JCore
-    with:
-      - java
-      - apachemaven
-    using:
-      - intellijidea
-      - github
-      - githubactions
-    for:
-      - java
-    download:
-      - name: GitHub
-        icon: fab fa-github
-        style: dark
-        links:
-          - name: GitHub Releases
-            link: https://github.com/KatsuteDev/JCore/releases
-          - name: GitHub Packages
-            link: https://github.com/KatsuteDev/JCore/packages/981432
-      - name: Maven
-        icon: fas fa-feather-alt
-        style: danger
-        links:
-          - name: Maven Central
-            link: https://mvnrepository.com/artifact/dev.katsute/jcore
-      - name: Binaries
-        icon: fab fa-java
-        style: dark
-        links:
-          - name: Jar
-            link: https://github.com/KatsuteDev/JCore/releases/download/1.3.0/jcore-1.3.0.jar
-          - name: Sources
-            link: https://github.com/KatsuteDev/JCore/releases/download/1.3.0/jcore-1.3.0-sources.jar
-          - name: Javadoc
-            link: https://github.com/KatsuteDev/JCore/releases/download/1.3.0/jcore-1.3.0-javadoc.jar
+- name: SimpleHttpServer
+  type: library
+  desc: A simplified implementation of the Java sun http server.
+  git: Ktt-Development/simplehttpserver
+  readme: Ktt-Development-simplehttpserver
+  with:
+    - java
+    - apachemaven
+  using:
+    - intellijidea
+    - github
+    - githubactions
+  for:
+    - java
+  download:
+    - name: GitHub
+      icon: fab fa-github
+      style: dark
+      links:
+        - name: GitHub Releases
+          link: https://github.com/Ktt-Development/simplehttpserver/releases
+    - name: Maven
+      icon: fas fa-feather-alt
+      style: danger
+      links:
+        - name: Maven Central
+          link: https://mvnrepository.com/artifact/com.kttdevelopment/simplehttpserver
+    - name: Binaries
+      icon: fab fa-java
+      style: dark
+      links:
+        - name: Jar
+          link: https://github.com/Ktt-Development/simplehttpserver/releases/download/4.4.2/simplehttpserver-4.4.2.jar
+        - name: Sources
+          link: https://github.com/Ktt-Development/simplehttpserver/releases/download/4.4.2/simplehttpserver-4.4.2-sources.jar
+        - name: Javadoc
+          link: https://github.com/Ktt-Development/simplehttpserver/releases/download/4.4.2/simplehttpserver-4.4.2-javadoc.jar
 
-  - name: SimpleHttpServer
-    type: library
-    desc: A simplified implementation of the Java sun http server.
-    git: Ktt-Development/simplehttpserver
-    readme: Ktt-Development-simplehttpserver
-    with:
-      - java
-      - apachemaven
-    using:
-      - intellijidea
-      - github
-      - githubactions
-    for:
-      - java
-    download:
-      - name: GitHub
-        icon: fab fa-github
-        style: dark
-        links:
-          - name: GitHub Releases
-            link: https://github.com/Ktt-Development/simplehttpserver/releases
-      - name: Maven
-        icon: fas fa-feather-alt
-        style: danger
-        links:
-          - name: Maven Central
-            link: https://mvnrepository.com/artifact/com.kttdevelopment/simplehttpserver
-      - name: Binaries
-        icon: fab fa-java
-        style: dark
-        links:
-          - name: Jar
-            link: https://github.com/Ktt-Development/simplehttpserver/releases/download/4.4.2/simplehttpserver-4.4.2.jar
-          - name: Sources
-            link: https://github.com/Ktt-Development/simplehttpserver/releases/download/4.4.2/simplehttpserver-4.4.2-sources.jar
-          - name: Javadoc
-            link: https://github.com/Ktt-Development/simplehttpserver/releases/download/4.4.2/simplehttpserver-4.4.2-javadoc.jar
+- name: GitHub Red Issues
+  type: extension
+  desc: Revert closed GitHub issues from purple back to red.
+  git: Katsute/GitHub-Red-Issues
+  readme: Katsute-GitHub-Red-Issues
+  with:
+    - css3
+    - typescript
+    - nodejs
+  using:
+    - visualstudiocode
+  for:
+    - chrome
+    - edge
+    - firefox
+    - opera
+  download:
+    - name: GitHub
+      icon: fab fa-github
+      style: dark
+      links:
+        - name: GitHub Releases
+          link: https://github.com/Katsute/GitHub-Red-Issues/releases
+    - name: Chrome
+      icon: fab fa-chrome
+      style: warning
+      links:
+        - name: Chrome Web Store
+          link: https://chrome.google.com/webstore/detail/github-red-issues/kjbbjibfgnnfdeabgmbieapkhpojikpc
+    - name: Firefox
+      icon: fab fa-firefox-browser
+      style: danger
+      links:
+        - name: Firefox Add-ons
+          link: https://addons.mozilla.org/firefox/addon/github-red-issues
 
-  - name: Mr. Flour
-    type: project
-    desc: Social platform to share recipes and order baked products.
-    with:
-      - java
-      - gradle
-      - html5
-      - css3
-      - javascript
-      - bootstrap
-    using:
-      - intellijidea
-      - visualstudiocode
-    for:
-      - windows
-      - chrome
+- name: Mr. Flour
+  type: project
+  desc: Social platform to share recipes and order baked products.
+  with:
+    - java
+    - gradle
+    - html5
+    - css3
+    - javascript
+    - bootstrap
+  using:
+    - intellijidea
+    - visualstudiocode
+  for:
+    - windows
+    - chrome

@@ -1,7 +1,7 @@
 // Copyright (C) Katsute 2022
 
 import { https } from 'follow-redirects';
-import fs, { WriteStream } from "fs";
+import fs from "fs";
 import path from "path";
 
 const jekyll_compress_version: string = "v3.1.0";

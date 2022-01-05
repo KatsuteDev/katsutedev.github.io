@@ -1,5 +1,9 @@
 ---
 title: Home
+body: |
+    # Welcome to my site
+
+    I am a student who develops software and libraries.
 list:
   - name: Academic Projects
     icon: fas fa-folder
@@ -16,8 +20,8 @@ list:
 ---
 <div class="@home">
     <div id="introduction" class="section">
-        <div>
-            todo
+        <div class="text-center py-4 my-4">
+            {{ page.body | markdownify }}
         </div>
     </div>
 {% comment %} tech stack =========================== {% endcomment %}
