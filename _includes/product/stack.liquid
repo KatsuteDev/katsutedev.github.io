@@ -1,0 +1,17 @@
+<div class="col px-0">
+    <div class="my-1">
+        <ul class="list-group shadow">
+            <li class="list-group-item d-flex p-2">
+                <h5 class="h6 mb-0">{{ include.title }}</h5>
+            </li>
+            {% for t in include.stack %}
+                <li class="list-group-item d-flex p-2">
+                    {% include _component/icon.liquid size=20 icon=t notooltip=true %}
+                    <div class="ps-2">
+                        <p class="small mb-0">{{ site.data.icons[t] }}</p>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
