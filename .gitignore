@@ -4,6 +4,11 @@ _includes/readme
 _layouts/compress.html
 
 _src/dependencies/node
+
 _site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
 
 .vscode
