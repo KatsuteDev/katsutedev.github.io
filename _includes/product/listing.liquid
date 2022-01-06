@@ -1,0 +1,40 @@
+{% capture slug %}{{ r.name | slugify: "latin" }}{% endcapture %}
+{% capture type %}{% if r.type != "project" %}product{% else %}project{% endif %}{% endcapture %}
+
+<div class="col">
+    <div class="card shadow h-100">
+        {% comment %} thumbnail {% endcomment %}
+        {% unless include.nothumbnail %}
+        <img src="/{{ type }}/{{ slug }}/thumbnail.png" class="card-img-top" onerror="this.style.display='none'">
+        {% endunless %}
+        {% comment %} body {% endcomment %}
+        <div class="card-body d-flex flex-column">
+            {% comment %} title {% endcomment %}
+            <h5 class="card-title *flex-align-center">{{ include.r.name }}</h5>
+
+            {% comment %} technologies {% endcomment %}
+            <h6 class="card-subtitle pb-2 text-muted border-bottom">
+                <span>Built with</span>
+                {% for t in r.with %}
+                    {% include _component/icon.liquid size=25 icon=t %}
+                {% endfor %}
+                <span>using</span>
+                {% for t in r.using %}
+                    {% include _component/icon.liquid size=25 icon=t %}
+                {% endfor %}
+                <span>for</span>
+                {% for t in r.for %}
+                    {% include _component/icon.liquid size=25 icon=t %}
+                {% endfor %}
+            </h6>
+
+            {% comment %} body {% endcomment %}
+            <p class="card-text mt-2 mb-2">
+                {{ r.desc }}
+            </p>
+
+            {% comment %} link {% endcomment %}
+            <a class="stretched-link text-decoration-none mt-auto" href="/{{ type }}/{{ slug }}">View {{ type | capitalize }}</a>
+        </div>
+    </div>
+</div>

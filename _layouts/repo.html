@@ -1,0 +1,57 @@
+---
+layout: default-container
+---
+{% for r in site.data.repos %}
+    {% if r.name == page.r %}
+        {% assign repo = r %}
+        {% break %}
+    {% endif %}
+{% endfor %}
+
+<div class="@repo row mx-0 mt-3">
+    <div class="col-12 col-md-8 col-lg-9 px-0">
+        <div class="markdown">
+            {% if repo.readme %}
+                {% capture readme %}{% include readme/{{ repo.readme }}.md %}{% endcapture %}
+                {{ readme | markdownify }}
+            {% else %}
+                {{ content }}
+            {% endif %}
+        </div>
+    </div>
+    <div class="col-12 col-md-4 col-lg-3 px-0">
+        {% comment %} tech stack {% endcomment %}
+        <div id="technologies" class="ms-md-3 mb-2">
+            <div class="row row-cols-1 mx-0">
+                {% include product/stack.liquid title="Built with" stack=repo.with %}
+                {% include product/stack.liquid title="Built using" stack=repo.using %}
+                {% include product/stack.liquid title="Built for" stack=repo.for %}
+            </div>
+        </div>
+        <div id="download">
+            <div class="row row-cols-1 mx-0 ms-md-3">
+                <div class="col px-0 d-grid">
+                    {% comment %} github {% endcomment %}
+                    {% if repo.git %}
+                        <a href="https://github.com/{{ repo.git }}"
+                           class="btn btn-dark"><i class="fab fa-github fa-fw me-1"></i>View on GitHub</a>
+                    {% endif %}
+                    {% comment %} downloads {% endcomment %}
+                    {% if repo.download %}
+                        <h6 class="h5 border-bottom my-2">Downloads</h6>
+                        {% for download in repo.download %}
+                            <div class="btn-group-vertical mt-2">
+                                {% for link in download.links %}
+                                    <a href="{{ link.link }}" class="btn btn-{{ download.style }}">
+                                        <i class="{{ download.icon }} fa-fw me-1"></i>
+                                        {{ link.name }}
+                                    </a>
+                                {% endfor %}
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

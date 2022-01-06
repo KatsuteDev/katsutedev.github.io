@@ -1,6 +1,14 @@
-.vscode
+node_modules
+
+_includes/readme
+_layouts/compress.html
+_src/CNAME
+_src/dependencies/node
 
 _site
+.sass-cache
 .jekyll-cache
+.jekyll-metadata
+vendor
 
-node_modules
+.vscode

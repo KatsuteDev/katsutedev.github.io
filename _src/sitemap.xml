@@ -1,0 +1,26 @@
+---
+layout: none
+paths:
+  - ""
+  - product
+  - products
+  - product/chrome-can-you-not
+  - product/desktop-flick
+  - product/github-red-issues
+  - product/jcore
+  - product/mal4j
+  - product/rexedia
+  - product/simplehttpserver
+  - project
+  - projects
+  - project/mr-flour
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+{% assign mod = site.time | date: "%Y-%m-%d" %}{% for path in page.paths %}    <url>
+        <loc>{{ site.url }}/{{ path }}</loc>
+        <lastmod>{{ mod }}</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+    </url>
+{% endfor %}</urlset>

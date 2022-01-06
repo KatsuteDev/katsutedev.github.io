@@ -1,0 +1,82 @@
+stack:
+  - [java, maven, intellij]
+  - [html, css, bootstrap, jekyll]
+  - [javascript, typescript, nodejs, electronjs, vscode]
+  - [github, github-actions]
+  - [python, pycharm]
+  - [cpp]
+
+tech:
+  java:
+    title: Java
+    body: 5 years experience using Java for web, application, and library development.
+    icon: java
+  maven:
+    title: Maven
+    body: Experience using Maven for dependency management and library deployment.
+    icon: apachemaven
+  intellij:
+    title: IntelliJ
+    body: Experience with using the IntelliJ IDE.
+    icon: intellijidea
+
+  html:
+    title: HTML
+    body: 4 years exprience using HTML for site development.
+    icon: html5
+  css:
+    title: CSS
+    body: 4 years experience using CSS for site development.
+    icon: css3
+  bootstrap:
+    title: Bootstrap
+    body: 4 years experience using Bootstrap for site development.
+    icon: bootstrap
+  jekyll:
+    title: Jekyll & Liquid
+    body: 3 years experience using Jekyll and Liquid for static site development.
+    icon: jekyll
+
+  javascript:
+    title: JavaScript
+    body: 3 years experience using JavaScript for site and application development.
+    icon: javascript
+  typescript:
+    title: TypeScript
+    body: 1 years experience using TypeScript for application development and repository management.
+    icon: typescript
+  nodejs:
+    title: NodeJS
+    body: 1 years experience using npm for dependency management.
+    icon: nodejs
+  electronjs:
+    title: ElectronJS
+    body: 1 years experience using Electron for application development.
+    icon: electron
+  vscode:
+    title: Visual Studio Code
+    body: Experience with using Microsoft Visual Studio Code IDE.
+    icon: visualstudiocode
+
+  github:
+    title: GitHub
+    body: Joined GitHub in December of 2019. Experience with managing organizations, repositories, and using the GitHub API.
+    icon: github
+  github-actions:
+    title: GitHub Actions & Workflows
+    body: Experience with using and developing GitHub Actions and Workflows.
+    icon: githubactions
+
+  python:
+    title: Python
+    body: 2 years academic experience using Python.
+    icon: python
+  pycharm:
+    title: PyCharm
+    body: Experience with using the PyCharm IDE.
+    icon: pycharm
+
+  cpp:
+    title: C++
+    body: 6 months academic experience using C++.
+    icon: cplusplus

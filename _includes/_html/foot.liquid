@@ -1,0 +1,19 @@
+<script src="{{ site.url }}/dependencies/node/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<script defer src="{{ site.url }}/dependencies/katsute/js/scroll.js"></script>
+
+<script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+    })
+</script>
+
+{{ layout.foot }}
+{{ page.foot }}
+
+{% comment %}
+stop page flickering
+https://stackoverflow.com/a/42969608
+{% endcomment %}
+<script> </script>

@@ -1,0 +1,23 @@
+.\@nav{
+
+    background-color: $dark20 !important;
+
+    @extend .bg-dark;
+
+    .brand-responsive {
+
+        font-size: 1.5rem;
+
+    }
+
+    @include media-breakpoint-up(lg){
+
+        .brand-responsive {
+
+            font-size: unset;
+
+        }
+
+    }
+
+}

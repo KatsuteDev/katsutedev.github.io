@@ -1,0 +1,77 @@
+.\*{
+
+    &flex-align-center {
+
+        @extend .d-flex;
+        @extend .align-content-center;
+
+    }
+
+    &flex-justify-center {
+
+        @extend .d-flex;
+        @extend .justify-content-center;
+
+    }
+
+    &flex-center-center {
+
+        @extend .\*flex-align-center;
+        @extend .\*flex-justify-center;
+
+    }
+
+    &mb-responsive > :not(:last-child) {
+
+        @extend .mb-2;
+        @extend .mb-lg-0;
+
+    }
+
+    &text-{
+
+        &white * {
+
+            @extend .text-white;
+
+        }
+
+        &body * {
+
+            @extend .text-body;
+
+        }
+
+        &dark * {
+
+            @extend .text-dark;
+
+        }
+
+    }
+
+    &btn-none {
+
+        @extend .btn;
+        @extend .btn-link;
+
+        &:focus {
+
+            box-shadow: none !important;
+            outline: none !important;
+
+        }
+
+    }
+
+    &mb- {
+
+        &0 > * {
+
+            @extend .mb-0;
+
+        }
+
+    }
+
+}

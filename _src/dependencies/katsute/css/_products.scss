@@ -1,0 +1,58 @@
+.\@products {
+
+    .product-types {
+
+        > div {
+
+            &:not(:first-child) {
+
+                @extend .pt-4;
+
+            }
+
+            > h2 {
+
+                @extend .border-bottom;
+                @extend .mb-3;
+
+                > i, > svg {
+
+                    @extend .fa-fw;
+                    @extend .me-1;
+
+                }
+
+            }
+
+        }
+
+    }
+
+    .product-listings {
+
+        > * {
+
+            @extend .mb-3;
+
+        }
+
+
+        .card-subtitle {
+
+            > span {
+
+                @extend .pt-1;
+
+            }
+
+            > span, > img {
+
+                @extend .pb-1;
+
+            }
+
+        }
+
+    }
+
+}

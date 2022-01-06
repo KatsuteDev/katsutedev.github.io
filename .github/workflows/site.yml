@@ -1,0 +1,28 @@
+name: Deploy Site
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    name: Deploy Site
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📤 Checkout Repository
+        uses: actions/checkout@v2.4.0
+
+      - name: 📚 Install Node
+        uses: actions/setup-node@v2.5.1
+        with:
+          node-version: 16
+
+      - name: ✔ Build
+        run: |
+          npm i
+
+      - name: 🌐 Deploy Site
+        uses: jeffreytse/jekyll-deploy-action@v0.3.1
+        with:
+          provider: 'github'
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: 'gh-pages'

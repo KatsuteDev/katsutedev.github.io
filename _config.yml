@@ -1,46 +1,40 @@
-# Development
-
+# development options
 livereload: true
 port: 8000
-open_url: true
+
+disable_disk_cache: true
 strict_front_matter: true
 
-# Site
+sass:
+  load_paths:
+    - _src/dependencies/katsute/css
+    - _src/dependencies/node/bootstrap/scss
+    - _src/dependencies/node/fontawesome/scss
+    - _src/dependencies/node/hover.css/scss
+  style: compressed
 
-timezone: America/New_York
-url: https://katsute.dev
+collections:
+  src:
+    output: true
+    permalink: /:path:output_ext
 
 defaults:
   - scope:
       path: ""
     values:
-      layout: default
+      layout: default-container
 
 exclude:
-  - /dependencies/node/bootstrap/scss
-  - /node_modules
-  - /CNAME
-  - /LICENSE
-  - /README.md
+  - CNAME
+  - _config.yml
+  - LICENSE
+  - README.md
+  - '*.json'
+  - '*.ts'
+  - _src/dependencies/node/bootstrap/scss
+  - _src/dependencies/node/fontawesome/scss
 
-  - /src
-  - /package*.json
-
-plugins:
-  - jekyll-optional-front-matter
-  - jekyll-readme-index
-
-readme_index:
-  enabled:          true
-  remove_originals: true
-  with_frontmatter: true
-
-sass:
-  load_paths:
-    - dependencies/katsute/css
-    - dependencies/node/bootstrap/scss
-  style: compressed
-
+# third-party
 compress_html:
   clippings: all
   comments: all
@@ -50,3 +44,6 @@ compress_html:
   blanklines: false
   profile: false
   startings: []
+
+# variables
+url: https://katsute.dev

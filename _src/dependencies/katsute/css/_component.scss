@@ -1,0 +1,36 @@
+ul.nav\+ {
+
+    @extend .nav;
+
+    @extend .col-12;
+    @extend .col-lg-auto;
+    @extend .justify-content-center;
+
+    > li > {
+
+        button {
+
+            @extend .\*btn-none;
+
+        }
+
+        a, button {
+
+            @extend .nav-link;
+
+            @extend .px-2;
+            @extend .py-0;
+
+            @extend .d-flex;
+            @extend .align-content-center;
+
+            > svg, i {
+
+                @extend .fa-fw;
+                @extend .fa-lg;
+
+            }
+
+        }
+    }
+}

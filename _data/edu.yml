@@ -1,0 +1,35 @@
+- name: Bayside High School
+  start: 2015
+  end: 2019
+  deg: Advanced Regents Diploma in Computer Programming & Web Design with CTE endorsement
+  desc: |
+    As part of the Computer Program students will learn to use web technologies HTML, CSS, JavaScript, Bootstrap, and REST APIs. Additionally students will also learn object oriented programming with Python and Java.
+
+    - Created games in Python, such as Flappy Bird.
+    - Created a site to check weather using the OpenWeatherMap and Google Map APIs.
+    - Created a site featuring a quiz to help students learn about history using Firebase, Google Maps API, and Bootstrap.
+    - Created a bouncing ball game in Java.
+
+    As part of the 4 year program students, in groups, will also complete a [capstone project](/project/mr-flour) involving said technologies and present them at Queens Community College.
+
+- name: Baruch College
+  start: 2019
+  end: Present
+  deg: Computer Information Systems (CIS)
+  desc: |
+    CIS majors will take courses involving both technical and manegerial issues in the information technology (IT) sector of business. Particularly data analytics, software development, and IT strategy.
+
+    Relevant Coursework:
+
+    - [CIS 2300 - Programming and Computational Thinking (Python)](https://github.com/Katsute/Baruch-CIS-2300)
+    - [CIS 3100 - Object-Oriented Programming I (C++)](https://github.com/Katsute/Baruch-CIS-3100)
+    - [CIS 3120 - Programming for Analytics (Python)](https://github.com/Katsute/Baruch-CIS-3120)
+    - [CIS 3400 - Database Management Systems (SQL)](https://github.com/Katsute/Baruch-CIS-3400)
+    - [CIS 4170 - Data Visualization (Python)](https://github.com/Katsute/Baruch-CIS-4170)
+
+    [View all coursework](https://github.com/Katsute?tab=repositories&q=baruch&sort=name)
+
+    ##### Ascend Baruch
+
+    - *Member of the Technology Committee (Fall 2020)*
+    - *Member of the Technology Committee (Fall 2021)*
