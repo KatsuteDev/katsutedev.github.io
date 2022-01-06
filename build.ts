@@ -29,10 +29,10 @@ class Main {
             fs.existsSync(readme) || fs.mkdirSync(readme);
 
             const repos: string[] = [
-                "KatsuteDev/Chrome-Can-You-Not",
                 "KatsuteDev/Desktop-Flick",
                 "KatsuteDev/JCore",
                 "KatsuteDev/Mal4J",
+                "KatsuteDev/Stop-Chrome",
                 "Katsute/GitHub-Red-Issues",
                 "Ktt-Development/rexedia",
                 "Ktt-Development/simplehttpserver"

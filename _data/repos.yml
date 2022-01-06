@@ -32,11 +32,11 @@
       - name: zip
         link: https://github.com/KatsuteDev/Desktop-Flick/releases/download/1.2.0/Desktop.Flick-win32-x64-1.2.0.zip
 
-- name: Chrome Can You Not
+- name: Stop Chrome
   type: software
   desc: Detect and stop chrome from running in the background.
-  git: KatsuteDev/Chrome-Can-You-Not
-  readme: KatsuteDev-Chrome-Can-You-Not
+  git: KatsuteDev/Stop-Chrome
+  readme: KatsuteDev-Stop-Chrome
   with:
     - electron
     - javascript
@@ -54,15 +54,15 @@
       style: dark
       links:
         - name: GitHub Releases
-          link: https://github.com/KatsuteDev/Chrome-Can-You-Not/releases
+          link: https://github.com/KatsuteDev/Stop-Chrome/releases
     - name: Windows
       icon: fab fa-windows
       style: primary
       links:
         - name: exe
-          link: https://github.com/KatsuteDev/Chrome-Can-You-Not/releases/download/1.1.0/Chrome.Can.You.Not-1.1.0.Setup.exe
+          link: https://github.com/KatsuteDev/Stop-Chrome/releases/download/2.0.0/Stop.Chrome-2.0.0.Setup.exe
         - name: zip
-          link: https://github.com/KatsuteDev/Chrome-Can-You-Not/releases/download/1.1.0/Chrome.Can.You.Not-win32-x64-1.1.0.zip
+          link: https://github.com/KatsuteDev/Stop-Chrome/releases/download/2.0.0/Stop.Chrome-win32-x64-2.0.0.zip
 
 - name: Rexedia
   type: software
