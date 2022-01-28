@@ -32,6 +32,7 @@ class Main {
                 "KatsuteDev/Desktop-Flick",
                 "KatsuteDev/JCore",
                 "KatsuteDev/Mal4J",
+                "KatsuteDev/OneMTA",
                 "KatsuteDev/Stop-Chrome",
                 "Katsute/GitHub-Red-Issues",
                 "Ktt-Development/rexedia",

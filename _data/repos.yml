@@ -94,6 +94,46 @@
         - name: zip
           link: https://github.com/Ktt-Development/rexedia/releases/download/1.3.0/rexedia.zip
 
+- name: OneMTA
+  type: library
+  desc: The MTA Bus and Subway APIs all in one Java library
+  git: KatsuteDev/OneMTA
+  readme: KatsuteDev-OneMTA
+  with:
+    - java
+    - apachemaven
+  using:
+    - intellijidea
+    - github
+    - githubactions
+  for:
+    - java
+  download:
+    - name: GitHub
+      icon: fab fa-github
+      style: dark
+      links:
+        - name: GitHub Releases
+          link: https://github.com/KatsuteDev/OneMTA/releases
+        - name: GitHub Packages
+          link: https://github.com/KatsuteDev/OneMTA/packages/1221214
+    - name: Maven
+      icon: fas fa-feather-alt
+      style: danger
+      links:
+        - name: Maven Central
+          link: https://mvnrepository.com/artifact/dev.katsute/onemta
+    - name: Binaries
+      icon: fab fa-java
+      style: dark
+      links:
+        - name: Jar
+          link: https://github.com/KatsuteDev/OneMTA/releases/download/1.0.0-RC-1/onemta-1.0.0-RC-1.jar
+        - name: Sources
+          link: https://github.com/KatsuteDev/OneMTA/releases/download/1.0.0-RC-1/onemta-1.0.0-RC-1-sources.jar
+        - name: Javadoc
+          link: https://github.com/KatsuteDev/OneMTA/releases/download/1.0.0-RC-1/onemta-1.0.0-RC-1-javadoc.jar
+
 - name: Mal4J
   type: library
   desc: Java wrapper for the official MyAnimeList REST API.
