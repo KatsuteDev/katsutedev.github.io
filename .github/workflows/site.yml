@@ -25,5 +25,5 @@ jobs:
         with:
           provider: 'github'
           token: ${{ secrets.GITHUB_TOKEN }}
-          actor: actions
+          actor: sinon-bot
           branch: 'gh-pages'
