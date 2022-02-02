@@ -25,4 +25,5 @@ jobs:
         with:
           provider: 'github'
           token: ${{ secrets.GITHUB_TOKEN }}
+          actor: actions
           branch: 'gh-pages'
