@@ -128,11 +128,11 @@
       style: dark
       links:
         - name: Jar
-          link: https://github.com/KatsuteDev/OneMTA/releases/download/1.0.0-RC-2/onemta-1.0.0-RC-2.jar
+          link: https://github.com/KatsuteDev/OneMTA/releases/download/1.0.0-RC-3/onemta-1.0.0-RC-3.jar
         - name: Sources
-          link: https://github.com/KatsuteDev/OneMTA/releases/download/1.0.0-RC-2/onemta-1.0.0-RC-2-sources.jar
+          link: https://github.com/KatsuteDev/OneMTA/releases/download/1.0.0-RC-3/onemta-1.0.0-RC-3-sources.jar
         - name: Javadoc
-          link: https://github.com/KatsuteDev/OneMTA/releases/download/1.0.0-RC-2/onemta-1.0.0-RC-2-javadoc.jar
+          link: https://github.com/KatsuteDev/OneMTA/releases/download/1.0.0-RC-3/onemta-1.0.0-RC-3-javadoc.jar
 
 - name: Mal4J
   type: library
