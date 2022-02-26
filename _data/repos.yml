@@ -60,9 +60,9 @@
       style: primary
       links:
         - name: exe
-          link: https://github.com/KatsuteDev/Stop-Chrome/releases/download/2.0.0/Stop.Chrome-2.0.0.Setup.exe
+          link: https://github.com/KatsuteDev/Stop-Chrome/releases/download/2.0.1/Stop.Chrome-2.0.1.Setup.exe
         - name: zip
-          link: https://github.com/KatsuteDev/Stop-Chrome/releases/download/2.0.0/Stop.Chrome-win32-x64-2.0.0.zip
+          link: https://github.com/KatsuteDev/Stop-Chrome/releases/download/2.0.1/Stop.Chrome-win32-x64-2.0.1.zip
 
 - name: Rexedia
   type: software
