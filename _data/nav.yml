@@ -29,6 +29,9 @@ social-modal:
   - name: Keith Chiu (LinkedIn)
     icon: fab fa-linkedin-in
     link: https://www.linkedin.com/in/keith-chiu
+  - name: Keith Chiu (AngelList)
+    icon: fab fa-angellist
+    link: https://angel.co/u/katsute
   - name: Katsute (GitHub)
     icon: fab fa-github
     link: https://github.com/Katsute
