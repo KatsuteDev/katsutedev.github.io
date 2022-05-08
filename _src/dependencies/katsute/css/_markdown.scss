@@ -67,9 +67,15 @@
 
     }
 
-    img[src$="#gh-dark-mode-only"] {
+    img[src$="#gh-dark-mode-only"] { // hide dark themed images
 
         @extend .d-none;
+
+    }
+
+    img[align] { // float left images
+
+        @extend .me-2;
 
     }
 

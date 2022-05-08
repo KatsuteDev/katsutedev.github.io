@@ -13,6 +13,9 @@ github-modal:
   - name: KatsuteDev (Organization)
     icon: fab fa-github
     link: https://github.com/KatsuteDev
+  - name: Ktt Development (Archived Organization)
+    icon: fab fa-github
+    link: https://github.com/Ktt-Development
 
 sponsor-modal:
   - name: Katsute (Patreon)
@@ -26,12 +29,12 @@ social-modal:
   - name: keith@katsute.dev (Business Email)
     icon: far fa-envelope
     link: 'mailto:keith@katsute.dev'
+  - name: Katsute (GitHub)
+    icon: fab fa-github
+    link: https://github.com/Katsute
   - name: Keith Chiu (LinkedIn)
     icon: fab fa-linkedin-in
     link: https://www.linkedin.com/in/keith-chiu
   - name: Keith Chiu (AngelList)
     icon: fab fa-angellist
     link: https://angel.co/u/katsute
-  - name: Katsute (GitHub)
-    icon: fab fa-github
-    link: https://github.com/Katsute

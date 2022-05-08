@@ -7,28 +7,6 @@
 
     }
 
-    &text-{
-
-        &white * {
-
-            @extend .text-white;
-
-        }
-
-        &body * {
-
-            @extend .text-body;
-
-        }
-
-        &dark * {
-
-            @extend .text-dark;
-
-        }
-
-    }
-
     &btn-none {
 
         @extend .btn;

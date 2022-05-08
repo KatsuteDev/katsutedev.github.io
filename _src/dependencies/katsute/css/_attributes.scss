@@ -60,11 +60,30 @@ $sizing: (
 
     }
 
+    &justify-end {
+
+        @extend .d-flex;
+        @extend .justify-content-end;
+
+    }
+
     &center-center {
 
         @extend .d-flex;
         @extend .align-content-center;
         @extend .justify-content-center;
+
+    }
+
+}
+
+.\> {
+
+    &text- {
+
+        &white * { @extend .text-white; }
+        &body  * { @extend .text-body; }
+        &dark  * { @extend .text-dark; }
 
     }
 

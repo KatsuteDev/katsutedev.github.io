@@ -24,7 +24,7 @@ jobs:
       - name: 🌐 Deploy Site
         uses: jeffreytse/jekyll-deploy-action@v0.3.1
         with:
-          provider: 'github'
+          provider: github
           token: ${{ secrets.GITHUB_TOKEN }}
           actor: sinon-bot
-          branch: 'gh-pages'
+          branch: gh-pages
