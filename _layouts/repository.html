@@ -32,7 +32,7 @@ layout: default-container
     <div class="col-12 col-md-9 col-lg-10 px-0">
         <div class="content">
             {% comment %} Header {% endcomment %}
-            <div class="header">
+            <div id="readme" class="header">
                 {% comment %} GitHub {% endcomment %}
                 {% if repo.git %}
                     <a href="https://github.com/{{ repo.git }}"
@@ -42,7 +42,7 @@ layout: default-container
             {% comment %} Content {% endcomment %}
             <article>
                 {% comment %} Readme {% endcomment %}
-                <div id="readme" class="markdown">
+                <div class="markdown">
                     {% if repo.readme %}
                         {% capture readme %}{% include readme/{{ repo.readme }}.md %}{% endcapture %}
                         {{ readme | markdownify }}

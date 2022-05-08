@@ -37,6 +37,18 @@
 
         table-layout: fixed;
 
+        th {
+
+            @extend .text-center;
+
+        }
+
+        td, th {
+
+            @extend .px-2, .py-1;
+
+        }
+
         td code { // prevent code blocks from being broken
 
             @extend .text-nowrap;
@@ -76,48 +88,6 @@
     img[align] { // float left images
 
         @extend .me-2;
-
-    }
-
-}
-
-.markdown-toc {
-
-    > div {
-
-        @extend .position-sticky; // keep at top on scroll
-
-        top: 1rem;
-
-        @extend .w-100;
-
-        > ul {
-
-            @extend .my-2;
-
-        }
-
-    }
-
-    ul {
-
-        @extend .list-unstyled;
-
-        @extend .ps-0;
-
-    }
-
-    li > ul {
-
-        @extend .ps-3;
-
-    }
-
-    a {
-
-        @extend .text-decoration-none;
-
-        @extend .small;
 
     }
 

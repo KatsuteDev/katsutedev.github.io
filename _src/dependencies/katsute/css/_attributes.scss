@@ -67,6 +67,13 @@ $sizing: (
 
     }
 
+    &align-end {
+
+        @extend .d-flex;
+        @extend .flex-align-end;
+
+    }
+
     &justify-center {
 
         @extend .d-flex;
