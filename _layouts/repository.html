@@ -11,7 +11,7 @@ layout: default-container
 <div class="@repository row mx-0 mt-3">
     {% comment %} Sidebar {% endcomment %}
     <div class="d-none d-md-block col-12 col-md-4 col-lg-3 px-0">
-        <div class="sidebar">
+        <div class="sidebar between-y-2 me-2">
             <div class="row row-cols-1 mx-0">
                 <div class="col px-0 d-grid">
                     <a href="#readme" class="btn btn-light mb-1">Overview</a>
@@ -29,15 +29,6 @@ layout: default-container
                 <br>
                 <br>
                 <br>
-            </div>
-
-            {% comment %} tech stack {% endcomment %}
-            <div id="technologies" class="mb-2">
-                <div class="row row-cols-1 mx-0">
-                    {% include product/stack.liquid title="Built with" stack=repo.with %}
-                    {% include product/stack.liquid title="Built using" stack=repo.using %}
-                    {% include product/stack.liquid title="Built for" stack=repo.for %}
-                </div>
             </div>
         </div>
     </div>
@@ -80,8 +71,9 @@ layout: default-container
                     </div>
                 {% endif %}
                 {% comment %} Details {% endcomment %}
-                <div id="details">
-                    <h4 class="text-center mb-2">Project Details</h4>
+                <div id="details" class="between-y-2">
+                    <h4 class="text-center">Project Details</h4>
+                    {% comment %} Specifications {% endcomment %}
                     <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 flex-justify-center">
                         <div class="col">
                             <h6 class="text-center pb-1 border-bottom">Built with</h6>
@@ -122,6 +114,46 @@ layout: default-container
                                 {% endfor %}
                             </div>
                         </div>
+                    </div>
+                    {% comment %} Details {% endcomment %}
+                    <div>
+                        <div class="d-inline-block">
+                            <table class="table table-s mb-0">
+                                <tbody>
+                                    <tr>
+                                        <th>Role</th>
+                                        <td>{{ repo.role }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Type</th>
+                                        <td>{{ repo.type | capitalize }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Created</th>
+                                        <td>{{ repo.start }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Completed</th>
+                                        <td>{% if repo.end %}{{ repo.end }}{% else %}<i>Ongoing Development*</i>{% endif %}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div>
+                            {% unless repo.end %}
+                                <i class="small">*projects with ongoing development have already been completed, but are continually receiving new features and support</i>
+                            {% endunless %}
+                        </div>
+                    </div>
+                    {% comment %} Summary {% endcomment %}
+                    <div>
+                        <h5 class="subheading">Summary</h5>
+                        <p>{{ repo.summary }}</p>
+                    </div>
+                    {% comment %} Description {% endcomment %}
+                    <div>
+                        <h5 class="subheading">Description</h5>
+                        <p>{{ repo.description }}</p>
                     </div>
                 </div>
             </article>

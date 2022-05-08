@@ -8,8 +8,6 @@
 
         @extend .position-sticky;
 
-        @extend .me-2;
-
     }
 
     .content {
@@ -24,12 +22,6 @@
             @extend .justify-content-end;
 
             @extend .px-4, .pt-4;
-
-            .btn {
-
-                @extend .round-1;
-
-            }
 
         }
 
@@ -53,6 +45,38 @@
 
                     @extend .d-block;
                     @extend .mb-1;
+
+                }
+
+            }
+
+            #details {
+
+                table {
+
+                    tr, th, td {
+
+                        @extend .border-0;
+
+                        @extend .p-1;
+
+                    }
+
+                    th {
+
+                        @extend .ps-0;
+
+                    }
+
+                }
+
+                .subheading {
+
+                    @extend .d-inline-block;
+
+                    @extend .border-bottom;
+
+                    @extend .pb-1;
 
                 }
 

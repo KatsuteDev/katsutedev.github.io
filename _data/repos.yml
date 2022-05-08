@@ -1,8 +1,12 @@
 - name: Desktop Flick
   type: software
-  desc: Use your mobile device as a localized desktop keyboard.
   git: KatsuteDev/Desktop-Flick
   readme: KatsuteDev-Desktop-Flick
+  summary: Use your mobile device as a localized desktop keyboard.
+  description: todo
+  role: Developer & Maintainer
+  start: March 2021
+  end: January 2022
   with:
     - electron
     - javascript
@@ -34,9 +38,13 @@
 
 - name: Stop Chrome
   type: software
-  desc: Detect and stop chrome from running in the background.
   git: KatsuteDev/Stop-Chrome
   readme: KatsuteDev-Stop-Chrome
+  summary: Detect and stop chrome from running in the background.
+  description: todo
+  role: Developer & Maintainer
+  start: July 2021
+  end: February 2022
   with:
     - electron
     - javascript
@@ -66,9 +74,13 @@
 
 - name: Rexedia
   type: software
-  desc: Metadata editing for bulk media files using regular expressions.
   git: Ktt-Development/rexedia
   readme: Ktt-Development-rexedia
+  summary: Metadata editing for bulk media files using regular expressions.
+  description: todo
+  role: Developer & Maintainer
+  start: July 2021
+  end: February 2022
   with:
     - java
     - apachemaven
@@ -96,9 +108,12 @@
 
 - name: OneMTA
   type: library
-  desc: The MTA Bus and Subway APIs all in one Java library
   git: KatsuteDev/OneMTA
   readme: KatsuteDev-OneMTA
+  summary: The MTA Bus and Subway APIs all in one Java library
+  description: todo
+  role: Developer & Maintainer
+  start: November 2021
   with:
     - java
     - apachemaven
@@ -136,9 +151,12 @@
 
 - name: Mal4J
   type: library
-  desc: Java wrapper for the official MyAnimeList REST API.
   git: KatsuteDev/Mal4J
   readme: KatsuteDev-Mal4J
+  summary: Java wrapper for the official MyAnimeList REST API.
+  description: todo
+  role: Developer & Maintainer
+  start: November 2020
   with:
     - java
     - apachemaven
@@ -176,9 +194,12 @@
 
 - name: JCore
   type: library
-  desc: Java library for GitHub workflow commands.
   git: KatsuteDev/JCore
   readme: KatsuteDev-JCore
+  summary: Java library for GitHub workflow commands.
+  description: todo
+  role: Developer & Maintainer
+  start: June 2021
   with:
     - java
     - apachemaven
@@ -216,9 +237,13 @@
 
 - name: SimpleHttpServer
   type: library
-  desc: A simplified implementation of the Java sun http server.
   git: Ktt-Development/simplehttpserver
   readme: Ktt-Development-simplehttpserver
+  summary: A simplified implementation of the Java sun http server.
+  description: todo
+  role: Developer & Maintainer
+  start: December 2019
+  end: February 2021
   with:
     - java
     - apachemaven
@@ -254,9 +279,11 @@
 
 - name: GitHub Red Issues
   type: extension
-  desc: Revert closed GitHub issues from purple back to red.
   git: Katsute/GitHub-Red-Issues
   readme: Katsute-GitHub-Red-Issues
+  summary: Revert closed GitHub issues from purple back to red.
+  description: todo
+  role: Developer & Maintainer
   with:
     - css3
     - typescript
@@ -290,7 +317,11 @@
 
 - name: Mr. Flour
   type: project
-  desc: Social platform to share recipes and order baked products.
+  summary: Social platform to share recipes and order baked products.
+  description: todo
+  role: Backend Server Developer
+  start: September 2018
+  end: June 2019
   with:
     - java
     - gradle
