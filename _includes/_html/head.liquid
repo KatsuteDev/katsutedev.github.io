@@ -59,13 +59,9 @@
 
 {% comment %} overrides {% endcomment %}
 
-{% if layout.css %}
+{% if layout.css or page.css %}
     <style>
         {{ layout.css }}
-    </style>
-{% endif %}
-{% if page.css %}
-    <style>
         {{ page.css }}
     </style>
 {% endif %}

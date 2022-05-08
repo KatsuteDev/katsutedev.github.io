@@ -2,8 +2,15 @@
 ---
 
 @import "bootstrap", "fontawesome";
-@import "vars", "markdown", "component", "attr";
-@import "nav", "home", "products";
+@import "attributes", "markdown", "component", "attr";
+@import "nav", "home", "products", "repository";
+
+// temp!
+
+body{
+    background-image: url("https://cdn.sstatic.net/Img/april-fools-2022/assets/frisa-bg.png?v=3d424b05383e"),linear-gradient(135deg, #f5e256 0%, #dc803e 33%, #d44073 66%, #454690 100%);
+    background-repeat: repeat;
+}
 
 // ----- global overrides ---------------
 
@@ -24,7 +31,7 @@ pre, code {
 
 * {
 
-    font-family: "Fira Sans", "Open Sans", Arial, Helvetica, sans-serif;
+    font-family: "Segoe UI Adjusted", "Segoe UI", "Open Sans", Helvetica, Arial, sans-serif;
 
     outline: none;
     scroll-behavior: smooth;

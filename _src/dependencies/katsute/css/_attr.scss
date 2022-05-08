@@ -1,26 +1,5 @@
 .\*{
 
-    &flex-align-center {
-
-        @extend .d-flex;
-        @extend .align-content-center;
-
-    }
-
-    &flex-justify-center {
-
-        @extend .d-flex;
-        @extend .justify-content-center;
-
-    }
-
-    &flex-center-center {
-
-        @extend .\*flex-align-center;
-        @extend .\*flex-justify-center;
-
-    }
-
     &mb-responsive > :not(:last-child) {
 
         @extend .mb-2;

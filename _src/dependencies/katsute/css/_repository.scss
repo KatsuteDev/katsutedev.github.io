@@ -1,0 +1,37 @@
+// Copyright (C) 2022 Katsute <https://github.com/Katsute>
+
+.\@repository {
+
+    .sidebar {
+
+        top: .5rem;
+
+        @extend .position-sticky;
+
+        @extend .me-2;
+
+    }
+
+    .content {
+
+        background-color: white;
+
+        @extend .round-3;
+        @extend .p-4;
+
+        .header {
+
+            @extend .d-flex;
+            @extend .justify-content-end;
+
+            .btn {
+
+                @extend .round-1;
+
+            }
+
+        }
+
+    }
+
+}
