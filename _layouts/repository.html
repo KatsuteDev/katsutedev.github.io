@@ -10,47 +10,39 @@ layout: default-container
 
 <div class="@repository row mx-0 mt-3">
     {% comment %} Sidebar {% endcomment %}
-    <div class="d-none d-md-block col-12 col-md-3 col-lg-2 px-0">
+    <div class="d-none d-md-block col-12 col-md-4 col-lg-3 px-0">
         <div class="sidebar">
             <div class="row row-cols-1 mx-0">
                 <div class="col px-0 d-grid">
-                    <a class="btn btn-light mb-1">Overview</a>
-                    <a class="btn btn-light mb-1">Downloads</a>
+                    <a href="#readme" class="btn btn-light mb-1">Overview</a>
+                    <a href="#downloads" class="btn btn-light mb-1">Downloads</a>
+                    <a href="#details" class="btn btn-light mb-1">Project Details</a>
                 </div>
             </div>
 
+            <div class="bg-white round-3 p-4">
+                space
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+
             {% comment %} tech stack {% endcomment %}
-            <div id="technologies" class="ms-md-3 mb-2">
+            <div id="technologies" class="mb-2">
                 <div class="row row-cols-1 mx-0">
                     {% include product/stack.liquid title="Built with" stack=repo.with %}
                     {% include product/stack.liquid title="Built using" stack=repo.using %}
                     {% include product/stack.liquid title="Built for" stack=repo.for %}
                 </div>
             </div>
-            <div id="download">
-                <div class="row row-cols-1 mx-0 ms-md-3">
-                    <div class="col px-0 d-grid">
-                        {% comment %} downloads {% endcomment %}
-                        {% if repo.download %}
-                            <h6 class="h5 border-bottom my-2">Downloads</h6>
-                            {% for download in repo.download %}
-                                <div class="btn-group-vertical mt-2">
-                                    {% for link in download.links %}
-                                        <a href="{{ link.link }}" class="btn btn-{{ download.style }}">
-                                            <i class="{{ download.icon }} fa-fw me-1"></i>
-                                            {{ link.name }}
-                                        </a>
-                                    {% endfor %}
-                                </div>
-                            {% endfor %}
-                        {% endif %}
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
     {% comment %} Content {% endcomment %}
-    <div class="col-12 col-md-9 col-lg-8 px-0">
+    <div class="col-12 col-md-8 col-lg-9 px-0">
         <div class="content">
             <div class="header">
                 {% comment %} GitHub {% endcomment %}
@@ -60,7 +52,8 @@ layout: default-container
                 {% endif %}
             </div>
             <article>
-                <div class="markdown">
+                {% comment %} Readme {% endcomment %}
+                <div id="readme" class="markdown">
                     {% if repo.readme %}
                         {% capture readme %}{% include readme/{{ repo.readme }}.md %}{% endcapture %}
                         {{ readme | markdownify }}
@@ -68,9 +61,68 @@ layout: default-container
                         {{ content }}
                     {% endif %}
                 </div>
-                <hr>
-                <div>
-                    test content
+                {% comment %} Downloads {% endcomment %}
+                {% if repo.download %}
+                    <div id="downloads">
+                        <h4 class="text-center mb-2">Downloads</h4>
+                        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 flex-justify-center">
+                            {% for download in repo.download %}
+                                <div class="col">
+                                    <h6 class="text-center pb-1 border-bottom"><i class="{{ download.icon }} fa-fw me-1"></i>{{ download.name }}</h6>
+                                    <div>
+                                        {% for link in download.links %}
+                                            <a href="{{ link.link }}" class="btn btn-sm btn-{{ download.style }}">{{ link.name }}</a>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                {% endif %}
+                {% comment %} Details {% endcomment %}
+                <div id="details">
+                    <h4 class="text-center mb-2">Project Details</h4>
+                    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 flex-justify-center">
+                        <div class="col">
+                            <h6 class="text-center pb-1 border-bottom">Built with</h6>
+                            <div class="between-y-2">
+                                {% for t in repo.with %}
+                                    <div>
+                                        {% include _component/icon.liquid size=25 icon=t notooltip=true %}
+                                        <div class="d-inline-block ps-2">
+                                            <p class="small mb-0">{{ site.data.icons[t] }}</p>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h6 class="text-center pb-1 border-bottom">Built using</h6>
+                            <div class="between-y-2">
+                                {% for t in repo.using %}
+                                    <div>
+                                        {% include _component/icon.liquid size=25 icon=t notooltip=true %}
+                                        <div class="d-inline-block ps-2">
+                                            <p class="small mb-0">{{ site.data.icons[t] }}</p>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h6 class="text-center pb-1 border-bottom">Built for</h6>
+                            <div class="between-y-2">
+                                {% for t in repo.for %}
+                                    <div>
+                                        {% include _component/icon.liquid size=25 icon=t notooltip=true %}
+                                        <div class="d-inline-block ps-2">
+                                            <p class="small mb-0">{{ site.data.icons[t] }}</p>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </article>
         </div>

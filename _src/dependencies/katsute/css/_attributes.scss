@@ -30,6 +30,18 @@ $sizing: (
         border-radius: $size;
 
     }
+
+    .between-y-#{$prefix} > *:not(:last-child) {
+
+        margin-bottom: $size;
+
+    }
+
+    .between-x-#{$prefix} > *:not(:last-child) {
+
+        margin-right: $size;
+
+    }
 }
 
 .flex- {
