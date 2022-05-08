@@ -31,6 +31,20 @@ $sizing: (
 
     }
 
+    .round-top-#{$prefix} {
+
+        border-top-left-radius: $size;
+        border-top-right-radius: $size;
+
+    }
+
+    .round-bottom-#{$prefix} {
+
+        border-bottom-left-radius: $size;
+        border-bottom-right-radius: $size;
+
+    }
+
     .between-y-#{$prefix} > *:not(:last-child) {
 
         margin-bottom: $size;
