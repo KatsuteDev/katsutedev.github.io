@@ -25,6 +25,7 @@ $sizing: (
 );
 
 @each $prefix, $size in $sizing {
+
     .round-#{$prefix} {
 
         border-radius: $size;
@@ -56,6 +57,7 @@ $sizing: (
         margin-right: $size;
 
     }
+
 }
 
 .flex- {
@@ -98,14 +100,9 @@ $sizing: (
 
 }
 
-.\> {
+.no-focus-outline:focus {
 
-    &text- {
-
-        &white * { @extend .text-white; }
-        &body  * { @extend .text-body; }
-        &dark  * { @extend .text-dark; }
-
-    }
+    box-shadow: none !important;
+    outline: none !important;
 
 }

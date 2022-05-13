@@ -1,26 +1,25 @@
 <div id="{{ include.id }}" class="modal fade">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content round-3 border-0">
-            <div class="modal-header py-2 >text-body">
+            <div class="modal-header px-4 py-2">
                 <h5 class="modal-title">{{ include.title }}</h5>
-                <button type="button" class="*btn-none p-1" data-bs-dismiss="modal"><i class="fas fa-times fa-fw fa-lg"></i></button>
+                <button type="button" class="btn btn-link no-focus-outline p-0 text-body" data-bs-dismiss="modal"><i class="fas fa-times fa-fw fa-lg"></i></button>
             </div>
-            <div class="modal-body">
-                <ul class="nav+ flex-column">
+            <div class="modal-body p-4">
+                <ul class="flex-column list-unstyled between-y-2">
                     {% for link in include.links %}
-                        <li {% unless forloop.last %}class="mb-2"{% endunless %}>
+                        <li>
                             <div class="d-inline-block">
-                                <i class="{{ link.icon }} fa-fw fa-lg me-1"></i>
                                 <a
                                     href="{{ link.link }}" target="_blank"
-                                    class="text-decoration-none">{{ link.name }}</a>
+                                    class="text-decoration-none"><i class="{{ link.icon }} fa-fw fa-lg me-1 text-body"></i>{{ link.name }}</a>
                             </div>
                         </li>
                     {% endfor %}
                 </ul>
             </div>
-            <div class="modal-footer py-2">
-                <small>{{ include.footer }}</small>
+            <div class="modal-footer px-4 py-2">
+                <small class="m-0">{{ include.footer }}</small>
             </div>
         </div>
     </div>

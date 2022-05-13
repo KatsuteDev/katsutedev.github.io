@@ -7,15 +7,15 @@
                 <a href="/" class="text-decoration-none text-white brand-responsive">Katsute</a>
             </div>
             {% comment %} navigation {% endcomment %}
-            <ul class="nav+ me-lg-auto >text-white">
+            <ul class="nav me-lg-auto">
                 {% for link in site.data.nav.nav-links %}
                     <li>
-                        <a href="{{ link.link }}">{{ link.name }}</a>
+                        <a href="{{ link.link }}" class="text-white">{{ link.name }}</a>
                     </li>
                 {% endfor %}
             </ul>
             {% comment %} links {% endcomment %}
-            <ul class="nav+ ms-lg-auto">
+            <ul class="nav ms-lg-auto">
                 <li class="mb-0">
                     <button type="button" data-bs-toggle="modal" data-bs-target="#github-modal" class="text-white">
                         <i class="fab fa-github"></i>
@@ -23,7 +23,7 @@
                     {% capture footer %}
                         View <a href="https://github.com/KatsuteDev/katsutedev.github.io" target="_blank" class="text-decoration-none">site source</a>.
                     {% endcapture %}
-                    {% include _layout/nav/modal.liquid
+                    {% include _layout/modal.liquid
                         id="github-modal"
                         title="GitHub"
                         links=site.data.nav.github-modal
@@ -37,7 +37,7 @@
                     {% capture footer %}
                         Sponsors help keep open source development free.
                     {% endcapture %}
-                    {% include _layout/nav/modal.liquid
+                    {% include _layout/modal.liquid
                         id="sponsor-modal"
                         title="Sponsor"
                         links=site.data.nav.sponsor-modal
@@ -51,7 +51,7 @@
                     {% capture footer %}
                         Business communications only, GitHub users please open issues in their respective repositories.
                     {% endcapture %}
-                    {% include _layout/nav/modal.liquid
+                    {% include _layout/modal.liquid
                         id="social-modal"
                         title="Social Links"
                         links=site.data.nav.social-modal

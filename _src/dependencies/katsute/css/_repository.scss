@@ -12,39 +12,15 @@
 
     .content {
 
-        background-color: white;
-
-        @extend .round-3;
-
-        .header {
-
-            @extend .d-flex;
-            @extend .justify-content-end;
-
-            @extend .px-4, .pt-4;
-
-        }
-
         article {
 
-            > * {
+            > div {
 
                 @extend .p-4;
 
                 &:not(:last-child) {
 
                     @extend .border-bottom;
-
-                }
-
-            }
-
-            #downloads {
-
-                .btn {
-
-                    @extend .d-block;
-                    @extend .mb-1;
 
                 }
 

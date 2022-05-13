@@ -2,59 +2,43 @@
     <div class="mt-2 bg-white">
         <div class="container-lg py-3">
             <div class="content row row-cols-1 row-cols-sm-4 flex-justify-center">
-                <div class="col">
-                    <h6>Navigation</h6>
-                    <ul>
-                        {% for link in site.data.nav.nav-links %}
-                            <li class="nav-item">
-                                <a href="{{ link.link }}" class="nav-link text-body p-0">{{ link.name }}</a>
-                            </li>
-                        {% endfor %}
-                    </ul>
+                <div class="col mb-2">
+                    {% include _layout/footer/nav.liquid
+                        title = "Navigation"
+                        links = site.data.nav.nav-links
+                    %}
                 </div>
-                <div class="col">
-                    <h6>Social</h6>
-                    <ul>
-                        {% for link in site.data.nav.social-links %}
-                            <li class="nav-item">
-                                <a href="{{ link.link }}" target="_blank" class="nav-link text-body p-0"><i class="{{ link.icon }} fa-fw me-1"></i>{{ link.name }}</a>
-                            </li>
-                        {% endfor %}
-                    </ul>
+                <div class="col mb-2">
+                    {% include _layout/footer/nav.liquid
+                        title = "Social"
+                        links = site.data.nav.social-links
+                    %}
                 </div>
-                <div class="col">
-                    <h6>Hiring</h6>
-                    <ul>
-                        {% for link in site.data.nav.hiring-links %}
-                            <li class="nav-item">
-                                <a href="{{ link.link }}" target="_blank" class="nav-link text-body p-0"><i class="{{ link.icon }} fa-fw me-1"></i>{{ link.name }}</a>
-                            </li>
-                        {% endfor %}
-                    </ul>
+                <div class="col mb-2">
+                    {% include _layout/footer/nav.liquid
+                        title = "Hiring"
+                        links = site.data.nav.hiring-links
+                    %}
                 </div>
-                <div class="col d-flex">
-                    <span class="copyright align-self-end text-center text-sm-start">Copyright © 2022 Katsute; licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>.</span>
+                <div class="col mb-2 d-flex">
+                    <span class="align-self-end text-center text-sm-start text-muted small">Copyright © 2022 Katsute; licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" class="text-muted text-nowrap text-decoration-none fw-bold">CC BY-NC-SA 4.0</a>.</span>
                 </div>
             </div>
             <div class="row row-cols-1 pt-2">
-                <div class="col
-                flex-center-center >text-dark">
-                    <ul class="nav+">
-                        <li>
-                            <button type="button" data-bs-toggle="modal" data-bs-target="#github-modal" class="text-white">
-                                <i class="fab fa-github"></i>
-                            </button>
-                        </li>
-                        <li>
-                            <button type="button" data-bs-toggle="modal" data-bs-target="#sponsor-modal" class="text-white">
-                                <i class="fab fa-patreon"></i>
-                            </button>
-                        </li>
-                        <li>
-                            <button type="button" data-bs-toggle="modal" data-bs-target="#social-modal" class="text-white">
-                                <i class="fab fa-linkedin"></i>
-                            </button>
-                        </li>
+                <div class="col flex-center-center">
+                    <ul class="nav">
+                        {% include _layout/footer/modal-button.liquid
+                            target = "#github-modal"
+                            icon = "fab fa-github"
+                        %}
+                        {% include _layout/footer/modal-button.liquid
+                            target = "#sponsor-modal"
+                            icon = "fab fa-patreon"
+                        %}
+                        {% include _layout/footer/modal-button.liquid
+                            target = "#social-modal"
+                            icon = "fab fa-linkedin"
+                        %}
                     </ul>
                 </div>
             </div>

@@ -18,9 +18,11 @@ layout: default-container
                     <li class="nav-item">
                         <a href="#readme" class="nav-link active">Overview</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#downloads" class="nav-link active">Downloads</a>
-                    </li>
+                    {% if repo.download %}
+                        <li class="nav-item">
+                            <a href="#downloads" class="nav-link active">Downloads</a>
+                        </li>
+                    {% endif %}
                     <li class="nav-item">
                         <a href="#details" class="nav-link active">Project Details</a>
                     </li>
@@ -30,9 +32,9 @@ layout: default-container
     </div>
     {% comment %} Content {% endcomment %}
     <div class="col-12 col-md-9 col-lg-10 px-0">
-        <div class="content">
+        <div class="content bg-white round-3">
             {% comment %} Header {% endcomment %}
-            <div id="readme" class="header">
+            <div id="readme" class="d-flex justify-content-end px-4 pt-4">
                 {% comment %} GitHub {% endcomment %}
                 {% if repo.git %}
                     <a href="https://github.com/{{ repo.git }}"
@@ -58,9 +60,9 @@ layout: default-container
                             {% for download in repo.download %}
                                 <div class="col mt-2">
                                     <h6 class="text-center pb-1 border-bottom"><i class="{{ download.icon }} fa-fw me-1"></i>{{ download.name }}</h6>
-                                    <div>
+                                    <div class="between-y-1">
                                         {% for link in download.links %}
-                                            <a href="{{ link.link }}" class="btn btn-sm btn-{{ download.style }}">{{ link.name }}</a>
+                                            <a href="{{ link.link }}" class="btn btn-sm btn-{{ download.style }} d-block">{{ link.name }}</a>
                                         {% endfor %}
                                     </div>
                                 </div>
@@ -135,14 +137,14 @@ layout: default-container
                                     </tr>
                                     <tr>
                                         <th>Completed</th>
-                                        <td>{% if repo.end %}{{ repo.end }}{% else %}<i>Ongoing Development*</i>{% endif %}</td>
+                                        <td>{% if repo.end %}{{ repo.end }}{% else %}<span>LTS*</span>{% endif %}</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                         <div>
                             {% unless repo.end %}
-                                <i class="small">*projects with ongoing development have already been completed, but are continually receiving new features and support</i>
+                                <i class="small">*projects with LTS (long term support) have already been completed, but are continually receiving new features and support</i>
                             {% endunless %}
                         </div>
                     </div>
