@@ -38,21 +38,9 @@
 
                     }
 
-                    th {
+                    th { @extend .ps-0; }
 
-                        @extend .ps-0;
-
-                    }
-
-                }
-
-                .subheading {
-
-                    @extend .d-inline-block;
-
-                    @extend .border-bottom;
-
-                    @extend .pb-1;
+                    td { @extend .ps-2; }
 
                 }
 

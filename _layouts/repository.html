@@ -14,6 +14,7 @@ layout: default-container
         <div class="sidebar between-y-2 mb-2 mb-sm-0 me-0 me-sm-2">
             {% comment %} Side Nav {% endcomment %}
             <div class="bg-white round-3 p-4">
+                <h6 class="border-bottom mx-3 mb-0">Contents</h6>
                 <ul class="nav flex-column">
                     <li class="nav-item">
                         <a href="#readme" class="nav-link active">Overview</a>
@@ -23,10 +24,28 @@ layout: default-container
                             <a href="#downloads" class="nav-link active">Downloads</a>
                         </li>
                     {% endif %}
+                    {% if repo.git %}
+                        <li class="nav-item">
+                            <a href="https://github.com/{{ repo.git }}#readme" class="nav-link active">Source Code<i class="fa-solid fa-arrow-up-right-from-square fa-fw ms-1"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://github.com/{{ repo.git }}/issues" class="nav-link active">Issues<i class="fa-solid fa-arrow-up-right-from-square fa-fw ms-1"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://github.com/{{ repo.git }}/blob/main/LICENSE" class="nav-link active">License<i class="fa-solid fa-arrow-up-right-from-square fa-fw ms-1"></i></a>
+                        </li>
+                    {% endif %}
                     <li class="nav-item">
                         <a href="#details" class="nav-link active">Project Details</a>
                     </li>
                 </ul>
+            </div>
+            {% comment %} Sponsor {% endcomment %}
+            <div class="bg-white round-3 p-4 small">
+                <h6>Sponsor</h6>
+                <p class="d-inline">All projects are developed and released for free, please consider</p>
+                <p class="d-inline cursor-pointer text-primary mx-1" data-bs-toggle="modal" data-bs-target="#sponsor-modal">sponsoring</p>
+                <p class="d-inline">this project</p>
             </div>
         </div>
     </div>
@@ -150,13 +169,13 @@ layout: default-container
                     </div>
                     {% comment %} Summary {% endcomment %}
                     <div>
-                        <h5 class="subheading">Summary</h5>
-                        <p>{{ repo.summary }}</p>
+                        <h5 class="d-inline-block border-bottom pb-1">Summary</h5>
+                        <p class="mb-0">{{ repo.summary }}</p>
                     </div>
                     {% comment %} Description {% endcomment %}
                     <div>
-                        <h5 class="subheading">Description</h5>
-                        <p>{{ repo.description }}</p>
+                        <h5 class="d-inline-block border-bottom pb-1">Description</h5>
+                        <p class="mb-0">{{ repo.description }}</p>
                     </div>
                 </div>
             </article>

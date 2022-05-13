@@ -2,7 +2,7 @@
 <ul class="flex-column between-y-2 list-unstyled">
     {% for link in include.links %}
         <li>
-            <a href="{{ link.link }}" class="nav-link text-body p-0" {% if link.link contains "https://" %}target="_blank"{% endif %}>
+            <a href="{{ link.link }}" class="nav-link text-body p-0">
                 {% if link.icon %}
                     <i class="{{ link.icon }} fa-fw me-1"></i>
                 {% endif %}

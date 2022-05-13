@@ -16,11 +16,19 @@
 
     blockquote {
 
-        @extend .ps-1;
+        @extend .ps-2;
+
         border-left: .25em solid lightgray;
+
         @extend .text-muted;
 
     }
+
+    code { @extend .text-danger; }
+
+    a code { @extend .text-primary; }
+
+    a { @extend .text-decoration-none; }
 
     table {
 
@@ -37,17 +45,9 @@
 
         table-layout: fixed;
 
-        th {
+        th { @extend .text-center; }
 
-            @extend .text-center;
-
-        }
-
-        td, th {
-
-            @extend .px-2, .py-1;
-
-        }
+        td, th { @extend .px-2, .py-1; }
 
         td code { // prevent code blocks from being broken
 
@@ -65,11 +65,7 @@
 
     p + { // remove spacing between list
 
-        ol, ul {
-
-            margin-top: -1rem;
-
-        }
+        ol, ul { margin-top: -1rem; }
 
     }
 

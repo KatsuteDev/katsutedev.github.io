@@ -21,14 +21,3 @@
     }
 
 }
-
-.\*{
-
-    &mb-responsive > :not(:last-child) {
-
-        @extend .mb-2;
-        @extend .mb-lg-0;
-
-    }
-
-}
