@@ -1,63 +1,33 @@
-<header class="@nav py-3">
+<header class="@nav bg-white py-3">
     <div class="container-lg">
         <div class="flex-wrap justify-content-lg-start
             flex-center-center">
             {% comment %} logo {% endcomment %}
             <div class="flex-align-center me-0 me-lg-2">
-                <a href="/" class="text-decoration-none text-white brand-responsive">Katsute</a>
+                <a href="/" class="text-decoration-none text-body">Katsute</a>
             </div>
             {% comment %} navigation {% endcomment %}
             <ul class="nav me-lg-auto">
                 {% for link in site.data.nav.nav-links %}
                     <li>
-                        <a href="{{ link.link }}" class="text-white">{{ link.name }}</a>
+                        <a href="{{ link.link }}" class="text-body">{{ link.name }}</a>
                     </li>
                 {% endfor %}
             </ul>
             {% comment %} links {% endcomment %}
-            <ul class="nav ms-lg-auto">
-                <li class="mb-0">
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#github-modal" class="text-white">
-                        <i class="fab fa-github"></i>
-                    </button>
-                    {% capture footer %}
-                        View <a href="https://github.com/KatsuteDev/katsutedev.github.io" target="_blank" class="text-decoration-none">site source</a>.
-                    {% endcapture %}
-                    {% include _layout/modal.liquid
-                        id="github-modal"
-                        title="GitHub"
-                        links=site.data.nav.github-modal
-                        footer=footer
-                    %}
-                </li>
-                <li class="mb-0">
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#sponsor-modal" class="text-white">
-                        <i class="fab fa-patreon"></i>
-                    </button>
-                    {% capture footer %}
-                        Sponsors help keep open source development free.
-                    {% endcapture %}
-                    {% include _layout/modal.liquid
-                        id="sponsor-modal"
-                        title="Sponsor"
-                        links=site.data.nav.sponsor-modal
-                        footer=footer
-                    %}
-                </li>
-                <li class="mb-0">
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#social-modal" class="text-white">
-                        <i class="fab fa-linkedin"></i>
-                    </button>
-                    {% capture footer %}
-                        Business communications only, GitHub users please open issues in their respective repositories.
-                    {% endcapture %}
-                    {% include _layout/modal.liquid
-                        id="social-modal"
-                        title="Social Links"
-                        links=site.data.nav.social-modal
-                        footer=footer
-                    %}
-                </li>
+            <ul class="nav ms-md-auto">
+                {% include _layout/modal-button.liquid
+                    target = "#github-modal"
+                    icon = "fab fa-github"
+                %}
+                {% include _layout/modal-button.liquid
+                    target = "#sponsor-modal"
+                    icon = "fab fa-patreon"
+                %}
+                {% include _layout/modal-button.liquid
+                    target = "#social-modal"
+                    icon = "fab fa-linkedin"
+                %}
             </ul>
         </div>
     </div>

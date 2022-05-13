@@ -14,7 +14,7 @@ layout: default-container
         <div class="sidebar between-y-2 mb-2 mb-sm-0 me-0 me-sm-2">
             {% comment %} Side Nav {% endcomment %}
             <div class="bg-white round-3 p-4">
-                <h6 class="border-bottom mx-3 mb-0">Contents</h6>
+                <h6 class="mb-0">Contents</h6>
                 <ul class="nav flex-column">
                     <li class="nav-item">
                         <a href="#readme" class="nav-link active">Overview</a>
@@ -41,11 +41,18 @@ layout: default-container
                 </ul>
             </div>
             {% comment %} Sponsor {% endcomment %}
-            <div class="bg-white round-3 p-4 small">
-                <h6>Sponsor</h6>
+            <div class="bg-white cursor-pointer round-3 p-4 small" data-bs-toggle="modal" data-bs-target="#sponsor-modal">
+                <h6><i class="fa-solid fa-dollar-sign fa-fw me-1"></i>Sponsor</h6>
                 <p class="d-inline">All projects are developed and released for free, please consider</p>
-                <p class="d-inline cursor-pointer text-primary mx-1" data-bs-toggle="modal" data-bs-target="#sponsor-modal">sponsoring</p>
-                <p class="d-inline">this project</p>
+                <p class="d-inline text-primary mx-1">sponsoring</p>
+                <p class="d-inline">this project.</p>
+            </div>
+            {% comment %} Hiring {% endcomment %}
+            <div class="bg-white cursor-pointer round-3 p-4 small" data-bs-toggle="modal" data-bs-target="#social-modal">
+                <h6><i class="fa-solid fa-briefcase fa-fw me-1"></i>Hiring</h6>
+                <p class="d-inline">I am currently looking for work, please consider</p>
+                <p class="d-inline text-primary mx-1">hiring</p>
+                <p class="d-inline">me.</p>
             </div>
         </div>
     </div>
