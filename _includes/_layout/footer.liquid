@@ -3,19 +3,19 @@
         <div class="container-lg py-3">
             <div class="content row row-cols-1 row-cols-sm-4 flex-justify-center">
                 <div class="col mb-2">
-                    {% include _layout/nav-links.liquid
+                    {% include _layout/footer-links.liquid
                         title = "Navigation"
                         links = site.data.nav.nav-links
                     %}
                 </div>
                 <div class="col mb-2">
-                    {% include _layout/nav-links.liquid
+                    {% include _layout/footer-links.liquid
                         title = "Social"
                         links = site.data.nav.social-links
                     %}
                 </div>
                 <div class="col mb-2">
-                    {% include _layout/nav-links.liquid
+                    {% include _layout/footer-links.liquid
                         title = "Hiring"
                         links = site.data.nav.hiring-links
                     %}
@@ -36,7 +36,7 @@
                             icon = "fab fa-patreon"
                         %}
                         {% include _layout/modal-button.liquid
-                            target = "#social-modal"
+                            target = "#hiring-modal"
                             icon = "fab fa-linkedin"
                         %}
                     </ul>

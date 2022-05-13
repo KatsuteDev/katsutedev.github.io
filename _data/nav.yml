@@ -41,13 +41,10 @@ sponsor-modal:
     icon: fab fa-paypal
     link: https://paypal.me/katsutedev
 
-social-modal:
+hiring-modal:
   - name: keith@katsute.dev (Business Email)
     icon: far fa-envelope
     link: 'mailto:keith@katsute.dev'
-  - name: Katsute (GitHub)
-    icon: fab fa-github
-    link: https://github.com/Katsute
   - name: Keith Chiu (LinkedIn)
     icon: fab fa-linkedin-in
     link: https://www.linkedin.com/in/keith-chiu

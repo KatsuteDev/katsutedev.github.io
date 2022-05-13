@@ -49,6 +49,8 @@
 
         td, th { @extend .px-2, .py-1; }
 
+        tbody { @extend .border-top-0; }
+
         td code { // prevent code blocks from being broken
 
             @extend .text-nowrap;
@@ -71,6 +73,13 @@
 
     ol, ul { // spacing below lists
 
+        @extend .mb-3;
+
+    }
+
+    img {
+
+        @extend .round-2;
         @extend .mb-3;
 
     }

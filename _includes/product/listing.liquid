@@ -2,7 +2,7 @@
 {% capture type %}{% if r.type != "project" %}product{% else %}project{% endif %}{% endcapture %}
 
 <div class="col">
-    <div class="card shadow h-100">
+    <div class="card border-0 round-3 h-100">
         {% comment %} thumbnail {% endcomment %}
         {% unless include.nothumbnail %}
         <img src="/{{ type }}/{{ slug }}/thumbnail.png" class="card-img-top" onerror="this.style.display='none'">
