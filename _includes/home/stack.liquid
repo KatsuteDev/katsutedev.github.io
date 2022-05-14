@@ -9,7 +9,7 @@ Stack
             {% for t in include.stack %}
                 <li class="list-group-item border-bottom-1 border-0 d-flex p-3">
                     {% assign tech = site.data.tech.tech[t] %}
-                    {% include _component/icon.liquid size=30 icon=tech.icon notooltip=true %}
+                    {% include _component/icon.liquid size=30 icon=tech.icon no-tooltip=true %}
                     <div class="ps-2">
                         <h5>{{ tech.title }}</h4>
                         <p class="mb-0">{{ tech.body }}</p>

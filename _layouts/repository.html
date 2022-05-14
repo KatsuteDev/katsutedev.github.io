@@ -108,7 +108,7 @@ layout: default-container
                             <div class="between-y-2">
                                 {% for t in repo.with %}
                                     <div class="d-flex">
-                                        {% include _component/icon.liquid size=25 icon=t notooltip=true %}
+                                        {% include _component/icon.liquid size=25 icon=t no-tooltip=true %}
                                         <div class="d-flex ps-2">
                                             <p class="small mb-0 align-self-center">{{ site.data.icons[t] }}</p>
                                         </div>
@@ -122,7 +122,7 @@ layout: default-container
                             <div class="between-y-2">
                                 {% for t in repo.using %}
                                     <div class="d-flex">
-                                        {% include _component/icon.liquid size=25 icon=t notooltip=true %}
+                                        {% include _component/icon.liquid size=25 icon=t no-tooltip=true %}
                                         <div class="d-flex ps-2">
                                             <p class="small mb-0 align-self-center">{{ site.data.icons[t] }}</p>
                                         </div>
@@ -136,7 +136,7 @@ layout: default-container
                             <div class="between-y-2">
                                 {% for t in repo.for %}
                                     <div class="d-flex">
-                                        {% include _component/icon.liquid size=25 icon=t notooltip=true %}
+                                        {% include _component/icon.liquid size=25 icon=t no-tooltip=true %}
                                         <div class="d-flex ps-2">
                                             <p class="small mb-0 align-self-center">{{ site.data.icons[t] }}</p>
                                         </div>

@@ -46,6 +46,21 @@ $sizing: (
 
     }
 
+    .round-left-#{$prefix} {
+
+        border-top-left-radius: $size;
+        border-bottom-left-radius: $size;
+
+    }
+
+    .round-right-#{$prefix} {
+
+        border-top-right-radius: $size;
+        border-bottom-right-radius: $size;
+
+    }
+
+
     .between-y-#{$prefix} > *:not(:last-child) {
 
         margin-bottom: $size;

@@ -64,7 +64,7 @@ list:
                             {% comment %} item {% endcomment %}
                             {% for r in site.data.repos %}
                                 {% if r.type != cat.type %}{% continue %}{% endif %}
-                                {% include product/listing.liquid r=r nothumbnail=true %}
+                                {% include product/listing.liquid r=r no-thumbnail=true %}
                             {% endfor %}
                         </div>
                     </div>

@@ -24,7 +24,7 @@
 
     }
 
-    code { @extend .text-danger; } // code
+    :not(a):not(.highlight) > code { @extend .text-danger; } // code
 
     a code { @extend .text-primary; } // code links
 
@@ -40,10 +40,12 @@
         @extend .table-sm;
         @extend .table-bordered;
 
-        overflow-x: scroll;
+        overflow-x: auto;
+
+        @extend .d-block;
 
         width: max-content;
-        max-width: 100%;
+        max-width: 100% !important;
 
         table-layout: fixed;
 
@@ -63,7 +65,12 @@
 
     img {
 
-        @extend .round-2;
+        &:not([src$=".yml/badge.svg"]):not([src^="https://img.shields.io/"]):not([alt*="License"]) {
+
+             @extend .round-2;
+
+        }
+
         @extend .mb-2;
 
         // dangling table

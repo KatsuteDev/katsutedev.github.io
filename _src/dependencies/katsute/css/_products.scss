@@ -2,56 +2,24 @@
 
 .\@products {
 
-    .product-types {
+    .background {
 
-        > div {
+        i, svg {
 
-            &:not(:first-child) {
-
-                @extend .pt-4;
-
-            }
-
-            > h2 {
-
-                @extend .border-bottom;
-                @extend .mb-3;
-
-                > i, > svg {
-
-                    @extend .fa-fw;
-                    @extend .me-1;
-
-                }
-
-            }
+            filter: drop-shadow(2px 2px 5px black);
 
         }
+
+        text-shadow: 2px 2px 5px black;
 
     }
 
-    .product-listings {
+    .product-card {
 
-        > * {
+        @include media-breakpoint-down(sm) {
 
-            @extend .mb-3;
-
-        }
-
-
-        .card-subtitle {
-
-            > span {
-
-                @extend .pt-1;
-
-            }
-
-            > span, > img {
-
-                @extend .pb-1;
-
-            }
+                padding-left: 0;
+                padding-right: 0;
 
         }
 
