@@ -1,37 +1,47 @@
 {% comment %}
 Copyright (C) 2022 Katsute <https://github.com/Katsute>
 {% endcomment %}
-<header class="@nav bg-white py-3">
+<header class="@nav py-3">
     <div class="container-lg">
         <div class="flex-wrap justify-content-lg-start
             flex-center-center">
-            {% comment %} logo {% endcomment %}
-            <div class="flex-align-center me-0 me-lg-2">
-                <a href="/" class="text-decoration-none text-body">Katsute</a>
+            {% comment %} left {% endcomment %}
+            <div class="mb-2 mb-md-0 col-12 col-md-auto">
+                <div class="px-3 py-2 bg-white round-2 flex-justify-center">
+                    {% comment %} logo {% endcomment %}
+                    <div class="flex-align-center me-0 me-lg-2">
+                        <h5 class="mb-0">
+                            <a href="/" class="text-decoration-none text-body">Katsute</a>
+                        </h5>
+                    </div>
+                    {% comment %} navigation {% endcomment %}
+                    <ul class="nav me-lg-auto ms-2 between-x-2 flex-align-center">
+                        {% for link in site.data.nav.nav-links %}
+                            <li>
+                                <a href="{{ link.link }}" class="text-body text-decoration-none">{{ link.name }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
             </div>
-            {% comment %} navigation {% endcomment %}
-            <ul class="nav me-lg-auto">
-                {% for link in site.data.nav.nav-links %}
-                    <li>
-                        <a href="{{ link.link }}" class="text-body">{{ link.name }}</a>
-                    </li>
-                {% endfor %}
-            </ul>
-            {% comment %} links {% endcomment %}
-            <ul class="nav ms-md-auto">
-                {% include _layout/modal-button.liquid
-                    target = "#github-modal"
-                    icon = "fab fa-github"
-                %}
-                {% include _layout/modal-button.liquid
-                    target = "#sponsor-modal"
-                    icon = "fab fa-patreon"
-                %}
-                {% include _layout/modal-button.liquid
-                    target = "#hiring-modal"
-                    icon = "fab fa-linkedin"
-                %}
-            </ul>
+            {% comment %} right {% endcomment %}
+            <div class="ms-md-auto p-2 bg-white round-2">
+                {% comment %} links {% endcomment %}
+                <ul class="list-unstyled d-flex mb-0">
+                    {% include _layout/modal-button.liquid
+                        target = "#github-modal"
+                        icon = "fab fa-github"
+                    %}
+                    {% include _layout/modal-button.liquid
+                        target = "#sponsor-modal"
+                        icon = "fab fa-patreon"
+                    %}
+                    {% include _layout/modal-button.liquid
+                        target = "#hiring-modal"
+                        icon = "fab fa-linkedin"
+                    %}
+                </ul>
+            </div>
         </div>
     </div>
 </header>

@@ -12,7 +12,7 @@ layout: compress
 
         {% include _layout/modals.liquid %}
         {% include _layout/navbar.liquid %}
-        <div>
+        <div {% if page["404"] %}class="h-100"{% endif %}>
             {{ content }}
         </div>
         {% include _layout/footer.liquid %}
