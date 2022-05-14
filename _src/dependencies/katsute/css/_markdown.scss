@@ -1,11 +1,8 @@
+// Copyright (C) 2022 Katsute <https://github.com/Katsute>
+
 .markdown {
 
-    #{$heading-selector} {
-
-        @extend .pt-3;
-        @extend .my-3;
-
-    }
+    #{$heading-selector} { @extend .my-3; }
 
     h1, h2 {
 
@@ -16,19 +13,24 @@
 
     blockquote {
 
-        @extend .ps-2;
+        @extend .p-2;
 
-        border-left: .25em solid lightgray;
+        border-left: .25rem solid $gray-300;
+        background-color: $gray-100;
 
         @extend .text-muted;
 
+        p { @extend .mb-0; }
+
     }
 
-    code { @extend .text-danger; }
+    code { @extend .text-danger; } // code
 
-    a code { @extend .text-primary; }
+    a code { @extend .text-primary; } // code links
 
-    a { @extend .text-decoration-none; }
+    a { @extend .text-decoration-none; } // links
+
+    p > br:first-child { @extend .d-none; } // empty p
 
     table {
 
@@ -51,48 +53,28 @@
 
         tbody { @extend .border-top-0; }
 
-        td code { // prevent code blocks from being broken
-
-            @extend .text-nowrap;
-
-        }
+        td code { @extend .text-nowrap; } // prevent code blocks from being broken
 
     }
 
-    kbd { // prevent  keystrokes from being broken
+    kbd { @extend .text-nowrap; } // prevent keystrokes from being broken
 
-        @extend .text-nowrap;
-
-    }
-
-    p + { // remove spacing between list
-
-        ol, ul { margin-top: -1rem; }
-
-    }
-
-    ol, ul { // spacing below lists
-
-        @extend .mb-3;
-
-    }
+    ol, ul {  @extend .mb-3; } // spacing below lists
 
     img {
 
         @extend .round-2;
-        @extend .mb-3;
+        @extend .mb-2;
 
-    }
+        // dangling table
+        &[alt="GitHub Copilot"] + p + table { @extend .d-none; }
 
-    img[src$="#gh-dark-mode-only"] { // hide dark themed images
+        // dark mode images
+        &[src$="#gh-dark-mode-only"] { @extend .d-none; }
 
-        @extend .d-none;
-
-    }
-
-    img[align] { // float left images
-
-        @extend .me-2;
+        // alignment
+        &[align="left"] { @extend .me-2; }
+        &[align="right"] { @extend .ms-2; }
 
     }
 

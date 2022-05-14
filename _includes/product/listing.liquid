@@ -1,3 +1,8 @@
+{% comment %}
+Copyright (C) 2022 Katsute <https://github.com/Katsute>
+
+Product card
+{% endcomment %}
 {% capture slug %}{{ r.name | slugify: "latin" }}{% endcapture %}
 {% capture type %}{% if r.type != "project" %}product{% else %}project{% endif %}{% endcapture %}
 

@@ -1,21 +1,3 @@
-.\@nav{
+// Copyright (C) 2022 Katsute <https://github.com/Katsute>
 
-    @extend .bg-dark;
-
-    .brand-responsive {
-
-        font-size: 1.5rem;
-
-    }
-
-    @include media-breakpoint-up(lg){
-
-        .brand-responsive {
-
-            font-size: unset;
-
-        }
-
-    }
-
-}
+.\@nav{ }

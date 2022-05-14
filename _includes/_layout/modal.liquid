@@ -1,3 +1,8 @@
+{% comment %}
+Copyright (C) 2022 Katsute <https://github.com/Katsute>
+
+All site modals
+{% endcomment %}
 <div id="{{ include.id }}" class="modal fade">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content border-0 round-3 p-4">
@@ -12,6 +17,7 @@
                             <div class="d-inline-block">
                                 <a
                                     href="{{ link.link }}"
+                                    target="_blank"
                                     class="text-decoration-none"><i class="{{ link.icon }} fa-fw fa-lg me-1 text-body"></i>{{ link.name }}</a>
                             </div>
                         </li>

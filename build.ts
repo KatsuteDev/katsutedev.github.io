@@ -1,4 +1,4 @@
-// Copyright (C) Katsute 2022
+// Copyright (C) 2022 Katsute <https://github.com/Katsute>
 
 import { https } from 'follow-redirects';
 import fs from "fs";

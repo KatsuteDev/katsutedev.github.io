@@ -1,5 +1,6 @@
 ---
 ---
+// Copyright (C) 2022 Katsute <https://github.com/Katsute>
 
 @import "bootstrap", "fontawesome";
 @import "attributes", "markdown";
@@ -14,11 +15,6 @@ body{
 }
 
 // ----- global overrides ---------------
-
-@font-face {
-    font-family: "Fira Sans";
-    src: url("/dependencies/node/google/webfonts/fira-sans-all-400-normal.woff");
-}
 
 pre, code {
 
