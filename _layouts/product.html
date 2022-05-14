@@ -4,11 +4,11 @@ layout: default-container
 ---
 <div class="@products mb-3">
     {% comment %} header {% endcomment %}
-    <div class="p-4 flex-center-center col-12">
-        <div class="text-center text-white background">
+    <div class="py-4 flex-center-center">
+        <div class="text-center text-white text-shadow">
             <i class="{{ page.image }} fa-fw fa-3x mb-4"></i>
             <h1 class="display-5 fw-bold">{{ page.name }}</h1>
-            <p class="lead mb-0">{{ page.desc }}</p>
+            <p class="lead fw-bold mb-0">{{ page.desc }}</p>
         </div>
     </div>
     {% comment %} content {% endcomment %}
@@ -16,7 +16,7 @@ layout: default-container
         {% for cat in page.list %}
             {% comment %} category {% endcomment %}
             <div id="{{ cat.name | slugify }}" class="bg-white round-3 p-4">
-                <h2 class="border-bottom pb-1 mb-3"><i class="{{ cat.icon }} fa-fw me-1"></i>{{ cat.name }}</h2>
+                <h2 class="border-bottom pb-1 mb-3 text-center-responsive"><i class="{{ cat.icon }} fa-fw me-1"></i>{{ cat.name }}</h2>
                 <div class="m-0 p-0
                     row row-cols-1 row-cols-md-2 row-cols-xxl-3">
                     {% comment %} item {% endcomment %}

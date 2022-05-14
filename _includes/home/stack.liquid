@@ -5,9 +5,9 @@ Stack
 {% endcomment %}
 <div class="col px-0">
     <div class="m-2">
-        <ul class="border-0 round-3 list-group">
+        <ul class="list-group round-3">
             {% for t in include.stack %}
-                <li class="list-group-item border-bottom-1 border-0 d-flex p-3">
+                <li class="list-group-item d-flex p-3">
                     {% assign tech = site.data.tech.tech[t] %}
                     {% include _component/icon.liquid size=30 icon=tech.icon no-tooltip=true %}
                     <div class="ps-2">

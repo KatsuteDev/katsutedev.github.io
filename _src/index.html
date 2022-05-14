@@ -1,9 +1,6 @@
 ---
+# Copyright (C) 2022 Katsute <https://github.com/Katsute>
 title: Home
-body: |
-    # Welcome to my site
-
-    I am a student who develops open source software and libraries.
 list:
   - name: Academic Projects
     icon: fas fa-folder
@@ -19,56 +16,60 @@ list:
     type: extension
 ---
 <div class="@home">
-    <div id="introduction" class="section">
-        <div class="text-center py-4 my-4">
-            {{ page.body | markdownify }}
+    <div class="py-4 my-4 flex-center-center">
+        <div class="text-center text-white text-shadow">
+            <h1 class="display-5 fw-bold">Welcome to my site
+            </h1>
+            <p class="lead fw-bold mb-0">I am a student who develops open source software and libraries.</p>
         </div>
     </div>
+    <div class="between-y-2">
 {% comment %} tech stack =========================== {% endcomment %}
-    <div id="technologies" class="section">
-        {% comment %} header {% endcomment %}
-        <div>
-            <h2 class="heading"><i class="fas fa-laptop-code"></i></i>Technologies and Tools</h2>
-        </div>
-        {% comment %} stacks {% endcomment %}
-        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
-            {% for stack in site.data.tech.stack %}
-                {% include home/stack.liquid stack=stack %}
-            {% endfor %}
-        </div>
-    </div>
-{% comment %} education ============================ {% endcomment %}
-    <div id="education" class="section">
-        <div>
-            <h2 class="heading"><i class="fas fa-graduation-cap"></i>Education</h2>
-        </div>
-        <div class="row row-cols-1">
-            {% for edu in site.data.edu %}
-                {% include home/edu.liquid edu=edu %}
-            {% endfor %}
-        </div>
-    </div>
-{% comment %} projects ============================= {% endcomment %}
-    <div id="projects" class="section">
-        <div>
-            <h2 class="heading"><i class="far fa-file-code"></i>Projects</h2>
-        </div>
-        <div class="@products mb-3">
-            <div class="pt-2">
-                {% for cat in page.list %}
-                    {% comment %} category {% endcomment %}
-                    <div id="{{ cat.name | slugify }}">
-                        <h6 class="h4 m-3"><i class="{{ cat.icon }} me-1"></i>{{ cat.name }}</h6>
-                        <div class="product-listings m-0 p-0
-                            row row-cols-1 row-cols-md-2 row-cols-xl-3">
-                            {% comment %} item {% endcomment %}
-                            {% for r in site.data.repos %}
-                                {% if r.type != cat.type %}{% continue %}{% endif %}
-                                {% include product/listing.liquid r=r no-thumbnail=true %}
-                            {% endfor %}
-                        </div>
-                    </div>
+        <div id="technologies" class="bg-white round-3 p-4">
+            {% comment %} header {% endcomment %}
+            <div>
+                <h3 class="border-bottom text-center-responsive pb-1 mb-3"><i class="fas fa-laptop-code fa-fw me-2"></i></i>Technologies and Tools</h2>
+            </div>
+            {% comment %} stacks {% endcomment %}
+            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
+                {% for stack in site.data.tech.stack %}
+                    {% include home/stack.liquid stack=stack %}
                 {% endfor %}
+            </div>
+        </div>
+{% comment %} education ============================ {% endcomment %}
+        <div id="education" class="bg-white round-3 p-4">
+            <div>
+                <h3 class="border-bottom text-center-responsive pb-1 mb-3"><i class="fas fa-graduation-cap fa-fw me-2"></i>Education</h3>
+            </div>
+            <div class="row row-cols-1">
+                {% for edu in site.data.edu %}
+                    {% include home/edu.liquid edu=edu %}
+                {% endfor %}
+            </div>
+        </div>
+{% comment %} projects ============================= {% endcomment %}
+        <div id="projects" class="bg-white round-3 p-4">
+            <div>
+                <h3 class="border-bottom text-center-responsive pb-1 mb-3"><i class="far fa-file-code fa-fw me-2"></i>Projects</h3>
+            </div>
+            <div class="@products mb-3">
+                <div class="between-y-2">
+                    {% for cat in page.list %}
+                        {% comment %} category {% endcomment %}
+                        <div id="{{ cat.name | slugify }}">
+                            <h4 class="pb-1 mb-3"><i class="{{ cat.icon }} fa-fw me-1"></i>{{ cat.name }}</h6>
+                            <div class="product-listings m-0 p-0
+                                row row-cols-1 row-cols-md-2 row-cols-xl-3">
+                                {% comment %} item {% endcomment %}
+                                {% for r in site.data.repos %}
+                                    {% if r.type != cat.type %}{% continue %}{% endif %}
+                                    {% include product/listing.liquid r=r no-thumbnail=true %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>
