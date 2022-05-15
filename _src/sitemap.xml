@@ -4,13 +4,14 @@ paths:
   - ""
   - product
   - products
-  - product/chrome-can-you-not
   - product/desktop-flick
   - product/github-red-issues
   - product/jcore
   - product/mal4j
+  - product/onemta
   - product/rexedia
   - product/simplehttpserver
+  - product/stop-chrome
   - project
   - projects
   - project/mr-flour
