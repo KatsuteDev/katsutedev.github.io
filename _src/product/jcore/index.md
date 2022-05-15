@@ -1,5 +1,5 @@
 ---
-layout: repo
+layout: repository
 r: JCore
 title: JCore
 ---

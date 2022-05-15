@@ -1,16 +1,26 @@
 ---
 ---
+// Copyright (C) 2022 Katsute <https://github.com/Katsute>
 
 @import "bootstrap", "fontawesome";
-@import "vars", "markdown", "component", "attr";
-@import "nav", "home", "products";
+@import "attributes", "markdown";
+@import "nav", "footer";
+@import "home", "products", "repository";
+
+// temp!
+
+body{
+    // #f5e256 0%, #dc803e 33%, #d44073 66%, #454690 100%
+    background-image: url("/dependencies/katsute/assets/background.png"),
+        linear-gradient(135deg,
+            rgb(63, 218, 216) 0%,
+            rgb(47, 201, 226) 33%,
+            rgb(28, 127, 238) 66%,
+            rgb(95, 21, 242) 100%);
+    background-repeat: repeat;
+}
 
 // ----- global overrides ---------------
-
-@font-face {
-    font-family: "Fira Sans";
-    src: url("/dependencies/node/google/webfonts/fira-sans-all-400-normal.woff");
-}
 
 pre, code {
 
@@ -24,7 +34,7 @@ pre, code {
 
 * {
 
-    font-family: "Fira Sans", "Open Sans", Arial, Helvetica, sans-serif;
+    font-family: "Segoe UI Adjusted", "Segoe UI", "Open Sans", Helvetica, Arial, sans-serif, "Segoe UI Emoji";
 
     outline: none;
     scroll-behavior: smooth;
@@ -112,12 +122,5 @@ img {
         z-index: 2;
 
     }
-
-}
-
-body {
-
-    @extend .d-flex;
-    @extend .flex-column;
 
 }

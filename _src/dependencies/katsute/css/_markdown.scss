@@ -1,15 +1,36 @@
+// Copyright (C) 2022 Katsute <https://github.com/Katsute>
+
 .markdown {
 
-    h {
+    #{$heading-selector} { @extend .my-3; }
 
-        &1, &2, &3, &4, &5, &6 {
+    h1, h2 {
 
-            @extend .pt-3;
-            @extend .my-3;
-
-        }
+        @extend .pb-1;
+        @extend .border-bottom;
 
     }
+
+    blockquote {
+
+        @extend .p-2;
+
+        border-left: .25rem solid $gray-300;
+        background-color: $gray-100;
+
+        @extend .text-muted;
+
+        p { @extend .mb-0; }
+
+    }
+
+    :not(a):not(.highlight) > code { @extend .text-danger; } // code
+
+    a code { @extend .text-primary; } // code links
+
+    a { @extend .text-decoration-none; } // links
+
+    p > br:first-child { @extend .d-none; } // empty p
 
     table {
 
@@ -19,83 +40,48 @@
         @extend .table-sm;
         @extend .table-bordered;
 
-        min-width: 500px;
+        overflow-x: auto;
 
-        td code { // prevent code blocks from being broken
+        @extend .d-block;
 
-            @extend .text-nowrap;
+        width: max-content;
+        max-width: 100% !important;
+
+        table-layout: fixed;
+
+        th { @extend .text-center; }
+
+        td, th { @extend .px-2, .py-1; }
+
+        tbody { @extend .border-top-0; }
+
+        td code { @extend .text-nowrap; } // prevent code blocks from being broken
+
+    }
+
+    kbd { @extend .text-nowrap; } // prevent keystrokes from being broken
+
+    ol, ul {  @extend .mb-3; } // spacing below lists
+
+    img {
+
+        &:not([src$=".yml/badge.svg"]):not([src^="https://img.shields.io/"]):not([alt*="License"]) {
+
+             @extend .round-2;
 
         }
 
-    }
+        @extend .mb-2;
 
-    kbd { // prevent  keystrokes from being broken
+        // dangling table
+        &[alt="GitHub Copilot"] + p + table { @extend .d-none; }
 
-        @extend .text-nowrap;
+        // dark mode images
+        &[src$="#gh-dark-mode-only"] { @extend .d-none; }
 
-    }
-
-    p + { // remove spacing between list
-
-        ol, ul {
-
-            margin-top: -1rem;
-
-        }
-
-    }
-
-    ol, ul { // spacing below lists
-
-        @extend .mb-3;
-
-    }
-
-    img[src$="#gh-dark-mode-only"] {
-
-        @extend .d-none;
-
-    }
-
-}
-
-.markdown-toc {
-
-    > div {
-
-        @extend .position-sticky; // keep at top on scroll
-
-        top: 1rem;
-
-        @extend .w-100;
-
-        > ul {
-
-            @extend .my-2;
-
-        }
-
-    }
-
-    ul {
-
-        @extend .list-unstyled;
-
-        @extend .ps-0;
-
-    }
-
-    li > ul {
-
-        @extend .ps-3;
-
-    }
-
-    a {
-
-        @extend .text-decoration-none;
-
-        @extend .small;
+        // alignment
+        &[align="left"] { @extend .me-2; }
+        &[align="right"] { @extend .ms-2; }
 
     }
 

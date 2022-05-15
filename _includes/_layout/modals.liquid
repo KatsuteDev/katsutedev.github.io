@@ -1,0 +1,30 @@
+{% comment %}
+Copyright (C) 2022 Katsute <https://github.com/Katsute>
+{% endcomment %}
+{% capture footer %}
+    View <a href="https://github.com/KatsuteDev/katsutedev.github.io" target="_blank" class="text-decoration-none">site source</a>.
+{% endcapture %}
+{% include _layout/modal.liquid
+    id="github-modal"
+    title="GitHub"
+    links=site.data.nav.github-modal
+    footer=footer
+%}
+{% capture footer %}
+    Sponsors help keep open source development free.
+{% endcapture %}
+{% include _layout/modal.liquid
+    id="sponsor-modal"
+    title="Sponsor"
+    links=site.data.nav.sponsor-modal
+    footer=footer
+%}
+{% capture footer %}
+    Business communications only, GitHub users please open issues in their respective repositories.
+{% endcapture %}
+{% include _layout/modal.liquid
+    id="hiring-modal"
+    title="Hiring"
+    links=site.data.nav.hiring-modal
+    footer=footer
+%}

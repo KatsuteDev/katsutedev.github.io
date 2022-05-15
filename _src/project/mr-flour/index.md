@@ -1,5 +1,5 @@
 ---
-layout: repo
+layout: repository
 r: Mr. Flour
 title: Mr. Flour
 ---
@@ -10,11 +10,11 @@ title: Mr. Flour
     <i>For privacy reasons source code is not publicly available.</i>
 </div>
 
-## Overview
+### Overview
 
-This was the final group project as part of the Computer Programming and Web Design track at Bayside High School.
+As part of the Computer Programming and Web Design program at Bayside High School, students in teams developed a capstone project based on the technologies learned in the program. This capstone project was presented at Queens Community College and given 1st place overall.
 
-## Screenshots
+### Screenshots
 
 ![homepage](1.png)
 ![search](2.png)

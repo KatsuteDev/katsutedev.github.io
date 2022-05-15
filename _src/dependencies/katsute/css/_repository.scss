@@ -1,0 +1,53 @@
+// Copyright (C) 2022 Katsute <https://github.com/Katsute>
+
+.\@repository {
+
+    .sidebar {
+
+        top: .5rem;
+
+        @extend .position-sticky;
+
+    }
+
+    .content {
+
+        article {
+
+            > div {
+
+                @extend .p-4;
+
+                &:not(:last-child) {
+
+                    @extend .border-bottom;
+
+                }
+
+            }
+
+            #details {
+
+                table {
+
+                    tr, th, td {
+
+                        @extend .border-0;
+
+                        @extend .p-1;
+
+                    }
+
+                    th { @extend .ps-0; }
+
+                    td { @extend .ps-2; }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}

@@ -1,28 +1,24 @@
+// Copyright (C) 2022 Katsute <https://github.com/Katsute>
+
 .\@home {
 
-    .section {
-
-        @extend .mt-4;
-
-    }
-
-    .heading {
-
-        @extend .h3;
-        @extend .border-bottom;
+    .text-shadow {
 
         i, svg {
 
-            @extend .fa-fw;
-            @extend .me-2;
+            filter: drop-shadow(2px 2px 5px black);
 
         }
 
-        text-align: center;
+        text-shadow: 2px 2px 5px black;
 
-        @include media-breakpoint-up(sm){
+    }
 
-            text-align: left;
+    .text-center-responsive {
+
+        @include media-breakpoint-down(sm) {
+
+            text-align: center;
 
         }
 

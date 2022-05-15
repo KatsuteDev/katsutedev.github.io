@@ -1,6 +1,11 @@
+{% comment %}
+Copyright (C) 2022 Katsute <https://github.com/Katsute>
+
+Icon asset with optional tooltip
+{% endcomment %}
 <img
     class="user-select-none" width="{{ include.size }}" height="{{ include.size }}"
     src="/dependencies/katsute/assets/{{ include.icon }}.svg"
-    {% unless include.notooltip %}data-bs-toggle="tooltip" data-bs-placement="top"{% endunless %}
+    {% unless include.no-tooltip %}data-bs-toggle="tooltip" data-bs-placement="top"{% endunless %}
     title="{{ site.data.icons[include.icon] }}"
 >

@@ -1,0 +1,32 @@
+{% comment %}
+Copyright (C) 2022 Katsute <https://github.com/Katsute>
+
+All site modals
+{% endcomment %}
+<div id="{{ include.id }}" class="modal fade">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content border-0 round-3 p-4">
+            <div class="modal-header border-0 p-0">
+                <h5 class="modal-title">{{ include.title }}</h5>
+                <button type="button" class="btn btn-link no-focus-outline p-0 text-body" data-bs-dismiss="modal"><i class="fas fa-times fa-fw fa-lg"></i></button>
+            </div>
+            <div class="modal-body p-0">
+                <ul class="flex-column list-unstyled between-y-2 my-4">
+                    {% for link in include.links %}
+                        <li>
+                            <div class="d-inline-block">
+                                <a
+                                    href="{{ link.link }}"
+                                    target="_blank"
+                                    class="text-decoration-none"><i class="{{ link.icon }} fa-fw fa-lg me-1 text-body"></i>{{ link.name }}</a>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="modal-footer border-0 p-0">
+                <small class="m-0">{{ include.footer }}</small>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,55 +1,35 @@
+// Copyright (C) 2022 Katsute <https://github.com/Katsute>
+
 .\@products {
 
-    .product-types {
+    .text-shadow {
 
-        > div {
+        i, svg {
 
-            &:not(:first-child) {
+            filter: drop-shadow(2px 2px 5px black);
 
-                @extend .pt-4;
+        }
 
-            }
+        text-shadow: 2px 2px 5px black;
 
-            > h2 {
+    }
 
-                @extend .border-bottom;
-                @extend .mb-3;
+    .text-center-responsive {
 
-                > i, > svg {
+        @include media-breakpoint-down(sm) {
 
-                    @extend .fa-fw;
-                    @extend .me-1;
-
-                }
-
-            }
+            text-align: center;
 
         }
 
     }
 
-    .product-listings {
+    .product-card {
 
-        > * {
+        @include media-breakpoint-down(sm) {
 
-            @extend .mb-3;
-
-        }
-
-
-        .card-subtitle {
-
-            > span {
-
-                @extend .pt-1;
-
-            }
-
-            > span, > img {
-
-                @extend .pb-1;
-
-            }
+            padding-left: 0;
+            padding-right: 0;
 
         }
 

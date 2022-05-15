@@ -1,4 +1,5 @@
 ---
+# Copyright (C) 2022 Katsute <https://github.com/Katsute>
 layout: compress
 ---
 <!DOCTYPE html>
@@ -6,13 +7,14 @@ layout: compress
     <head>
         {% include _html/head.liquid %}
     </head>
-    <body>
+    <body class="d-flex flex-column">
         <noscript>This site requires javascript.</noscript>
 
-        {% include _layout/nav.liquid %}
-        <main>
+        {% include _layout/modals.liquid %}
+        {% include _layout/navbar.liquid %}
+        <div {% if page["404"] %}class="h-100"{% endif %}>
             {{ content }}
-        </main>
+        </div>
         {% include _layout/footer.liquid %}
 
         {% include _html/foot.liquid %}

@@ -4,16 +4,16 @@ stack:
   - [javascript, typescript, nodejs, electronjs, vscode]
   - [github, github-actions]
   - [python, pycharm]
-  - [cpp]
+  - [cpp, clion]
 
 tech:
   java:
     title: Java
-    body: 5 years experience using Java for web, application, and library development.
+    body: 5 years experience using Java for CLI, library, software, and web development.
     icon: java
   maven:
     title: Maven
-    body: Experience using Maven for dependency management and library deployment.
+    body: Experience using Maven for dependency management and library deployment to Maven Central.
     icon: apachemaven
   intellij:
     title: IntelliJ
@@ -22,15 +22,15 @@ tech:
 
   html:
     title: HTML
-    body: 4 years exprience using HTML for site development.
+    body: 5 years exprience using HTML for site and software development.
     icon: html5
   css:
     title: CSS
-    body: 4 years experience using CSS for site development.
+    body: 5 years experience using CSS for site and software development.
     icon: css3
   bootstrap:
     title: Bootstrap
-    body: 4 years experience using Bootstrap for site development.
+    body: 5 years experience using Bootstrap for site development.
     icon: bootstrap
   jekyll:
     title: Jekyll & Liquid
@@ -39,19 +39,19 @@ tech:
 
   javascript:
     title: JavaScript
-    body: 3 years experience using JavaScript for site and application development.
+    body: 5 years experience using JavaScript for site and software development.
     icon: javascript
   typescript:
     title: TypeScript
-    body: 1 years experience using TypeScript for application development and repository management.
+    body: 1 years experience using TypeScript for software development and repository management.
     icon: typescript
   nodejs:
     title: NodeJS
-    body: 1 years experience using npm for dependency management.
+    body: 1 years experience using npm for project and dependency management.
     icon: nodejs
   electronjs:
     title: ElectronJS
-    body: 1 years experience using Electron for application development.
+    body: 1 years experience using Electron for software development.
     icon: electron
   vscode:
     title: Visual Studio Code
@@ -78,5 +78,9 @@ tech:
 
   cpp:
     title: C++
-    body: 6 months academic experience using C++.
+    body: 1 years academic experience using C++.
     icon: cplusplus
+  clion:
+    title: CLion
+    body: Experience with using the CLion IDE.
+    icon: clion

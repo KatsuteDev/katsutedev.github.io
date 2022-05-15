@@ -1,13 +1,22 @@
+{% comment %}
+Copyright (C) 2022 Katsute <https://github.com/Katsute>
+
+Stack
+{% endcomment %}
 <div class="col px-0">
     <div class="m-2">
-        <ul class="list-group shadow">
+        <ul class="list-group round-3 shadow">
             {% for t in include.stack %}
                 <li class="list-group-item d-flex p-3">
                     {% assign tech = site.data.tech.tech[t] %}
-                    {% include _component/icon.liquid size=30 icon=tech.icon notooltip=true %}
-                    <div class="ps-2">
-                        <h5>{{ tech.title }}</h4>
-                        <p class="mb-0">{{ tech.body }}</p>
+                    <div>
+                        <div class="flex-align-center">
+                            <div class="me-1">
+                                {% include _component/icon.liquid size=25 icon=tech.icon no-tooltip=true %}
+                            </div>
+                            <h5 class="my-auto">{{ tech.title }}</h5>
+                        </div>
+                        <p class="mt-1 mb-0">{{ tech.body }}</p>
                     </div>
                 </li>
             {% endfor %}

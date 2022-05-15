@@ -1,15 +1,20 @@
-<div class="col px-0">
+{% comment %}
+Copyright (C) 2022 Katsute <https://github.com/Katsute>
+
+Edu card
+{% endcomment %}
+<div class="col px-0 {% unless forloop.last %}border-bottom{% endunless %}">
     <div class="m-2">
-        <div class="card shadow">
-            <div class="card-body">
+        <div class="card border-0">
+            <div class="card-body p-0">
                 <div class="card-title">
-                    <h4 class="h3 d-inline-block me-1 mb-0">{{ include.edu.name }}</h4>
+                    <h4 class="h3 d-inline-block me-2 mb-0">{{ include.edu.name }}</h4>
                     <p class="h5 d-inline-block text-muted mb-0">{{ include.edu.start }} - {{ include.edu.end }}</p>
                 </div>
-                <h6 class="card-subtitle mt-1 fw-bold">{{ include.edu.deg }}</h6>
-                <p class="card-text">
+                <h6 class="card-subtitle my-2 fw-bold">{{ include.edu.deg }}</h6>
+                <div class="card-text markdown">
                     {{ include.edu.desc | markdownify }}
-                </p>
+                </div>
             </div>
         </div>
     </div>

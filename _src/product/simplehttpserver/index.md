@@ -1,5 +1,5 @@
 ---
-layout: repo
+layout: repository
 r: SimpleHttpServer
 title: simplehttpserver
 ---

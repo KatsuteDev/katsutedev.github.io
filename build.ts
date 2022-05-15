@@ -1,10 +1,21 @@
-// Copyright (C) Katsute 2022
+// Copyright (C) 2022 Katsute <https://github.com/Katsute>
 
 import { https } from 'follow-redirects';
 import fs from "fs";
 import path from "path";
 
 const jekyll_compress_version: string = "v3.1.0";
+
+const repos: string[] = [
+    "KatsuteDev/Desktop-Flick",
+    "KatsuteDev/JCore",
+    "KatsuteDev/Mal4J",
+    "KatsuteDev/OneMTA",
+    "KatsuteDev/Stop-Chrome",
+    "Katsute/GitHub-Red-Issues",
+    "Ktt-Development/rexedia",
+    "Ktt-Development/simplehttpserver"
+];
 
 class Main {
 
@@ -27,17 +38,6 @@ class Main {
             const readme: string = path.join(__dirname, "_includes", "readme");
 
             fs.existsSync(readme) || fs.mkdirSync(readme);
-
-            const repos: string[] = [
-                "KatsuteDev/Desktop-Flick",
-                "KatsuteDev/JCore",
-                "KatsuteDev/Mal4J",
-                "KatsuteDev/OneMTA",
-                "KatsuteDev/Stop-Chrome",
-                "Katsute/GitHub-Red-Issues",
-                "Ktt-Development/rexedia",
-                "Ktt-Development/simplehttpserver"
-            ];
 
             for(const repo of repos){
                 https.get(`https://raw.githubusercontent.com/${repo}/main/README.md`, (response) => {
