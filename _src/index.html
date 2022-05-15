@@ -1,6 +1,8 @@
 ---
 # Copyright (C) 2022 Katsute <https://github.com/Katsute>
 title: Home
+heading: Welcome to my site
+body: I'm a student and a full stack open source developer.
 list:
   - name: Academic Projects
     icon: fas fa-folder
@@ -18,9 +20,8 @@ list:
 <div class="@home">
     <div class="py-4 my-4 flex-center-center">
         <div class="text-center text-white text-shadow">
-            <h1 class="display-5 fw-bold">Welcome to my site
-            </h1>
-            <p class="lead fw-bold mb-0">I am a student who develops open source software and libraries.</p>
+            <h1 class="display-5 fw-bold">{{ page.heading }}</h1>
+            <p class="lead fw-bold mb-0">{{ page.body }}</p>
         </div>
     </div>
     <div class="between-y-2">

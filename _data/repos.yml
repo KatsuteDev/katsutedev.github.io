@@ -3,7 +3,10 @@
   git: KatsuteDev/Desktop-Flick
   readme: KatsuteDev-Desktop-Flick
   summary: Use your mobile device as a localized desktop keyboard.
-  description: todo
+  description: |
+    Influenced by this [april fools post](http://www.google.co.jp/ime/furikku/) from Google, there are no Japanese flick keyboards avaiable on the consumer market for PCs.
+    To fulfill this need I have create a desktop application that streams a mobile devices keyboard inputs to the desktop, allowing for the use of localized mobile keyboards on desktop without any additional peripherals.
+    While initially created for Japanese, it is functional for any mobile language keyboard.
   role: Developer & Maintainer
   start: March 2021
   end: January 2022
@@ -41,7 +44,9 @@
   git: KatsuteDev/Stop-Chrome
   readme: KatsuteDev-Stop-Chrome
   summary: Detect and stop chrome from running in the background.
-  description: todo
+  description: |
+    Originally created to resolve an issue where Google Chrome continues to run in the background when all windows are closed, even when background apps are turned off.
+    Also solves the issue of Google Chrome not launching because it's stuck running in the background for no good reason.
   role: Developer & Maintainer
   start: July 2021
   end: February 2022
@@ -77,7 +82,8 @@
   git: Ktt-Development/rexedia
   readme: Ktt-Development-rexedia
   summary: Metadata editing for bulk media files using regular expressions.
-  description: todo
+  description: |
+    A CLI that applies metadata and cover art to bulk media files.
   role: Developer & Maintainer
   start: July 2021
   end: February 2022
@@ -110,8 +116,10 @@
   type: library
   git: KatsuteDev/OneMTA
   readme: KatsuteDev-OneMTA
-  summary: The MTA Bus and Subway APIs all in one Java library
-  description: todo
+  summary: The MTA Bus and Subway APIs all in one Java library.
+  description: |
+    In order to create applications and systems dependent on the MTA API, this library was created to simply the usage of the [MTA Bus REST API](https://bustime.mta.info/wiki/Developers/SIRIIntro) and the [MTA Subway Realtime GTFS API](https://api.mta.info/#/landing).
+    Condenses these two poorly documented APIs into a singular, well documented Java library.
   role: Developer & Maintainer
   start: November 2021
   with:
@@ -154,7 +162,8 @@
   git: KatsuteDev/Mal4J
   readme: KatsuteDev-Mal4J
   summary: Java wrapper for the official MyAnimeList REST API.
-  description: todo
+  description: |
+    The first major library developed by me; created a zero-dependency Java/Android library for the [MyAnimeList REST API](https://myanimelist.net/apiconfig/references/api/v2).
   role: Developer & Maintainer
   start: November 2020
   with:
@@ -197,7 +206,8 @@
   git: KatsuteDev/JCore
   readme: KatsuteDev-JCore
   summary: Java library for GitHub workflow commands.
-  description: todo
+  description: |
+    Created to use the GitHub workflow commands in a Java environment.
   role: Developer & Maintainer
   start: June 2021
   with:
@@ -240,7 +250,8 @@
   git: Ktt-Development/simplehttpserver
   readme: Ktt-Development-simplehttpserver
   summary: A simplified implementation of the Java sun http server.
-  description: todo
+  description: |
+    Java library based on the backend of my [capstone project](/project/mr-flour). Simplifies the Java sun http server.
   role: Developer & Maintainer
   start: December 2019
   end: February 2021
@@ -282,7 +293,8 @@
   git: Katsute/GitHub-Red-Issues
   readme: Katsute-GitHub-Red-Issues
   summary: Revert closed GitHub issues from purple back to red.
-  description: todo
+  description: |
+    Created to revert the [GitHub issue color change](https://github.blog/changelog/2021-10-26-updates-to-our-issue-status-icons-and-colors/) that was forced onto users without any feature preview or user consent. Extension is compatible with Chromium based browsers and Firefox. Uses minimal JavaScript and mostly complex CSS selectors.
   role: Developer & Maintainer
   start: October 2021
   with:
@@ -319,7 +331,8 @@
 - name: Mr. Flour
   type: project
   summary: Social platform to share recipes and order baked products.
-  description: todo
+  description: |
+    As part of the Computer Programming and Web Design program at Bayside High School, students in teams developed a capstone project based on the technologies learned in the program. This capstone project was presented at Queens Community College and given 1st place overall.
   role: Backend Server Developer
   start: September 2018
   end: June 2019

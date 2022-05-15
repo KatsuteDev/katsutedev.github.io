@@ -3,34 +3,48 @@
   end: 2019
   deg: Advanced Regents Diploma in Computer Programming & Web Design with CTE endorsement
   desc: |
-    As part of the Computer Program students will learn to use web technologies HTML, CSS, JavaScript, Bootstrap, and REST APIs. Additionally students will also learn object oriented programming with Python and Java.
+    The Computer Programming & Web Design program involved using web-based technologies HTML, CSS, JavaScript, Bootstrap, REST APIs; and object-oriented-programming with Python and Java.
 
-    - Created games in Python, such as Flappy Bird.
-    - Created a site to check weather using the OpenWeatherMap and Google Map APIs.
-    - Created a site featuring a quiz to help students learn about history using Firebase, Google Maps API, and Bootstrap.
-    - Created a bouncing ball game in Java.
+    This program also invoved the completion of a [capstone project](/project/mr-flour), a full year team project involving all of the previous stated technologies and presented at Queens Community College.
 
-    As part of the 4 year program students, in groups, will also complete a [capstone project](/project/mr-flour) involving said technologies and present them at Queens Community College.
+    ##### Relevant Assignments:
+
+     - Created games in Python, such as Flappy Bird.
+     - Created a site to check weather using the OpenWeatherMap and Google Map APIs.
+     - Created a site featuring a quiz to help students learn about history using Firebase, Google Maps API, and Bootstrap.
+     - Created a bouncing ball game in Java.
+
+    ##### Awards and Acknowledgements:
+
+     - AP Scholar Award
+     - Excellence in Advanced Placement Computer Science
+     - 1st place team for capstone project
+
+    ##### Miscellaneous:
+
+     - Teaching Assistant (TA) for the Attendance Department (2019)
 
 - name: Baruch College
   start: 2019
   end: Present
   deg: BBA - Computer Information Systems (CIS)
   desc: |
-    CIS majors will take courses involving both technical and manegerial issues in the information technology (IT) sector of business. Particularly data analytics, software development, and IT strategy.
+    The BBA degree focuses on a wide variety of liberal arts as an educational foundation, and a business curriculum focusing on ethical and effective business operations.
 
-    Relevant Coursework:
+    The CIS major invoves both technical and manegerial courses in the information technology (IT) sector of business. Specifically data analytics, systems development, and IT strategy.
 
-    - [CIS 2300 - Programming and Computational Thinking (Python)](https://github.com/Katsute/Baruch-CIS-2300)
-    - [CIS 3100 - Object-Oriented Programming I (C++)](https://github.com/Katsute/Baruch-CIS-3100)
-    - [CIS 3120 - Programming for Analytics (Python)](https://github.com/Katsute/Baruch-CIS-3120)
-    - [CIS 3400 - Database Management Systems (SQL)](https://github.com/Katsute/Baruch-CIS-3400)
-    - [CIS 4100 - Object-Oriented Programming II (C++)](https://github.com/Katsute/Baruch-CIS-4100)
-    - [CIS 4170 - Data Visualization (Python)](https://github.com/Katsute/Baruch-CIS-4170)
+    ##### Relevant Coursework:
+
+     - [CIS 2300 - Programming and Computational Thinking (Python)](https://github.com/Katsute/Baruch-CIS-2300)
+     - [CIS 3100 - Object-Oriented Programming I (C++)](https://github.com/Katsute/Baruch-CIS-3100)
+     - [CIS 3120 - Programming for Analytics (Python)](https://github.com/Katsute/Baruch-CIS-3120)
+     - [CIS 3400 - Database Management Systems (SQL)](https://github.com/Katsute/Baruch-CIS-3400)
+     - [CIS 4100 - Object-Oriented Programming II (C++)](https://github.com/Katsute/Baruch-CIS-4100)
+     - [CIS 4170 - Data Visualization (Python)](https://github.com/Katsute/Baruch-CIS-4170)
 
     [View all coursework](https://github.com/Katsute?tab=repositories&q=baruch&sort=name)
 
     ##### Ascend Baruch
 
-    - *Member of the Technology Committee (Fall 2020)*
-    - *Member of the Technology Committee (Fall 2021)*
+     - *Member of the Technology Committee (Fall 2020)*
+     - *Member of the Technology Committee (Fall 2021)*

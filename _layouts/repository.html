@@ -178,12 +178,12 @@ layout: default-container
                     {% comment %} Summary {% endcomment %}
                     <div>
                         <h5 class="d-inline-block border-bottom pb-1">Summary</h5>
-                        <p class="mb-0">{{ repo.summary }}</p>
+                        <div class="mb-0 markdown">{{ repo.summary | markdownify }}</d>
                     </div>
                     {% comment %} Description {% endcomment %}
                     <div>
                         <h5 class="d-inline-block border-bottom pb-1">Description</h5>
-                        <p class="mb-0">{{ repo.description }}</p>
+                        <div class="mb-0 markdown">{{ repo.description | markdownify }}</div>
                     </div>
                 </div>
             </article>

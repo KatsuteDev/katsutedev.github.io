@@ -42,9 +42,9 @@ Product card
             </h6>
 
             {% comment %} body {% endcomment %}
-            <p class="card-text mt-2 mb-2">
-                {{ r.summary }}
-            </p>
+            <div class="card-text my-2 markdown">
+                {{ r.summary | markdownify }}
+            </div>
 
             {% comment %} link {% endcomment %}
             <div class="mt-auto">
