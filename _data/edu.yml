@@ -15,7 +15,7 @@
 - name: Baruch College
   start: 2019
   end: Present
-  deg: Computer Information Systems (CIS)
+  deg: BBA - Computer Information Systems (CIS)
   desc: |
     CIS majors will take courses involving both technical and manegerial issues in the information technology (IT) sector of business. Particularly data analytics, software development, and IT strategy.
 
@@ -25,6 +25,7 @@
     - [CIS 3100 - Object-Oriented Programming I (C++)](https://github.com/Katsute/Baruch-CIS-3100)
     - [CIS 3120 - Programming for Analytics (Python)](https://github.com/Katsute/Baruch-CIS-3120)
     - [CIS 3400 - Database Management Systems (SQL)](https://github.com/Katsute/Baruch-CIS-3400)
+    - [CIS 4100 - Object-Oriented Programming II (C++)](https://github.com/Katsute/Baruch-CIS-4100)
     - [CIS 4170 - Data Visualization (Python)](https://github.com/Katsute/Baruch-CIS-4170)
 
     [View all coursework](https://github.com/Katsute?tab=repositories&q=baruch&sort=name)

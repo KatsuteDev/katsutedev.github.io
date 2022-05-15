@@ -4,7 +4,7 @@ stack:
   - [javascript, typescript, nodejs, electronjs, vscode]
   - [github, github-actions]
   - [python, pycharm]
-  - [cpp]
+  - [cpp, clion]
 
 tech:
   java:
@@ -80,3 +80,7 @@ tech:
     title: C++
     body: 6 months academic experience using C++.
     icon: cplusplus
+  clion:
+    title: CLion
+    body: Experience with using the CLion IDE.
+    icon: clion
