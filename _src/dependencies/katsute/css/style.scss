@@ -7,12 +7,10 @@
 @import "nav", "footer";
 @import "home", "products", "repository";
 
-// temp!
+body {
 
-body{
-    // #f5e256 0%, #dc803e 33%, #d44073 66%, #454690 100%
-    background-image: url("/dependencies/katsute/assets/background.png"), linear-gradient(135deg, #3278be 0%, #2e51a2 100%);
-    background-repeat: repeat;
+    background: linear-gradient(135deg, #3278be 0%, #2e51a2 100%);
+
 }
 
 // ----- global overrides ---------------
