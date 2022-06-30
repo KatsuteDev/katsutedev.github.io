@@ -5,6 +5,9 @@ stack:
   - [github, github-actions]
   - [python, pycharm]
   - [cpp, clion]
+  - [windows]
+  - [docs, sheets, slides, drive, domains]
+  - [word, excel, powerpoint, access]
 
 tech:
   java:
@@ -84,3 +87,42 @@ tech:
     title: CLion
     body: Experience with using the CLion IDE.
     icon: clion
+
+  windows:
+    title: Windows
+    body: Experiences with the Windows operating system.
+    icon: windows
+
+  docs:
+    title: Google Docs
+    icon: googledocs
+    ext: png
+  sheets:
+    title: Google Sheets
+    icon: googlesheets
+    ext: png
+  slides:
+    title: Google Slides
+    icon: googleslides
+    ext: png
+  drive:
+    title: Google Drive
+    icon: googledrive
+    ext: png
+  domains:
+    title: Google Domains
+    icon: googledomains
+    ext: png
+
+  word:
+    title: Microsoft Word
+    icon: microsoftword
+  excel:
+    title: Microsoft Excel
+    icon: microsoftexcel
+  powerpoint:
+    title: Microsoft Powerpoint
+    icon: microsoftpowerpoint
+  access:
+    title: Microsoft Access
+    icon: microsoftaccess

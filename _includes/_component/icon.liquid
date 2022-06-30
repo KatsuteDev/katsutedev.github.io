@@ -5,7 +5,7 @@ Icon asset with optional tooltip
 {% endcomment %}
 <img
     class="user-select-none" width="{{ include.size }}" height="{{ include.size }}"
-    src="/dependencies/katsute/assets/{{ include.icon }}.svg"
+    src="/dependencies/katsute/assets/{{ include.icon }}.{% if include.ext %}{{ include.ext }}{% else %}svg{% endif%}"
     {% unless include.no-tooltip %}data-bs-toggle="tooltip" data-bs-placement="top"{% endunless %}
     title="{{ site.data.icons[include.icon] }}"
 >
