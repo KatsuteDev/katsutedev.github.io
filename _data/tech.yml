@@ -25,7 +25,7 @@ tech:
 
   html:
     title: HTML
-    body: 5 years exprience using HTML for site and software development.
+    body: 5 years experience using HTML for site and software development.
     icon: html5
   css:
     title: CSS
@@ -90,7 +90,7 @@ tech:
 
   windows:
     title: Windows
-    body: Experiences with the Windows operating system.
+    body: Experience with the Windows operating system.
     icon: windows
 
   docs:

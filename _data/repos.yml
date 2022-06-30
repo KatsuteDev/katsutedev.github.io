@@ -4,8 +4,8 @@
   readme: KatsuteDev-Desktop-Flick
   summary: Use your mobile device as a localized desktop keyboard.
   description: |
-    Influenced by this [april fools post](http://www.google.co.jp/ime/furikku/) from Google, there are no Japanese flick keyboards avaiable on the consumer market for PCs.
-    To fulfill this need I have create a desktop application that streams a mobile devices keyboard inputs to the desktop, allowing for the use of localized mobile keyboards on desktop without any additional peripherals.
+    Influenced by this [april fools post](http://www.google.co.jp/ime/furikku/) from Google, there are no Japanese flick keyboards available on the consumer market for PCs.
+    To fulfill this need I have created a desktop application that streams a mobile device's keyboard inputs to the desktop, allowing for the use of localized mobile keyboards on the desktop without any additional peripherals.
     While initially created for Japanese, it is functional for any mobile language keyboard.
   role: Developer & Maintainer
   start: March 2021
