@@ -151,11 +151,11 @@
       style: dark
       links:
         - name: Jar
-          link: https://github.com/KatsuteDev/OneMTA/releases/download/1.2.0/onemta-1.2.0.jar
+          link: https://github.com/KatsuteDev/OneMTA/releases/download/1.2.1/onemta-1.2.1.jar
         - name: Sources
-          link: https://github.com/KatsuteDev/OneMTA/releases/download/1.2.0/onemta-1.2.0-sources.jar
+          link: https://github.com/KatsuteDev/OneMTA/releases/download/1.2.1/onemta-1.2.1-sources.jar
         - name: Javadoc
-          link: https://github.com/KatsuteDev/OneMTA/releases/download/1.2.0/onemta-1.2.0-javadoc.jar
+          link: https://github.com/KatsuteDev/OneMTA/releases/download/1.2.1/onemta-1.2.1-javadoc.jar
 
 - name: Mal4J
   type: library
@@ -195,11 +195,11 @@
       style: dark
       links:
         - name: Jar
-          link: https://github.com/KatsuteDev/Mal4J/releases/download/2.8.0/mal4j-2.8.0.jar
+          link: https://github.com/KatsuteDev/Mal4J/releases/download/2.8.1/mal4j-2.8.1.jar
         - name: Sources
-          link: https://github.com/KatsuteDev/Mal4J/releases/download/2.8.0/mal4j-2.8.0-sources.jar
+          link: https://github.com/KatsuteDev/Mal4J/releases/download/2.8.1/mal4j-2.8.1-sources.jar
         - name: Javadoc
-          link: https://github.com/KatsuteDev/Mal4J/releases/download/2.8.0/mal4j-2.8.0-javadoc.jar
+          link: https://github.com/KatsuteDev/Mal4J/releases/download/2.8.1/mal4j-2.8.1-javadoc.jar
 
 - name: JCore
   type: library
@@ -328,6 +328,38 @@
       links:
         - name: Firefox Add-ons
           link: https://addons.mozilla.org/firefox/addon/github-red-issues
+
+- name: Background
+  type: extension
+  git: KatsuteDev/Background
+  readme: KatsuteDev-Background
+  summary: The most advanced background image extension for VSCode.
+  description: |
+    The only background extension that supports [glob](https://github.com/isaacs/node-glob#glob-primer). Add multiple background images for the window, editors, sidebars, or the panel. Created as an improved alternative to existing background extensions.
+  role: Developer & Maintainer
+  start: June 2022
+  with:
+    - typescript
+    - nodejs
+  for:
+    - visualstudiocode
+  using:
+    - visualstudiocode
+  download:
+    - name: GitHub
+      icon: fab fa-github
+      style: dark
+      links:
+        - name: GitHub Releases
+          link: https://github.com/Katsute/GitHub-Red-Issues/releases
+        - name: Extension
+          link: https://github.com/KatsuteDev/Background/releases/download/1.0.0/Katsute.code-background-1.0.0.vsix
+    - name: Visual Studio Code
+      icon: fab fa-microsoft
+      style: primary
+      links:
+        - name: Visual Studio Marketplace
+          link: https://marketplace.visualstudio.com/items?itemName=katsute.code-background
 
 - name: Mr. Flour
   type: project

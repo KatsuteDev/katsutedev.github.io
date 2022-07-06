@@ -4,6 +4,7 @@ paths:
   - ""
   - product
   - products
+  - product/background
   - product/desktop-flick
   - product/github-red-issues
   - product/jcore

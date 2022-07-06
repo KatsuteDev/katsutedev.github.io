@@ -11,6 +11,7 @@ Product card
         {% comment %} thumbnail {% endcomment %}
         {% unless include.no-thumbnail %}
             <img src="/{{ type }}/{{ slug }}/thumbnail.png" class="card-fluid" onerror="this.style.display='none'">
+            <img src="/{{ type }}/{{ slug }}/thumbnail.gif" class="card-fluid" onerror="this.style.display='none'">
         {% endunless %}
         {% comment %} body {% endcomment %}
         <div class="card-body d-flex flex-column">
@@ -32,13 +33,10 @@ Product card
                 {% for i in r.using %}
                     {% include _component/icon.liquid size=20 icon=i %}
                 {% endfor %}
-                {% assign s = r.for | size %}
-                {% if s > 1 %}
-                    <span class="align-middle">for</span>
-                    {% for i in r.for %}
-                        {% include _component/icon.liquid size=20 icon=i %}
-                    {% endfor %}
-                {% endif %}
+                <span class="align-middle">for</span>
+                {% for i in r.for %}
+                    {% include _component/icon.liquid size=20 icon=i %}
+                {% endfor %}
             </h6>
 
             {% comment %} body {% endcomment %}

@@ -12,6 +12,7 @@ const repos: string[] = [
     "KatsuteDev/Mal4J",
     "KatsuteDev/OneMTA",
     "KatsuteDev/Stop-Chrome",
+    "KatsuteDev/Background",
     "Katsute/GitHub-Red-Issues",
     "Ktt-Development/rexedia",
     "Ktt-Development/simplehttpserver"
