@@ -35,9 +35,9 @@
       style: primary
       links:
       - name: exe
-        link: https://github.com/KatsuteDev/Desktop-Flick/releases/download/1.2.2/Desktop.Flick-1.2.2.Setup.exe
+        link: https://github.com/KatsuteDev/Desktop-Flick/releases/download/1.2.3/Desktop.Flick-1.2.3.Setup.exe
       - name: zip
-        link: https://github.com/KatsuteDev/Desktop-Flick/releases/download/1.2.2/Desktop.Flick-win32-x64-1.2.2.zip
+        link: https://github.com/KatsuteDev/Desktop-Flick/releases/download/1.2.3/Desktop.Flick-win32-x64-1.2.3.zip
 
 - name: Stop Chrome
   type: software
