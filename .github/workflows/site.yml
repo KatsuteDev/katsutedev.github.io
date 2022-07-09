@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: 16
 
-      - name: ✔ Build
+      - name: ✔️ Build
         run: |
           npm i
 
@@ -26,5 +26,5 @@ jobs:
         with:
           provider: github
           token: ${{ secrets.GITHUB_TOKEN }}
-          actor: sinon-bot
+          actor: mashiro-san
           branch: gh-pages
