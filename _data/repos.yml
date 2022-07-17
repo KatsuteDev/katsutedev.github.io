@@ -73,9 +73,9 @@
       style: primary
       links:
         - name: exe
-          link: https://github.com/KatsuteDev/Stop-Chrome/releases/download/2.0.2/Stop.Chrome-2.0.2.Setup.exe
+          link: https://github.com/KatsuteDev/Stop-Chrome/releases/download/2.0.3/Stop.Chrome-2.0.3.Setup.exe
         - name: zip
-          link: https://github.com/KatsuteDev/Stop-Chrome/releases/download/2.0.2/Stop.Chrome-win32-x64-2.0.2.zip
+          link: https://github.com/KatsuteDev/Stop-Chrome/releases/download/2.0.3/Stop.Chrome-win32-x64-2.0.3.zip
 
 - name: Rexedia
   type: software
@@ -195,11 +195,11 @@
       style: dark
       links:
         - name: Jar
-          link: https://github.com/KatsuteDev/Mal4J/releases/download/2.8.1/mal4j-2.8.1.jar
+          link: https://github.com/KatsuteDev/Mal4J/releases/download/2.8.2/mal4j-2.8.2.jar
         - name: Sources
-          link: https://github.com/KatsuteDev/Mal4J/releases/download/2.8.1/mal4j-2.8.1-sources.jar
+          link: https://github.com/KatsuteDev/Mal4J/releases/download/2.8.2/mal4j-2.8.2-sources.jar
         - name: Javadoc
-          link: https://github.com/KatsuteDev/Mal4J/releases/download/2.8.1/mal4j-2.8.1-javadoc.jar
+          link: https://github.com/KatsuteDev/Mal4J/releases/download/2.8.2/mal4j-2.8.2-javadoc.jar
 
 - name: JCore
   type: library
