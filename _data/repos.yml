@@ -73,9 +73,9 @@
       style: primary
       links:
         - name: exe
-          link: https://github.com/KatsuteDev/Stop-Chrome/releases/download/2.0.3/Stop.Chrome-2.0.3.Setup.exe
+          link: https://github.com/KatsuteDev/Stop-Chrome/releases/download/2.0.4/Stop.Chrome-2.0.4.Setup.exe
         - name: zip
-          link: https://github.com/KatsuteDev/Stop-Chrome/releases/download/2.0.3/Stop.Chrome-win32-x64-2.0.3.zip
+          link: https://github.com/KatsuteDev/Stop-Chrome/releases/download/2.0.4/Stop.Chrome-win32-x64-2.0.4.zip
 
 - name: Rexedia
   type: software
@@ -315,7 +315,7 @@
       style: dark
       links:
         - name: GitHub Releases
-          link: https://github.com/Katsute/GitHub-Red-Issues/releases
+          link: https://github.com/KatsuteDev/GitHub-Red-Issues/releases
     - name: Chrome
       icon: fab fa-chrome
       style: warning
