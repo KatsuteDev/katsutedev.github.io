@@ -291,8 +291,8 @@
 
 - name: GitHub Red Issues
   type: extension
-  git: Katsute/GitHub-Red-Issues
-  readme: Katsute-GitHub-Red-Issues
+  git: KatsuteDev/GitHub-Red-Issues
+  readme: KatsuteDev-GitHub-Red-Issues
   summary: Revert closed GitHub issues from purple back to red.
   description: |
     Created to revert the [GitHub issue color change](https://github.blog/changelog/2021-10-26-updates-to-our-issue-status-icons-and-colors/) that was forced onto users without any feature preview or user consent. Extension is compatible with Chromium based browsers and Firefox. Uses minimal JavaScript and mostly complex CSS selectors.
