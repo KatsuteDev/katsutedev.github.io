@@ -12,6 +12,7 @@ paths:
   - product/onemta
   - product/rexedia
   - product/simplehttpserver
+  - product/simplehttpserver5
   - product/stop-chrome
   - project
   - projects
