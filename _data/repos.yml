@@ -195,11 +195,11 @@
       style: dark
       links:
         - name: Jar
-          link: https://github.com/KatsuteDev/Mal4J/releases/download/2.8.2/mal4j-2.8.2.jar
+          link: https://github.com/KatsuteDev/Mal4J/releases/download/2.9.0/mal4j-2.9.0.jar
         - name: Sources
-          link: https://github.com/KatsuteDev/Mal4J/releases/download/2.8.2/mal4j-2.8.2-sources.jar
+          link: https://github.com/KatsuteDev/Mal4J/releases/download/2.9.0/mal4j-2.9.0-sources.jar
         - name: Javadoc
-          link: https://github.com/KatsuteDev/Mal4J/releases/download/2.8.2/mal4j-2.8.2-javadoc.jar
+          link: https://github.com/KatsuteDev/Mal4J/releases/download/2.9.0/mal4j-2.9.0-javadoc.jar
 
 - name: JCore
   type: library
