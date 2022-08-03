@@ -1,0 +1,10 @@
+User-agent: *
+
+Disallow: /404
+Disallow: /*/404
+Disallow: /dependencies
+Disallow: /dependencies/*
+Disallow: /*/dependencies
+Disallow: /*/dependencies/*
+
+Sitemap: https://katsute.dev/sitemap.xml
